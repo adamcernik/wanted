@@ -1,2 +1,2 @@
-# wanted
+# Wanted
 Wanted - company website
