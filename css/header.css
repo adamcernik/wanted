@@ -226,7 +226,7 @@
     top: 90px;
     left: 0;
     right: 0;
-    background: rgba(15, 21, 33, 0.95);
+    background: rgba(15, 21, 33, 0.98);
     backdrop-filter: blur(10px);
     padding: 2rem 1.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -311,22 +311,32 @@
     height: 8px;
 }
 
-/* Mobile language selector dropdown - also open upwards */
+/* Mobile language selector dropdown overlay backdrop */
+.mobile-nav-content .language-select.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+/* Mobile language selector dropdown - center it in the viewport */
 .mobile-nav-content .language-dropdown {
-    position: absolute;
-    bottom: 100%;
-    top: auto;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     max-width: 300px;
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-    border-radius: 0.5rem;
+    margin: 0;
+    border-radius: 0.75rem;
     background: #0F1521;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
 }
 
 .mobile-nav-content .language-option {
@@ -460,6 +470,7 @@
     
     .mobile-nav {
         top: 80px;
+        padding: 1.5rem 1rem;
     }
     
     .header.scrolled + .mobile-nav.active {
@@ -468,6 +479,18 @@
     
     .mobile-nav.active {
         max-height: calc(100vh - 80px);
+    }
+    
+    .mobile-nav-content .language-dropdown {
+        width: 90%;
+    }
+    
+    .mobile-menu a {
+        font-size: 1.4rem;
+    }
+    
+    .mobile-nav-content .language-current {
+        font-size: 1.4rem;
     }
 }
 

@@ -897,6 +897,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     languageCurrent.setAttribute('aria-expanded', 'false');
                     languageDropdown.style.display = 'none';
                     
+                    // Close mobile menu if it's open
+                    const mobileNav = document.querySelector('.mobile-nav');
+                    const mobileToggle = document.querySelector('.mobile-toggle');
+                    const html = document.documentElement;
+                    
+                    if (mobileNav && mobileNav.classList.contains('active')) {
+                        mobileNav.classList.remove('active');
+                        if (mobileToggle) {
+                            mobileToggle.classList.remove('active');
+                        }
+                        html.classList.remove('mobile-menu-open');
+                    }
+                    
                     // You would add code here to change the site language
                 });
             });
