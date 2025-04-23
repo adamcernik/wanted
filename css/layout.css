@@ -4,6 +4,7 @@
     gap: 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .tile {
@@ -107,10 +108,15 @@
 }
 
 .content-overlay {
+    width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
     background: linear-gradient(to top, 
         rgba(26, 42, 58, 1) 0%,
         rgba(26, 42, 58, 0.95) 15%,
@@ -120,8 +126,6 @@
         rgba(26, 42, 58, 0.2) 85%,
         rgba(26, 42, 58, 0) 100%
     );
-    padding: 2rem 3rem 3rem;
-    color: var(--text-color);
 }
 
 /* Specific styling for Who We Are section to remove space */
@@ -214,7 +218,8 @@
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
-        padding: 0 15px;
+        padding: 0;
+        margin: 0 auto;
     }
 
     /* Adjust contact tiles to fit properly in tablet view */
@@ -272,17 +277,24 @@
         max-height: 270px;
         padding: 1.5rem;
     }
+
+    #partners.wide-full {
+        width: 100% !important;
+        margin: 15px 0 !important;
+        padding: 0 !important;
+    }
 }
 
-@media (min-width: 641px) and (max-width: 768px) {
-    /* Fix for the breakpoint between 640px and 768px */
+/* Fix tablet breakpoint issues */
+@media (min-width: 641px) and (max-width: 1024px) {
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 0 10px;
+        gap: 1.25rem;
+        padding: 0;
+        margin: 0 auto;
     }
     
-    /* Adjust tile sizes for this specific breakpoint */
+    /* Adjust tile sizes for tablet */
     .big {
         grid-column: span 2;
         grid-row: span 1;
@@ -298,22 +310,38 @@
         grid-column: span 2;
     }
     
-    .big.full-image {
-        min-height: 350px;
+    .wide {
+        grid-column: span 2;
+    }
+    
+    .wide-full {
+        grid-column: span 2;
+    }
+    
+    /* Make sure the partners grid works in tablet view */
+    .partners-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+    }
+}
+
+/* Specific styling for 768px breakpoint */
+@media (min-width: 641px) and (max-width: 768px) {
+    /* Ensure proper layout for two-column grid */
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        flex-direction: unset;
+        gap: 1rem;
+        padding: 0;
+        margin: 0 auto;
     }
     
     /* Fix for any specific problematic tiles */
     .tile.quote-tile,
-    .tile.service-tile,
-    .tile[style*="background-color: #1A1A1A"] {
+    .tile.service-tile {
         min-height: 200px;
         grid-column: span 1;
-    }
-    
-    /* Contact form and other large tiles */
-    .tile.big.gradient[style*="min-height: 600px"] {
-        grid-column: span 2;
-        min-height: 500px;
     }
     
     /* Ensure proper layout for the resource tile */
@@ -325,18 +353,18 @@
     .tile {
         overflow: hidden;
     }
-
-    /* Quote and Renault tiles */
-    .quote-tile,
-    .renault-tile {
-        max-height: 250px;
-    }
-
-    /* Contact tiles adjustments */
-    .contact-person-tile, 
-    .company-contact-tile,
-    .warehouse-contact-tile {
-        min-height: 150px;
+    
+    /* Fix partners tile in tablet view */
+    #partners.tile.wide-full {
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 15px 0 !important;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
     }
 }
 
@@ -397,7 +425,8 @@
         flex-direction: column;
         gap: 1rem;
         max-width: 100%;
-        padding: 1rem 0;
+        padding: 0;
+        margin: 0 auto;
     }
     
     /* Standard tile padding */
@@ -406,7 +435,7 @@
         min-height: unset;
         margin: 0;
         border-radius: 8px;
-        padding: 24px;
+        padding: 16px;
     }
     
     .tile.wide {
@@ -429,21 +458,21 @@
     
     /* What We Do tile - exact padding from image */
     .what-we-do-tile {
-        padding: 24px;
+        padding: 16px;
     }
     
     /* Fix for Content Overlays */
     .content-overlay {
-        padding: 24px;
+        padding: 16px;
     }
     
-    /* Who We Are overlay padding - COMPLETELY REMOVED */
+    /* Who We Are overlay padding */
     #who-we-are .content-overlay {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 0;
+        padding: 20px;
         background: linear-gradient(to top,
             rgba(26, 42, 58, 1) 0%,
             rgba(26, 42, 58, 0.9) 60%,
@@ -490,17 +519,18 @@
 
 @media screen and (max-width: 480px) {
     .bento-grid {
-        padding: 0.5rem 0;
+        padding: 0;
+        margin: 0 auto;
     }
     
     /* Standard tile padding */
     .tile {
-        padding: 24px;
+        padding: 16px;
     }
     
     /* Content overlay padding */
     .content-overlay {
-        padding: 24px;
+        padding: 20px;
         height: 100%;
         min-height: 100%;
     }
@@ -517,16 +547,16 @@
     
     /* What We Do tile */
     .what-we-do-tile {
-        padding: 24px;
+        padding: 20px;
     }
     
-    /* Who We Are overlay - NO PADDING */
+    /* Who We Are overlay */
     #who-we-are .content-overlay {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 0;
+        padding: 20px;
     }
     
     #who-we-are .content-overlay .headline {
@@ -612,4 +642,59 @@
         height: auto;
         justify-content: flex-end;
     }
+}
+
+/* What We Do tile */
+.what-we-do-tile {
+    padding: 20px;
+}
+
+/* Service list in What We Do tile - make it two columns */
+.service-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px;
+    padding-left: 20px;
+    margin: 16px 0 0 0;
+    list-style-position: outside;
+}
+
+.what-we-do-tile .service-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+/* Add responsive adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .service-list,
+    .what-we-do-tile .service-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 5px;
+        padding-left: 15px;
+    }
+}
+
+/* Content overlay padding */
+.content-overlay {
+    padding: 2rem 3rem 3rem;
+}
+
+#partners.wide-full {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 15px 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 100% !important;
 } 

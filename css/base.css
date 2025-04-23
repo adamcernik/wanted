@@ -10,12 +10,14 @@ body {
     background: var(--gradient-dark);
     color: var(--text-color);
     min-height: 100vh;
-    padding: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
     background-image: 
         radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05), transparent 70%),
         radial-gradient(circle at 0% 50%, rgba(26, 42, 58, 0.1), transparent 50%),
         var(--gradient-dark);
-    padding-top: 9rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.015em;
@@ -56,6 +58,10 @@ body {
     #who-we-are, #service-01, #movie-grid, #lukas-contact, #history, #mobile-services, #desktop-services {
         scroll-margin-top: 140px; /* Slightly more space on medium screens */
     }
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -66,8 +72,8 @@ body {
     body {
         font-size: 14px;
         padding-bottom: 40px;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 16px;
+        padding-right: 16px;
         padding-top: 100px;
     }
     

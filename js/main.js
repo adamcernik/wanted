@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS
     emailjs.init("hUdCH3u0SC6LkmOaD");
     
+    // Close mobile menu when resizing to desktop
+    window.addEventListener('resize', function() {
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const html = document.documentElement;
+        
+        // If viewport is desktop size (> 768px) and mobile menu is open, close it
+        if (window.innerWidth > 768 && mobileNav && mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            mobileToggle.classList.remove('active');
+            html.classList.remove('mobile-menu-open');
+        }
+    });
+    
     // Function to initialize and control the project slider
     function initProjectSlider() {
         const slider = document.querySelector('.project-slider-tile');
@@ -141,6 +155,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: 0,
                 behavior: 'smooth'
             });
+            
+            // Close mobile menu if open
+            const mobileNav = document.querySelector('.mobile-nav');
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const html = document.documentElement;
+            
+            if (mobileNav && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                html.classList.remove('mobile-menu-open');
+            }
         });
     }
     
@@ -231,6 +256,16 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.warn('Services track element not found in the DOM');
     }
+    
+    // Load partners section
+    fetch('includes/partners.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('partners').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading partners section:', error);
+        });
     
     // Shared scrolling utility function for both services and timeline
     function setupNaturalScrolling(container, options = {}) {
@@ -955,21 +990,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Modal content data
     const modalData = {
         'service-01': {
-            title: 'Print & design',
+            title: 'Print & Design',
             subtitle: 'Professional printing and design services for various media',
-            image: 'images/services/01.jpeg',
+            image: 'images/services/01.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
-                        <li>Signs</li>
-                        <li>City lights view (CLV)</li>
-                        <li>Flags</li>
-                        <li>Honeycomb prints</li>
-                        <li>Banners</li>
+                        <li>Professional printing</li>
+                        <li>Graphic design</li>
                         <li>Large format printing</li>
-                        <li>3D print</li>
-                        <li>Acrylic & plexiglass</li>
-                        <li>Expo frames</li>
+                        <li>Brochures and catalogs</li>
+                        <li>Custom print solutions</li>
+                        <li>Digital design</li>
                     </ul>
                 </div>
             `
@@ -977,15 +1009,16 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-02': {
             title: 'Corporate Identities',
             subtitle: 'Comprehensive brand identity development and implementation',
-            image: 'images/services/02.jpeg',
+            image: 'images/services/02.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
-                        <li>Brand strategy development</li>
-                        <li>Visual identity design</li>
-                        <li>Brand guidelines creation</li>
-                        <li>Identity implementation</li>
-                        <li>Brand consistency management</li>
+                        <li>Logo design</li>
+                        <li>Brand guidelines</li>
+                        <li>Visual identity systems</li>
+                        <li>Corporate branding</li>
+                        <li>Brand implementation</li>
+                        <li>Visual communication</li>
                     </ul>
                 </div>
             `
@@ -993,7 +1026,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-03': {
             title: 'Furniture',
             subtitle: 'Custom furniture design and manufacturing solutions',
-            image: 'images/services/03.jpeg',
+            image: 'images/services/03.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
@@ -1008,7 +1041,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-04': {
             title: 'Production',
             subtitle: 'Full-scale production services and project management',
-            image: 'images/services/04.jpeg',
+            image: 'images/services/04.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
@@ -1024,7 +1057,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-05': {
             title: 'Crafts',
             subtitle: 'Specialized craftsmanship including glass work and custom solutions',
-            image: 'images/services/05.jpeg',
+            image: 'images/services/05.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
@@ -1039,7 +1072,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-06': {
             title: 'Film Props & Decorations',
             subtitle: 'Custom props and set decorations for film and television',
-            image: 'images/services/06.jpeg',
+            image: 'images/services/06.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
@@ -1056,7 +1089,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-07': {
             title: 'Logistics',
             subtitle: 'Comprehensive logistics and transportation services',
-            image: 'images/services/07.jpeg',
+            image: 'images/services/07.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">
@@ -1072,7 +1105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'service-08': {
             title: 'Documentation',
             subtitle: 'Professional documentation and project documentation services',
-            image: 'images/services/08.jpeg',
+            image: 'images/services/08.jpg',
             content: `
                 <div class="modal-section">
                     <ul class="modal-list two-columns">

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/partners.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo-container">
-                <a href="#" class="logo-link">
+                <a href="#main-content" class="logo-link" id="top-link">
                     <img src="images/wanted-logo2.png" alt="WANTED Logo" class="logo" width="96" height="96">
                     <span class="logo-text">WANTED</span>
                 </a>
@@ -78,7 +79,7 @@
             <div class="mobile-nav" id="mobile-nav">
                 <div class="mobile-nav-content">
                     <div class="mobile-menu">
-                        <a href="#service-01">Services</a>
+                        <a href="#desktop-services">Services</a>
                         <a href="#movie-grid">Production</a>
                         <a href="#history">References</a>
                         <a href="#lukas-contact">Contact</a>
@@ -225,7 +226,8 @@
             <div id="basic-services-scroll">
                 <!-- Service 01 -->
                 <div class="basic-service-tile" data-target="service-01">
-                    <img src="images/services/01.jpeg" alt="Print & Design">
+                    <img src="images/services/01.jpg" alt="Print & Design">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">01</span>
@@ -237,7 +239,8 @@
                 
                 <!-- Service 02 -->
                 <div class="basic-service-tile" data-target="service-02">
-                    <img src="images/services/02.jpeg" alt="Corporate Identities">
+                    <img src="images/services/02.jpg" alt="Corporate Identities">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">02</span>
@@ -249,7 +252,8 @@
                 
                 <!-- Service 03 -->
                 <div class="basic-service-tile" data-target="service-03">
-                    <img src="images/services/03.jpeg" alt="Furniture">
+                    <img src="images/services/03.jpg" alt="Furniture">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">03</span>
@@ -261,7 +265,8 @@
                 
                 <!-- Service 04 -->
                 <div class="basic-service-tile" data-target="service-04">
-                    <img src="images/services/04.jpeg" alt="Production">
+                    <img src="images/services/04.jpg" alt="Production">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">04</span>
@@ -273,7 +278,8 @@
                 
                 <!-- Service 05 -->
                 <div class="basic-service-tile" data-target="service-05">
-                    <img src="images/services/05.jpeg" alt="Crafts">
+                    <img src="images/services/05.jpg" alt="Crafts">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">05</span>
@@ -285,7 +291,8 @@
                 
                 <!-- Service 06 -->
                 <div class="basic-service-tile" data-target="service-06">
-                    <img src="images/services/06.jpeg" alt="Film Props & Deco">
+                    <img src="images/services/06.jpg" alt="Film Props & Deco">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">06</span>
@@ -297,7 +304,8 @@
                 
                 <!-- Service 07 -->
                 <div class="basic-service-tile" data-target="service-07">
-                    <img src="images/services/07.jpeg" alt="Logistics">
+                    <img src="images/services/07.jpg" alt="Logistics">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">07</span>
@@ -309,7 +317,8 @@
                 
                 <!-- Service 08 -->
                 <div class="basic-service-tile" data-target="service-08">
-                    <img src="images/services/08.jpeg" alt="Documentation">
+                    <img src="images/services/08.jpg" alt="Documentation">
+                    <span class="expand-icon"></span>
                     <div class="service-content-mobile">
                         <div class="service-header">
                             <span class="number">08</span>
@@ -324,7 +333,8 @@
         <!-- Services section - desktop view (inside bento-grid) -->
         <!-- Service 01 tile -->
         <div id="service-01" class="tile service-tile" data-modal="service-01">
-            <img src="images/services/01.jpeg" alt="Print & Design">
+            <img src="images/services/01.jpg" alt="Print & Design">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">01</div>
                 <h3 class="service-title">Print & Design</h3>
@@ -334,7 +344,8 @@
 
         <!-- Service 02 tile -->
         <div class="tile service-tile service-02" data-modal="service-02">
-            <img src="images/services/02.jpeg" alt="Corporate Identities">
+            <img src="images/services/02.jpg" alt="Corporate Identities">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">02</div>
                 <h3 class="service-title">Corporate Identities</h3>
@@ -344,7 +355,8 @@
 
         <!-- Service 03 tile -->
         <div class="tile service-tile service-03" data-modal="service-03">
-            <img src="images/services/03.jpeg" alt="Furniture">
+            <img src="images/services/03.jpg" alt="Furniture">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">03</div>
                 <h3 class="service-title">Furniture</h3>
@@ -354,7 +366,8 @@
 
         <!-- Service 04 tile -->
         <div class="tile service-tile service-04" data-modal="service-04">
-            <img src="images/services/04.jpeg" alt="Production">
+            <img src="images/services/04.jpg" alt="Production">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">04</div>
                 <h3 class="service-title">Production</h3>
@@ -364,7 +377,8 @@
 
         <!-- Service 05 tile -->
         <div class="tile service-tile service-05" data-modal="service-05">
-            <img src="images/services/05.jpeg" alt="Crafts">
+            <img src="images/services/05.jpg" alt="Crafts">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">05</div>
                 <h3 class="service-title">Crafts</h3>
@@ -374,7 +388,8 @@
 
         <!-- Service 06 tile -->
         <div class="tile service-tile service-06" data-modal="service-06">
-            <img src="images/services/06.jpeg" alt="Film Props & Decorations">
+            <img src="images/services/06.jpg" alt="Film Props & Decorations">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">06</div>
                 <h3 class="service-title">Film Props & Deco</h3>
@@ -384,7 +399,8 @@
 
         <!-- Service 07 tile -->
         <div class="tile service-tile service-07" data-modal="service-07">
-            <img src="images/services/07.jpeg" alt="Logistics">
+            <img src="images/services/07.jpg" alt="Logistics">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">07</div>
                 <h3 class="service-title">Logistics</h3>
@@ -394,7 +410,8 @@
 
         <!-- Service 08 tile -->
         <div class="tile service-tile service-08" data-modal="service-08">
-            <img src="images/services/08.jpeg" alt="Documentation">
+            <img src="images/services/08.jpg" alt="Documentation">
+            <span class="expand-icon"></span>
             <div class="service-content">
                 <div class="service-number">08</div>
                 <h3 class="service-title">Documentation</h3>
@@ -456,12 +473,6 @@
                 <li>Snowpiercer <span class="year">(2013)</span></li>
                 <li>Mission: Impossible - Ghost Protocol <span class="year">(2011)</span></li>
             </ul>
-            <a href="#" class="show-more-btn">
-                <span>Show More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </a>
         </div>
 
         <!-- Commercial Projects tile -->
@@ -502,6 +513,11 @@
             <div id="timeline-basic-scroll">
                 <!-- Timeline items will be loaded dynamically by JS -->
             </div>
+        </div>
+
+        <!-- Partners/Logos Section (no background, no fixed height) -->
+        <div id="partners" class="wide-full partners-wrapper">
+            <!-- Include partners section -->
         </div>
 
         <!-- Contact Person Tile - Lukas -->
@@ -642,5 +658,6 @@
     <!-- JavaScript -->
     </main>
     <script src="js/main.js"></script>
+    <script src="js/partners.js"></script>
 </body>
 </html>
