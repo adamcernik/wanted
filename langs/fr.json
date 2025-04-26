@@ -1,55 +1,250 @@
 {
-  "navigation": {
-    "services": "Services",
-    "production": "Production",
-    "references": "Références",
-    "contact": "Contact"
-  },
-  "header": {
-    "skipToContent": "Passer au contenu"
-  },
-  "home": {
-    "whoWeAre": {
-      "title": "Qui sommes-nous",
-      "text": "Grâce à la qualité et à la gamme des services proposés, WANTED s.f.o. est bien établi dans l'industrie cinématographique, dans le domaine des projets d'aménagement, de la production de mobilier design, des réalisations complexes d'intérieur et des produits d'aide à la vente."
+    "navigation": {
+      "services": "Services",
+      "production": "Production",
+      "references": "Références",
+      "contact": "Contact",
+      "language": "Langue"
     },
-    "whatWeDo": {
-      "title": "Ce que nous faisons",
-      "services": [
-        "Cinéma",
-        "Décorations",
-        "Accessoires",
-        "Événements",
-        "Intérieurs",
-        "Expositions"
-      ]
+    "header": {
+      "skipToContent": "Passer au contenu"
     },
-    "projects": {
-      "inProgress": "En cours",
-      "daciaNvi": "Projet Dacia NVI",
-      "renaultStore": "Renault Store New'R",
-      "comingSoon": "À venir"
+    "home": {
+      "whoWeAre": {
+        "title": "Qui sommes-nous",
+        "text": "Grâce à la qualité et à la gamme des services proposés, WANTED s.f.o. est bien établie dans l'industrie cinématographique, dans le domaine des projets d'aménagement, de la production de mobilier design, des réalisations d'intérieurs complexes et des produits d'aide à la vente."
+      },
+      "whatWeDo": {
+        "title": "Ce que nous faisons",
+        "services": [
+          "Cinéma",
+          "Décorations",
+          "Accessoires",
+          "Événements",
+          "Intérieurs",
+          "Expositions"
+        ]
+      },
+      "resources": {
+        "title": "Nos ressources",
+        "items": [
+          "Flotte de transport propre",
+          "Installations de stockage et de production",
+          "Réseau étendu de fournisseurs vérifiés",
+          "Expérience pratique sur les plateaux de tournage",
+          "Personnel qualifié et dévoué"
+        ]
+      },
+      "projects": {
+        "inProgress": "En cours",
+        "daciaNvi": "Projet Dacia NVI",
+        "renaultStore": "Renault Store New'R",
+        "comingSoon": "Prochainement"
+      },
+      "filmProduction": {
+        "title": "Support à la production cinématographique et télévisuelle",
+        "text": "WANTED s.f.o. a contribué à la création de nombreux films et séries télévisées acclamés. Notre expertise en matière d'accessoires, de décorations et de conception de décors a aidé à donner vie à des histoires à travers divers genres et productions."
+      },
+      "notableFilms": {
+        "title": "Projets cinématographiques notables",
+        "projects": [
+          "The Wheel of Time (2020-2023)",
+          "Jojo Rabbit (2018)",
+          "The Painted Bird (2018)",
+          "The Zookeeper's Wife (2017)",
+          "Snowpiercer (2013)",
+          "Mission : Impossible - Ghost Protocol (2011)"
+        ]
+      },
+      "commercialProjects": {
+        "title": "Projets commerciaux",
+        "projects": [
+          "Groupe Renault (Fournisseur homologué)",
+          "Nouvelle identité visuelle Dacia",
+          "Refonte du Renault Store",
+          "Renault Alpine Store",
+          "Renault Care Service",
+          "Diverses campagnes commerciales et événements promotionnels"
+        ]
+      },
+      "quote": {
+        "text": "Le plaisir dans le travail met la perfection dans l'œuvre",
+        "author": "— Aristote"
+      },
+      "renault": {
+        "text": "fournisseur agréé"
+      }
+    },
+    "services": {
+      "heading": "Nos services",
+      "service01": {
+        "title": "Impression & Design",
+        "number": "01",
+        "description": "Services professionnels d'impression et de design pour divers médias",
+        "fullDescription": "Nos services d'impression et de design incluent des solutions d'impression de haute qualité pour tous les formats et matériaux. Des impressions grand format aux projets de design détaillés, nous proposons des solutions complètes adaptées aux besoins spécifiques de chaque client. Notre équipe de designers et de professionnels de l'impression garantit une qualité exceptionnelle et une attention aux détails dans chaque projet.",
+        "capabilities": [
+          "Impression grand format",
+          "Impression numérique et offset",
+          "Services de design graphique",
+          "Production de matériels de marque",
+          "Signalétique et affichages personnalisés",
+          "Impressions et matériaux d'exposition"
+        ]
+      },
+      "service02": {
+        "title": "Identités d'entreprise",
+        "number": "02",
+        "description": "Développement et mise en œuvre complète d'identité de marque",
+        "fullDescription": "Nous sommes spécialisés dans la création et la mise en œuvre de systèmes d'identité d'entreprise complets. Du développement initial du concept à la mise en œuvre à grande échelle à travers tous les points de contact, nos services d'identité d'entreprise aident les marques à établir une présence cohérente et reconnaissable sur leurs marchés respectifs.",
+        "capabilities": [
+          "Développement de stratégie de marque",
+          "Systèmes d'identité visuelle",
+          "Création de directives de marque",
+          "Conception de supports d'entreprise",
+          "Image de marque environnementale",
+          "Conception d'espace de marque"
+        ]
+      },
+      "service03": {
+        "title": "Mobilier",
+        "number": "03",
+        "description": "Solutions de conception et de fabrication de mobilier sur mesure",
+        "fullDescription": "Nos services de conception et de production de mobilier sur mesure combinent créativité et savoir-faire. Nous travaillons avec divers matériaux pour créer des pièces de mobilier uniques qui répondent à des exigences fonctionnelles et esthétiques spécifiques. Du concept à l'installation, nous gérons tous les aspects des projets de mobilier sur mesure.",
+        "capabilities": [
+          "Conception de mobilier sur mesure",
+          "Développement de prototypes",
+          "Production de mobilier sur mesure",
+          "Solutions de mobilier commercial",
+          "Mobilier d'exposition et de présentation",
+          "Mobilier de décor"
+        ]
+      },
+      "service04": {
+        "title": "Production",
+        "number": "04",
+        "description": "Services de production à grande échelle et gestion de projet",
+        "fullDescription": "Nos capacités de production s'étendent des projets à petite échelle aux productions complexes et multifacettes. Nous assurons une gestion de projet complète, garantissant que tous les aspects de la production sont exécutés efficacement, à temps et dans les limites du budget. Notre équipe expérimentée gère la logistique, l'allocation des ressources et le contrôle qualité.",
+        "capabilities": [
+          "Support à la production cinématographique et télévisuelle",
+          "Production d'événements",
+          "Production d'expositions",
+          "Construction de décors",
+          "Production commerciale",
+          "Production d'environnements de vente au détail"
+        ]
+      },
+      "service05": {
+        "title": "Artisanat",
+        "number": "05",
+        "description": "Artisanat spécialisé incluant le travail du verre et des solutions sur mesure",
+        "fullDescription": "Nos services d'artisanat mettent en valeur les compétences et l'expertise de nos artisans. Nous proposons des travaux spécialisés dans divers matériaux, avec une expertise particulière dans le travail du verre, le travail du métal et le travail du bois. Chaque projet bénéficie de notre attention aux détails et de notre engagement envers un artisanat de qualité.",
+        "capabilities": [
+          "Installations en verre sur mesure",
+          "Travail artistique du métal",
+          "Ébénisterie fine",
+          "Finitions de peinture spéciales",
+          "Éléments sculpturaux",
+          "Création d'accessoires sur mesure"
+        ]
+      },
+      "service06": {
+        "title": "Accessoires & Déco de film",
+        "number": "06",
+        "description": "Accessoires personnalisés et décorations de plateau pour le cinéma et la télévision",
+        "fullDescription": "Nos services d'accessoires et de décoration de plateau répondent aux besoins spécifiques des productions cinématographiques et télévisuelles. Nous créons des accessoires personnalisés, des éléments de décor et des éléments décoratifs qui aident à donner vie aux histoires à l'écran. Notre expérience avec de nombreuses productions acclamées nous assure de comprendre les exigences uniques de l'industrie cinématographique.",
+        "capabilities": [
+          "Création d'accessoires sur mesure",
+          "Décoration de plateau",
+          "Recréations fidèles à l'époque",
+          "Accessoires et effets spéciaux",
+          "Services de décoration de plateau",
+          "Support à la conception de production"
+        ]
+      },
+      "service07": {
+        "title": "Logistique",
+        "number": "07",
+        "description": "Services complets de logistique et de transport",
+        "fullDescription": "Nos services logistiques garantissent que les matériaux, les équipements et les produits finis arrivent où ils doivent être, quand ils doivent y être. Avec notre propre flotte de transport et notre équipe logistique expérimentée, nous gérons tout, des livraisons locales aux arrangements d'expédition internationaux.",
+        "capabilities": [
+          "Services de transport",
+          "Gestion d'entrepôt",
+          "Contrôle d'inventaire",
+          "Expédition et réception",
+          "Logistique d'installation",
+          "Support logistique sur plateau"
+        ]
+      },
+      "service08": {
+        "title": "Documentation",
+        "number": "08",
+        "description": "Services professionnels de documentation et de documentation de projet",
+        "fullDescription": "Nos services de documentation fournissent une tenue de registres complète pour des projets de toutes tailles. Des spécifications techniques à la documentation visuelle, nous nous assurons que tous les aspects d'un projet sont correctement documentés pour référence, conformité et utilisation future.",
+        "capabilities": [
+          "Documentation technique",
+          "Photographie de projet",
+          "Documentation vidéo",
+          "Documentation de processus",
+          "Documentation telle que construite",
+          "Gestion d'archives"
+        ]
+      }
+    },
+    "contact": {
+      "formTitle": "Contactez-nous",
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "sendMessage": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "sent": "Message envoyé !",
+      "failed": "Échec de l'envoi",
+      "disclaimer": "En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément au RGPD.",
+      "address": "Adresse",
+      "emailUs": "Envoyez-nous un e-mail",
+      "followUs": "Suivez-nous",
+      "emailContact": "info@wanted-sfo.cz",
+      "people": {
+        "lukas": {
+          "name": "Lukas Katakalidis",
+          "phone": "+420 606 042 031",
+          "email": "lukas@wanted-sfo.cz",
+          "ico": "71382186",
+          "dic": "CZ8211270144"
+        },
+        "pepi": {
+          "name": "Pepi Borik",
+          "phone": "+420 602 335 335",
+          "email": "pepi@wanted-sfo.cz",
+          "ico": "74241486",
+          "dic": "CZ7907132475"
+        }
+      },
+      "company": {
+        "name": "WANTED s.f.o.",
+        "address": [
+          "Zásadská 569/3",
+          "190 00 Praha 9"
+        ]
+      },
+      "warehouse": {
+        "title": "Bureau / Entrepôt",
+        "address": [
+          "Stoliňská 4",
+          "190 00 Praha 9"
+        ]
+      },
+      "labels": {
+        "ico": "IČO:",
+        "dic": "DIČ:"
+      }
+    },
+    "modal": {
+      "closeButton": "Fermer la modal"
+    },
+    "meta": {
+      "description": "WANTED s.f.o. - Support et services de production cinématographique",
+      "title": "WANTED - Support à la production cinématographique"
     }
-  },
-  "contact": {
-    "formTitle": "Contactez-nous",
-    "name": "Nom",
-    "email": "Email",
-    "message": "Message",
-    "sendMessage": "Envoyer le message",
-    "sending": "Envoi en cours...",
-    "sent": "Message envoyé !",
-    "failed": "Échec de l'envoi"
-  },
-  "services": {
-    "heading": "Nos services",
-    "filmProduction": {
-      "title": "Production cinématographique",
-      "description": "Services complets pour la production cinématographique, y compris la conception de décors, la fabrication et la fourniture d'accessoires."
-    }
-  },
-  "meta": {
-    "description": "WANTED s.f.o. - Support et services de production cinématographique",
-    "title": "WANTED - Support de production cinématographique"
   }
-} 

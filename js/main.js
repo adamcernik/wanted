@@ -987,7 +987,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set initial language based on browser preference
     const browserLang = navigator.language.split('-')[0];
-    const availableLangs = ['en', 'cz', 'de', 'fr', 'pl', 'hu'];
+    const availableLangs = ['en', 'cs', 'de', 'fr', 'pl', 'hu'];
     const defaultLang = availableLangs.includes(browserLang) ? browserLang : 'en';
     
     document.documentElement.lang = defaultLang;
