@@ -647,6 +647,10 @@
 /* What We Do tile */
 .what-we-do-tile {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* Service list in What We Do tile - make it two columns */
@@ -655,7 +659,7 @@
     grid-template-columns: 1fr 1fr !important;
     gap: 8px;
     padding-left: 20px;
-    margin: 16px 0 0 0;
+    margin: 0;
     list-style-position: outside;
 }
 
@@ -663,6 +667,7 @@
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     width: 100%;
+    margin-top: auto;
 }
 
 .service-list li {

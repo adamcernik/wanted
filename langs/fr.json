@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "services": "Services",
+    "production": "Production",
+    "references": "Références",
+    "contact": "Contact"
+  },
+  "header": {
+    "skipToContent": "Passer au contenu"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Qui sommes-nous",
+      "text": "Grâce à la qualité et à la gamme des services proposés, WANTED s.f.o. est bien établi dans l'industrie cinématographique, dans le domaine des projets d'aménagement, de la production de mobilier design, des réalisations complexes d'intérieur et des produits d'aide à la vente."
+    },
+    "whatWeDo": {
+      "title": "Ce que nous faisons",
+      "services": [
+        "Cinéma",
+        "Décorations",
+        "Accessoires",
+        "Événements",
+        "Intérieurs",
+        "Expositions"
+      ]
+    },
+    "projects": {
+      "inProgress": "En cours",
+      "daciaNvi": "Projet Dacia NVI",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "À venir"
+    }
+  },
+  "contact": {
+    "formTitle": "Contactez-nous",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "sendMessage": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "sent": "Message envoyé !",
+    "failed": "Échec de l'envoi"
+  },
+  "services": {
+    "heading": "Nos services",
+    "filmProduction": {
+      "title": "Production cinématographique",
+      "description": "Services complets pour la production cinématographique, y compris la conception de décors, la fabrication et la fourniture d'accessoires."
+    }
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Support et services de production cinématographique",
+    "title": "WANTED - Support de production cinématographique"
+  }
+} 

@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Force translation update if a language was previously selected
+    if (localStorage.getItem('language')) {
+        console.log('Detected previously selected language:', localStorage.getItem('language'));
+        // Check if the i18n object exists and call translatePage
+        if (window.i18n && typeof window.i18n.translatePage === 'function') {
+            setTimeout(() => {
+                window.i18n.translatePage();
+                console.log('Triggered translation refresh from main.js');
+            }, 500);
+        } else {
+            console.error('i18n object not found or translatePage is not a function');
+        }
+    }
+    
     // Initialize the project slider
     initProjectSlider();
     
@@ -170,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Handle contact form submission
-    const contactForm = document.getElementById('contact-form');
+    const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
@@ -178,14 +192,20 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show loading state
             const submitBtn = contactForm.querySelector('.submit-btn');
             const originalBtnText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
+            
+            // Get status texts from translations
+            const sendingText = submitBtn.getAttribute('data-sending') || 'Sending...';
+            const sentText = submitBtn.getAttribute('data-sent') || 'Message Sent!';
+            const failedText = submitBtn.getAttribute('data-failed') || 'Failed to Send';
+            
+            submitBtn.textContent = sendingText;
             submitBtn.disabled = true;
             
             // Send the email using EmailJS
             emailjs.sendForm('service_y9eokla', 'template_07bfz5o', this)
                 .then(function() {
                     // Success message
-                    submitBtn.textContent = 'Message Sent!';
+                    submitBtn.textContent = sentText;
                     contactForm.reset();
                     
                     // Reset button after delay
@@ -197,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .catch(function(error) {
                     // Error handling
                     console.error('EmailJS error:', error);
-                    submitBtn.textContent = 'Failed to Send';
+                    submitBtn.textContent = failedText;
                     
                     // Reset button after delay
                     setTimeout(() => {
@@ -1125,12 +1145,52 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = modalData[modalId];
         if (!data) return;
         
+        // Try to get translations if i18n is available
+        let serviceNumber = modalId.replace('service-', '');
+        let serviceKey = `service${serviceNumber.padStart(2, '0')}`;
+        let translatedTitle = data.title;
+        let translatedSubtitle = data.subtitle;
+        let translatedContent = data.content;
+        
+        // Check if window.i18n exists and if we have translations for this service
+        if (window.i18n && window.i18n.getCurrentLanguage) {
+            const currentLang = window.i18n.getCurrentLanguage();
+            // Try to load from global translations cache
+            if (window.translations && 
+                window.translations[currentLang] && 
+                window.translations[currentLang].services && 
+                window.translations[currentLang].services[serviceKey]) {
+                
+                const serviceTrans = window.translations[currentLang].services[serviceKey];
+                
+                if (serviceTrans.title) {
+                    translatedTitle = serviceTrans.title;
+                }
+                
+                if (serviceTrans.description) {
+                    translatedSubtitle = serviceTrans.description;
+                }
+                
+                // If we have capabilities, use them for the content
+                if (serviceTrans.capabilities && Array.isArray(serviceTrans.capabilities)) {
+                    translatedContent = `
+                        <div class="modal-section">
+                            <p>${serviceTrans.fullDescription || ''}</p>
+                            <ul class="modal-list two-columns">
+                                ${serviceTrans.capabilities.map(cap => `<li>${cap}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+            }
+        }
+        
         // Populate modal content
         modalImage.src = data.image;
-        modalImage.alt = data.title;
-        modalTitle.textContent = data.title;
-        modalSubtitle.textContent = data.subtitle;
-        modalBody.innerHTML = data.content;
+        modalImage.alt = translatedTitle;
+        modalTitle.textContent = translatedTitle;
+        modalSubtitle.textContent = translatedSubtitle;
+        modalBody.innerHTML = translatedContent;
         
         // Show modal
         modalOverlay.classList.add('active');
