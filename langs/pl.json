@@ -81,7 +81,6 @@
         "title": "Druk i projektowanie",
         "number": "01",
         "description": "Profesjonalne usługi drukarskie i projektowe dla różnych mediów",
-        "fullDescription": "Nasze usługi druku i projektowania obejmują wysokiej jakości rozwiązania drukarskie dla wszystkich formatów i materiałów. Od druków wielkoformatowych po szczegółowe projekty graficzne, oferujemy kompleksowe rozwiązania dostosowane do konkretnych potrzeb każdego klienta. Nasz zespół projektantów i specjalistów w dziedzinie druku zapewnia wyjątkową jakość i dbałość o szczegóły w każdym projekcie.",
         "capabilities": [
           "Druk wielkoformatowy",
           "Druk cyfrowy i offsetowy",
@@ -95,7 +94,6 @@
         "title": "Tożsamość korporacyjna",
         "number": "02",
         "description": "Kompleksowe opracowanie i wdrożenie tożsamości marki",
-        "fullDescription": "Specjalizujemy się w tworzeniu i wdrażaniu kompleksowych systemów identyfikacji korporacyjnej. Od wstępnego opracowania koncepcji po pełnoskalowe wdrożenie we wszystkich punktach styku, nasze usługi tożsamości korporacyjnej pomagają markom ustanowić spójną i rozpoznawalną obecność na ich rynkach.",
         "capabilities": [
           "Opracowanie strategii marki",
           "Systemy identyfikacji wizualnej",
@@ -109,7 +107,6 @@
         "title": "Meble",
         "number": "03",
         "description": "Niestandardowe rozwiązania w zakresie projektowania i produkcji mebli",
-        "fullDescription": "Nasze usługi w zakresie niestandardowego projektowania i produkcji mebli łączą kreatywność z rzemiosłem. Pracujemy z różnymi materiałami, aby tworzyć unikatowe meble, które spełniają określone wymagania funkcjonalne i estetyczne. Od koncepcji po montaż, zajmujemy się każdym aspektem niestandardowych projektów meblowych.",
         "capabilities": [
           "Niestandardowe projektowanie mebli",
           "Rozwój prototypów",
@@ -123,7 +120,6 @@
         "title": "Produkcja",
         "number": "04",
         "description": "Pełnowymiarowe usługi produkcyjne i zarządzanie projektami",
-        "fullDescription": "Nasze możliwości produkcyjne obejmują zarówno małe projekty, jak i złożone, wieloaspektowe produkcje. Zapewniamy kompleksowe zarządzanie projektami, gwarantując, że wszystkie aspekty produkcji są realizowane efektywnie, na czas i w ramach budżetu. Nasz doświadczony zespół zajmuje się logistyką, alokacją zasobów i kontrolą jakości.",
         "capabilities": [
           "Wsparcie produkcji filmowej i telewizyjnej",
           "Produkcja wydarzeń",
@@ -137,7 +133,6 @@
         "title": "Rzemiosło",
         "number": "05",
         "description": "Specjalistyczne rzemiosło, w tym prace szklarskie i niestandardowe rozwiązania",
-        "fullDescription": "Nasze usługi rzemieślnicze prezentują umiejętności i wiedzę naszych rzemieślników. Oferujemy specjalistyczne prace w różnych materiałach, ze szczególną wiedzą w zakresie prac szklarskich, metalowych i stolarskich. Każdy projekt korzysta z naszej dbałości o szczegóły i zaangażowania w jakość rzemiosła.",
         "capabilities": [
           "Niestandardowe instalacje szklane",
           "Artystyczne prace metalowe",
@@ -151,7 +146,6 @@
         "title": "Rekwizyty i dekoracje filmowe",
         "number": "06",
         "description": "Niestandardowe rekwizyty i dekoracje scenograficzne dla filmu i telewizji",
-        "fullDescription": "Nasze usługi w zakresie rekwizytów filmowych i dekoracji scenograficznych są dostosowane do specyficznych potrzeb produkcji filmowych i telewizyjnych. Tworzymy niestandardowe rekwizyty, elementy scenografii i dekoracje, które pomagają ożywić historie na ekranie. Nasze doświadczenie z licznymi uznanymi produkcjami zapewnia, że rozumiemy unikalne wymagania branży filmowej.",
         "capabilities": [
           "Tworzenie niestandardowych rekwizytów",
           "Dekoracja scenografii",
@@ -165,7 +159,6 @@
         "title": "Logistyka",
         "number": "07",
         "description": "Kompleksowe usługi logistyczne i transportowe",
-        "fullDescription": "Nasze usługi logistyczne zapewniają, że materiały, sprzęt i gotowe produkty docierają tam, gdzie powinny, wtedy, kiedy są potrzebne. Dzięki własnej flocie transportowej i doświadczonemu zespołowi logistycznemu, zajmujemy się wszystkim, od lokalnych dostaw po międzynarodowe ustalenia wysyłkowe.",
         "capabilities": [
           "Usługi transportowe",
           "Zarządzanie magazynem",
@@ -179,7 +172,6 @@
         "title": "Dokumentacja",
         "number": "08",
         "description": "Profesjonalne usługi dokumentacyjne i dokumentacja projektów",
-        "fullDescription": "Nasze usługi dokumentacyjne zapewniają kompleksowe prowadzenie rejestrów dla projektów każdej wielkości. Od specyfikacji technicznych po dokumentację wizualną, zapewniamy, że wszystkie aspekty projektu są odpowiednio udokumentowane do celów referencyjnych, zgodności i przyszłego wykorzystania.",
         "capabilities": [
           "Dokumentacja techniczna",
           "Fotografia projektowa",

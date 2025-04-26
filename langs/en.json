@@ -81,7 +81,6 @@
       "title": "Print & Design",
       "number": "01",
       "description": "Professional printing and design services for various media",
-      "fullDescription": "Our print and design services include high-quality printing solutions for all formats and materials. From large format prints to detailed design projects, we provide end-to-end solutions tailored to each client's specific needs. Our team of designers and print professionals ensures exceptional quality and attention to detail in every project.",
       "capabilities": [
         "Large format printing",
         "Digital and offset printing",
@@ -95,7 +94,6 @@
       "title": "Corporate Identities",
       "number": "02",
       "description": "Comprehensive brand identity development and implementation",
-      "fullDescription": "We specialize in creating and implementing comprehensive corporate identity systems. From initial concept development to full-scale implementation across all touchpoints, our corporate identity services help brands establish a cohesive and recognizable presence in their respective markets.",
       "capabilities": [
         "Brand strategy development",
         "Visual identity systems",
@@ -109,7 +107,6 @@
       "title": "Furniture",
       "number": "03",
       "description": "Custom furniture design and manufacturing solutions",
-      "fullDescription": "Our custom furniture design and production services combine creativity with craftsmanship. We work with various materials to create unique furniture pieces that meet specific functional and aesthetic requirements. From concept to installation, we handle every aspect of custom furniture projects.",
       "capabilities": [
         "Custom furniture design",
         "Prototype development",
@@ -123,7 +120,6 @@
       "title": "Production",
       "number": "04",
       "description": "Full-scale production services and project management",
-      "fullDescription": "Our production capabilities span from small-scale projects to complex, multi-faceted productions. We provide comprehensive project management, ensuring that all aspects of production are executed efficiently, on time, and within budget. Our experienced team handles logistics, resource allocation, and quality control.",
       "capabilities": [
         "Film and TV production support",
         "Event production",
@@ -137,7 +133,6 @@
       "title": "Crafts",
       "number": "05",
       "description": "Specialized craftsmanship including glass work and custom solutions",
-      "fullDescription": "Our craftsmanship services showcase the skill and expertise of our artisans. We offer specialized work in various materials, with particular expertise in glass work, metalwork, and woodwork. Each project benefits from our attention to detail and commitment to quality craftsmanship.",
       "capabilities": [
         "Custom glass installations",
         "Artistic metalwork",
@@ -151,7 +146,6 @@
       "title": "Film Props & Deco",
       "number": "06",
       "description": "Custom props and set decorations for film and television",
-      "fullDescription": "Our film props and set decoration services cater to the specific needs of film and television productions. We create custom props, set pieces, and decorative elements that help bring stories to life on screen. Our experience with numerous acclaimed productions ensures we understand the unique requirements of the film industry.",
       "capabilities": [
         "Custom prop creation",
         "Set decoration",
@@ -165,7 +159,6 @@
       "title": "Logistics",
       "number": "07",
       "description": "Comprehensive logistics and transportation services",
-      "fullDescription": "Our logistics services ensure that materials, equipment, and finished products arrive where they need to be, when they need to be there. With our own transportation fleet and experienced logistics team, we handle everything from local deliveries to international shipping arrangements.",
       "capabilities": [
         "Transportation services",
         "Warehouse management",
@@ -179,7 +172,6 @@
       "title": "Documentation",
       "number": "08",
       "description": "Professional documentation and project documentation services",
-      "fullDescription": "Our documentation services provide comprehensive record-keeping for projects of all sizes. From technical specifications to visual documentation, we ensure that all aspects of a project are properly documented for reference, compliance, and future use.",
       "capabilities": [
         "Technical documentation",
         "Project photography",

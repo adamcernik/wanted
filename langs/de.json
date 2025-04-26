@@ -81,21 +81,19 @@
         "title": "Druck & Design",
         "number": "01",
         "description": "Professionelle Druck- und Designdienstleistungen für verschiedene Medien",
-        "fullDescription": "Unsere Druck- und Designdienstleistungen umfassen hochwertige Drucklösungen für alle Formate und Materialien. Von Großformatdrucken bis hin zu detaillierten Designprojekten bieten wir maßgeschneiderte End-to-End-Lösungen für die spezifischen Bedürfnisse jedes Kunden. Unser Team aus Designern und Druckfachleuten sorgt für außergewöhnliche Qualität und Liebe zum Detail in jedem Projekt.",
         "capabilities": [
           "Großformatdruck",
           "Digital- und Offsetdruck",
           "Grafikdesign-Dienstleistungen",
           "Produktion von Markenmaterialien",
-          "Individuelle Beschilderung und Displays",
+          "Maßgeschneiderte Beschilderung und Displays",
           "Ausstellungsdrucke und -materialien"
         ]
       },
       "service02": {
-        "title": "Unternehmensidentitäten",
+        "title": "Corporate Identity",
         "number": "02",
-        "description": "Umfassende Entwicklung und Umsetzung von Markenidentitäten",
-        "fullDescription": "Wir sind spezialisiert auf die Erstellung und Implementierung umfassender Corporate-Identity-Systeme. Von der anfänglichen Konzeptentwicklung bis zur vollständigen Implementierung über alle Kontaktpunkte hinweg helfen unsere Corporate-Identity-Dienstleistungen Marken dabei, eine kohärente und erkennbare Präsenz in ihren jeweiligen Märkten zu etablieren.",
+        "description": "Umfassende Markenidentitätsentwicklung und -implementierung",
         "capabilities": [
           "Entwicklung von Markenstrategien",
           "Visuelle Identitätssysteme",
@@ -109,26 +107,24 @@
         "title": "Möbel",
         "number": "03",
         "description": "Maßgeschneiderte Möbeldesign- und Fertigungslösungen",
-        "fullDescription": "Unsere maßgeschneiderten Möbeldesign- und Produktionsdienstleistungen verbinden Kreativität mit Handwerkskunst. Wir arbeiten mit verschiedenen Materialien, um einzigartige Möbelstücke zu schaffen, die spezifische funktionale und ästhetische Anforderungen erfüllen. Vom Konzept bis zur Installation übernehmen wir jeden Aspekt von maßgeschneiderten Möbelprojekten.",
         "capabilities": [
           "Maßgeschneidertes Möbeldesign",
           "Prototypenentwicklung",
           "Maßgefertigte Möbelproduktion",
-          "Gewerbliche Möbellösungen",
+          "Kommerzielle Möbellösungen",
           "Ausstellungs- und Displaymöbel",
-          "Set-Design-Möbel"
+          "Möbel für Filmsets"
         ]
       },
       "service04": {
         "title": "Produktion",
         "number": "04",
         "description": "Umfassende Produktionsdienstleistungen und Projektmanagement",
-        "fullDescription": "Unsere Produktionskapazitäten reichen von kleinen Projekten bis hin zu komplexen, vielschichtigen Produktionen. Wir bieten umfassendes Projektmanagement und stellen sicher, dass alle Aspekte der Produktion effizient, termingerecht und innerhalb des Budgets ausgeführt werden. Unser erfahrenes Team kümmert sich um Logistik, Ressourcenzuweisung und Qualitätskontrolle.",
         "capabilities": [
-          "Film- und TV-Produktionsunterstützung",
-          "Veranstaltungsproduktion",
+          "Unterstützung bei Film- und TV-Produktionen",
+          "Eventproduktion",
           "Ausstellungsproduktion",
-          "Setbau",
+          "Kulissenbau",
           "Kommerzielle Produktion",
           "Produktion von Einzelhandelsumgebungen"
         ]
@@ -136,28 +132,26 @@
       "service05": {
         "title": "Handwerk",
         "number": "05",
-        "description": "Spezialisierte Handwerkskunst einschließlich Glasarbeiten und maßgeschneiderten Lösungen",
-        "fullDescription": "Unsere handwerklichen Dienstleistungen zeigen die Fähigkeiten und Expertise unserer Kunsthandwerker. Wir bieten spezialisierte Arbeiten in verschiedenen Materialien an, mit besonderer Expertise in Glasarbeiten, Metallarbeiten und Holzarbeiten. Jedes Projekt profitiert von unserer Liebe zum Detail und unserem Engagement für qualitativ hochwertige Handwerkskunst.",
+        "description": "Spezialisiertes Handwerk einschließlich Glasarbeiten und maßgeschneiderten Lösungen",
         "capabilities": [
           "Maßgefertigte Glasinstallationen",
           "Künstlerische Metallarbeiten",
           "Feine Holzarbeiten",
           "Spezielle Lackierungen",
           "Skulpturale Elemente",
-          "Maßgefertigte Requisitenherstellung"
+          "Erstellung maßgeschneiderter Requisiten"
         ]
       },
       "service06": {
-        "title": "Filmrequisiten & Dekoration",
+        "title": "Filmrequisiten & Deko",
         "number": "06",
-        "description": "Maßgefertigte Requisiten und Set-Dekorationen für Film und Fernsehen",
-        "fullDescription": "Unsere Filmrequisiten- und Set-Dekorationsdienstleistungen sind auf die spezifischen Bedürfnisse von Film- und Fernsehproduktionen zugeschnitten. Wir erstellen maßgefertigte Requisiten, Set-Stücke und dekorative Elemente, die dazu beitragen, Geschichten auf dem Bildschirm zum Leben zu erwecken. Unsere Erfahrung mit zahlreichen angesehenen Produktionen stellt sicher, dass wir die einzigartigen Anforderungen der Filmindustrie verstehen.",
+        "description": "Maßgeschneiderte Requisiten und Setdekorationen für Film und Fernsehen",
         "capabilities": [
-          "Erstellung maßgefertigter Requisiten",
-          "Set-Dekoration",
-          "Epochengetreue Nachbildungen",
+          "Erstellung maßgeschneiderter Requisiten",
+          "Setdekoration",
+          "Epochengetreue Rekonstruktionen",
           "Spezialrequisiten und -effekte",
-          "Set-Ausstattungsdienstleistungen",
+          "Einrichtungsdienstleistungen für Sets",
           "Unterstützung beim Produktionsdesign"
         ]
       },
@@ -165,21 +159,19 @@
         "title": "Logistik",
         "number": "07",
         "description": "Umfassende Logistik- und Transportdienstleistungen",
-        "fullDescription": "Unsere Logistikdienstleistungen stellen sicher, dass Materialien, Ausrüstung und fertige Produkte dort ankommen, wo sie benötigt werden, wenn sie benötigt werden. Mit unserer eigenen Transportflotte und einem erfahrenen Logistikteam kümmern wir uns um alles, von lokalen Lieferungen bis hin zu internationalen Versandvereinbarungen.",
         "capabilities": [
           "Transportdienstleistungen",
           "Lagerverwaltung",
           "Bestandskontrolle",
           "Versand und Empfang",
           "Installationslogistik",
-          "Logistikunterstützung am Set"
+          "Logistische Unterstützung am Set"
         ]
       },
       "service08": {
         "title": "Dokumentation",
         "number": "08",
         "description": "Professionelle Dokumentations- und Projektdokumentationsdienstleistungen",
-        "fullDescription": "Unsere Dokumentationsdienstleistungen bieten umfassende Aufzeichnungen für Projekte aller Größenordnungen. Von technischen Spezifikationen bis hin zur visuellen Dokumentation stellen wir sicher, dass alle Aspekte eines Projekts ordnungsgemäß dokumentiert werden, sei es als Referenz, zur Einhaltung von Vorschriften oder für zukünftige Verwendung.",
         "capabilities": [
           "Technische Dokumentation",
           "Projektfotografie",

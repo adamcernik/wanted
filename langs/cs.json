@@ -81,7 +81,6 @@
       "title": "Tisk & Design",
       "number": "01",
       "description": "Profesionální tiskové a designové služby pro různá média",
-      "fullDescription": "Naše tiskové a designové služby zahrnují vysoce kvalitní tiskové řešení pro všechny formáty a materiály. Od velkoformátových tisků po detailní designové projekty poskytujeme kompletní řešení přizpůsobená specifickým potřebám každého klienta. Náš tým designérů a tiskových profesionálů zajišťuje výjimečnou kvalitu a pozornost detailům v každém projektu.",
       "capabilities": [
         "Velkoformátový tisk",
         "Digitální a ofsetový tisk",
@@ -95,7 +94,6 @@
       "title": "Korporátní identity",
       "number": "02",
       "description": "Komplexní vývoj a implementace firemní identity",
-      "fullDescription": "Specializujeme se na vytváření a implementaci komplexních systémů korporátní identity. Od počátečního vývoje konceptu až po plnohodnotnou implementaci napříč všemi kontaktními body, naše služby korporátní identity pomáhají značkám vytvořit soudržnou a rozpoznatelnou přítomnost na jejich příslušných trzích.",
       "capabilities": [
         "Vývoj brandové strategie",
         "Systémy vizuální identity",
@@ -109,7 +107,6 @@
       "title": "Nábytek",
       "number": "03",
       "description": "Zakázkový design a výroba nábytku",
-      "fullDescription": "Naše služby zakázkového designu a výroby nábytku kombinují kreativitu s řemeslným zpracováním. Pracujeme s různými materiály, abychom vytvořili jedinečné kusy nábytku, které splňují specifické funkční a estetické požadavky. Od konceptu až po instalaci se staráme o každý aspekt zakázkových nábytkových projektů.",
       "capabilities": [
         "Zakázkový design nábytku",
         "Vývoj prototypů",
@@ -123,7 +120,6 @@
       "title": "Produkce",
       "number": "04",
       "description": "Komplexní produkční služby a projektový management",
-      "fullDescription": "Naše produkční schopnosti sahají od malých projektů až po komplexní, vícestranné produkce. Poskytujeme komplexní projektový management, zajišťující, že všechny aspekty produkce jsou provedeny efektivně, včas a v rámci rozpočtu. Náš zkušený tým se stará o logistiku, alokaci zdrojů a kontrolu kvality.",
       "capabilities": [
         "Podpora filmové a TV produkce",
         "Produkce eventů",
@@ -137,7 +133,6 @@
       "title": "Řemesla",
       "number": "05",
       "description": "Specializované řemeslné práce včetně sklářských prací a zakázkových řešení",
-      "fullDescription": "Naše řemeslné služby prezentují dovednosti a odborné znalosti našich řemeslníků. Nabízíme specializované práce v různých materiálech, se zvláštním zaměřením na práci se sklem, kovem a dřevem. Každý projekt těží z naší pozornosti k detailům a závazku ke kvalitnímu řemeslnému zpracování.",
       "capabilities": [
         "Zakázkové skleněné instalace",
         "Umělecké zpracování kovů",
@@ -151,7 +146,6 @@
       "title": "Filmové rekvizity & Dekorace",
       "number": "06",
       "description": "Zakázkové rekvizity a dekorace pro film a televizi",
-      "fullDescription": "Naše služby filmových rekvizit a dekorací uspokojují specifické potřeby filmových a televizních produkcí. Vytváříme zakázkové rekvizity, kulisy a dekorativní prvky, které pomáhají oživit příběhy na obrazovce. Naše zkušenosti s četnými oceňovanými produkcemi zajišťují, že rozumíme jedinečným požadavkům filmového průmyslu.",
       "capabilities": [
         "Výroba zakázkových rekvizit",
         "Dekorace scén",
@@ -165,7 +159,6 @@
       "title": "Logistika",
       "number": "07",
       "description": "Komplexní logistické a transportní služby",
-      "fullDescription": "Naše logistické služby zajišťují, že materiály, vybavení a hotové produkty dorazí tam, kde potřebují být, když potřebují být tam. S naším vlastním vozovým parkem a zkušeným logistickým týmem se staráme o vše od místních dodávek až po mezinárodní přepravní aranžmá.",
       "capabilities": [
         "Transportní služby",
         "Správa skladů",
@@ -179,7 +172,6 @@
       "title": "Dokumentace",
       "number": "08",
       "description": "Profesionální dokumentační a projektové dokumentační služby",
-      "fullDescription": "Naše dokumentační služby poskytují komplexní vedení záznamů pro projekty všech velikostí. Od technických specifikací po vizuální dokumentaci zajišťujeme, že všechny aspekty projektu jsou řádně zdokumentovány pro reference, dodržování předpisů a budoucí použití.",
       "capabilities": [
         "Technická dokumentace",
         "Projektová fotografie",

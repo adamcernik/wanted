@@ -1175,7 +1175,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (serviceTrans.capabilities && Array.isArray(serviceTrans.capabilities)) {
                     translatedContent = `
                         <div class="modal-section">
-                            <p>${serviceTrans.fullDescription || ''}</p>
                             <ul class="modal-list two-columns">
                                 ${serviceTrans.capabilities.map(cap => `<li>${cap}</li>`).join('')}
                             </ul>

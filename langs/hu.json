@@ -81,7 +81,6 @@
         "title": "Nyomtatás és dizájn",
         "number": "01",
         "description": "Professzionális nyomtatási és tervezési szolgáltatások különböző médiumokhoz",
-        "fullDescription": "Nyomtatási és tervezési szolgáltatásaink magukban foglalják a kiváló minőségű nyomtatási megoldásokat minden formátumhoz és anyaghoz. A nagyformátumú nyomatoktól a részletes tervezési projektekig testreszabott, teljes körű megoldásokat kínálunk minden ügyfél egyedi igényeinek megfelelően. Tervezőkből és nyomtatási szakemberekből álló csapatunk kivételes minőséget és figyelmet biztosít minden projektnél.",
         "capabilities": [
           "Nagyformátumú nyomtatás",
           "Digitális és ofszet nyomtatás",
@@ -95,7 +94,6 @@
         "title": "Vállalati arculat",
         "number": "02",
         "description": "Átfogó márkaidentitás-fejlesztés és -megvalósítás",
-        "fullDescription": "Átfogó vállalati arculati rendszerek létrehozására és megvalósítására specializálódtunk. A kezdeti koncepciófejlesztéstől a teljes körű megvalósításig minden érintkezési ponton, vállalati arculati szolgáltatásaink segítenek a márkáknak egy koherens és felismerhető jelenlét kialakításában a saját piacaikon.",
         "capabilities": [
           "Márkastratégia fejlesztése",
           "Vizuális arculati rendszerek",
@@ -109,7 +107,6 @@
         "title": "Bútorok",
         "number": "03",
         "description": "Egyedi bútortervezési és gyártási megoldások",
-        "fullDescription": "Egyedi bútortervezési és gyártási szolgáltatásaink ötvözik a kreativitást a szakértelemmel. Különböző anyagokkal dolgozunk egyedi bútordarabok létrehozása érdekében, amelyek megfelelnek a specifikus funkcionális és esztétikai követelményeknek. A koncepciótól a telepítésig minden aspektusát kezeljük az egyedi bútorprojekteknek.",
         "capabilities": [
           "Egyedi bútortervezés",
           "Prototípus-fejlesztés",
@@ -123,7 +120,6 @@
         "title": "Gyártás",
         "number": "04",
         "description": "Teljes körű gyártási szolgáltatások és projektmenedzsment",
-        "fullDescription": "Gyártási képességeink a kis léptékű projektektől a komplex, többrétű gyártásokig terjednek. Átfogó projektmenedzsmentet biztosítunk, garantálva, hogy a gyártás minden aspektusa hatékonyan, időben és költségvetésen belül valósuljon meg. Tapasztalt csapatunk kezeli a logisztikát, az erőforrás-elosztást és a minőségellenőrzést.",
         "capabilities": [
           "Film és TV gyártási támogatás",
           "Rendezvényszervezés",
@@ -137,7 +133,6 @@
         "title": "Kézművesség",
         "number": "05",
         "description": "Specializált kézművesség, beleértve az üvegmunkákat és egyedi megoldásokat",
-        "fullDescription": "Kézművességi szolgáltatásaink bemutatják kézműveseink készségeit és szakértelmét. Különböző anyagokban végzünk specializált munkát, különös szaktudással az üvegmunka, fémmunka és famunka területén. Minden projekt élvezi részletekre való figyelmünket és elkötelezettségünket a minőségi kézművesség iránt.",
         "capabilities": [
           "Egyedi üveginstallációk",
           "Művészi fémmunka",
@@ -151,7 +146,6 @@
         "title": "Filmkellékek és dekoráció",
         "number": "06",
         "description": "Egyedi kellékek és díszletek film és televízió számára",
-        "fullDescription": "Filmkellékek és díszlet szolgáltatásaink a film- és televíziós produkciók speciális igényeinek felelnek meg. Egyedi kellékeket, díszletelemeket és dekoratív elemeket készítünk, amelyek segítenek életre kelteni a történeteket a képernyőn. Számos elismert produkcióval szerzett tapasztalatunk biztosítja, hogy megértjük a filmipar egyedi követelményeit.",
         "capabilities": [
           "Egyedi kellékek készítése",
           "Díszletdekoráció",
@@ -165,7 +159,6 @@
         "title": "Logisztika",
         "number": "07",
         "description": "Átfogó logisztikai és szállítási szolgáltatások",
-        "fullDescription": "Logisztikai szolgáltatásaink biztosítják, hogy az anyagok, felszerelések és kész termékek oda érkezzenek, ahová kell, amikor szükség van rájuk. Saját szállítási flottánkkal és tapasztalt logisztikai csapatunkkal mindent kezelünk a helyi kézbesítésektől a nemzetközi szállítási megállapodásokig.",
         "capabilities": [
           "Szállítási szolgáltatások",
           "Raktárkezelés",
@@ -179,7 +172,6 @@
         "title": "Dokumentáció",
         "number": "08",
         "description": "Professzionális dokumentációs és projektdokumentációs szolgáltatások",
-        "fullDescription": "Dokumentációs szolgáltatásaink átfogó nyilvántartást biztosítanak minden méretű projekthez. A műszaki specifikációktól a vizuális dokumentációig biztosítjuk, hogy a projekt minden aspektusa megfelelően dokumentálva legyen referencia, megfelelőség és jövőbeni felhasználás céljából.",
         "capabilities": [
           "Műszaki dokumentáció",
           "Projektfotózás",
