@@ -537,4 +537,75 @@
     margin-left: 0;
     margin-top: 1.5rem;
     width: 100%;
-} 
+}
+
+/* ====================================================================
+   Mobile Menu Full-Screen Overlay + Centered Language Dropdown
+   ==================================================================== */
+
+/* Make the mobile-nav overlay span the whole viewport */
+.mobile-nav {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    max-height: none !important;
+}
+
+/* Active state still fills full viewport */
+.mobile-nav.active {
+    max-height: none !important;
+    height: 100vh !important;
+}
+
+/* Hide logo (and any other header items) while the mobile menu is open so that
+   only the close button (mobile-toggle) remains visible */
+html.mobile-menu-open .header .logo-container,
+html.mobile-menu-open .header .desktop-nav {
+    display: none !important;
+}
+
+/* Position the mobile toggle button (hamburger/close button) in the top right corner when menu is open */
+html.mobile-menu-open .header {
+    justify-content: flex-end !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+html.mobile-menu-open .header .header-content {
+    justify-content: flex-end !important;
+    padding-right: 1.5rem !important;
+}
+
+/* Fix the mobile toggle position to match its original position */
+html.mobile-menu-open .mobile-toggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    z-index: 1500;
+}
+
+@media (max-width: 768px) {
+    html.mobile-menu-open .mobile-toggle {
+        right: 1rem;
+        top: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html.mobile-menu-open .mobile-toggle {
+        right: 1rem;
+        top: 1.5rem;
+    }
+}
+
+/* Ensure language dropdown in mobile view is ALWAYS perfectly centered */
+.mobile-nav-content .language-dropdown {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80% !important;
+    max-width: 320px !important;
+    margin: 0 !important;
+    right: auto !important; /* override earlier rules */
+}
