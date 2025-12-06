@@ -1,0 +1,86 @@
+/* ============================================
+   WANTED s.f.o. - Main Stylesheet
+   Film Production Support & Services
+   ============================================ */
+
+/* Core - Foundation */
+@import 'core/reset.css';
+@import 'core/variables.css';
+@import 'core/typography.css';
+
+/* Layout - Structure */
+@import 'layout/grid.css';
+@import 'header.css';
+
+/* Components - Reusable elements */
+@import 'components.css';
+@import 'modal.css';
+
+/* Sections - Page-specific */
+@import 'services.css';
+@import 'partners.css';
+@import 'timeline.css';
+
+/* Utilities - Helpers */
+@import 'reset-mobile.css';
+/* Mobile fixes for scrolling issues */
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+    background-color: #111922;
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05), transparent 70%),
+        radial-gradient(circle at 0% 50%, rgba(26, 42, 58, 0.1), transparent 50%),
+        linear-gradient(to bottom, #111922 0%, #1a2735 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    padding-top: 9rem;
+}
+
+/* ============================================
+   SKIP LINK (Accessibility)
+   ============================================ */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #161E24;
+    color: #000;
+    padding: 8px;
+    z-index: var(--z-tooltip);
+    text-decoration: none;
+    transition: top var(--transition-slow) var(--ease-out);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ============================================
+   MOBILE MENU STATE
+   ============================================ */
+
+html.mobile-menu-open {
+    overflow: hidden;
+    height: 100%;
+}
+
+html.mobile-menu-open body {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        padding-top: 120px;
+    }
+}

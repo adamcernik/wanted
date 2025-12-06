@@ -1,0 +1,320 @@
+/* ============================================
+   BENTO GRID LAYOUT SYSTEM
+   ============================================ */
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Add spacing between multiple bento-grid sections */
+.bento-grid+.bento-grid {
+    margin-top: var(--grid-gap);
+}
+
+/* ============================================
+   TILE BASE STYLES
+   ============================================ */
+
+.tile {
+    background: var(--color-bg-tile);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    border: none;
+    transition: all var(--transition-slow) var(--ease-smooth);
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+    min-height: 200px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: var(--shadow-tile);
+}
+
+/* Tile Hover - Only for interactive tiles */
+.tile.service-tile:hover,
+.tile[data-modal]:hover {
+    box-shadow: var(--shadow-tile-hover);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* Remove default hover for non-interactive tiles */
+.tile:hover {
+    box-shadow: var(--shadow-tile);
+    transform: none;
+}
+
+.tile::before {
+    content: none;
+}
+
+/* ============================================
+   TILE VARIANTS
+   ============================================ */
+
+.tile.gradient {
+    background: linear-gradient(135deg, #0F1521 0%, #233446 100%);
+}
+
+.tile.light {
+    background: var(--color-bg-tile-light);
+}
+
+/* ============================================
+   TILE SIZES
+   ============================================ */
+
+/* Big tile - 2x2 columns */
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+    max-height: 550px;
+}
+
+/* Special handling for movie grid */
+#movie-grid.tile.big {
+    height: 100%;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space-md);
+}
+
+/* Rectangle - 2 columns, 1 row */
+.rect {
+    grid-column: span 2;
+    min-height: 380px;
+}
+
+/* Wide - 2 columns */
+.wide {
+    grid-column: span 2;
+    max-height: 250px;
+}
+
+/* Full width - 4 columns */
+.wide-full {
+    grid-column: span 4;
+    min-height: 300px;
+}
+
+/* ============================================
+   CONTENT OVERLAY STYLES
+   ============================================ */
+
+.full-image {
+    padding: 0;
+    min-height: 300px;
+}
+
+.big.full-image {
+    min-height: 500px;
+}
+
+.full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    transition: none;
+}
+
+.full-image:hover img {
+    transform: none;
+}
+
+.content-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    background: linear-gradient(to top,
+            rgba(26, 42, 58, 1) 0%,
+            rgba(26, 42, 58, 0.95) 15%,
+            rgba(26, 42, 58, 0.85) 30%,
+            rgba(26, 42, 58, 0.7) 50%,
+            rgba(26, 42, 58, 0.4) 70%,
+            rgba(26, 42, 58, 0.2) 85%,
+            rgba(26, 42, 58, 0) 100%);
+}
+
+.content-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,
+            rgba(212, 175, 55, 0.08) 0%,
+            rgba(26, 42, 58, 0.08) 100%);
+    pointer-events: none;
+}
+
+.content-overlay .headline {
+    position: relative;
+    font-size: var(--text-4xl);
+    margin-bottom: 1.25rem;
+    background: none;
+    -webkit-text-fill-color: var(--color-text);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-overlay .text {
+    position: relative;
+    font-size: var(--text-lg);
+    line-height: var(--leading-loose);
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 90%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tile:hover .content-overlay {
+    transform: none;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (1024px and below)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .tile {
+        min-height: 220px;
+    }
+
+    .full-image {
+        min-height: 350px;
+    }
+
+    .big.full-image {
+        min-height: 400px;
+    }
+
+    .rect {
+        min-height: 280px;
+    }
+
+    .content-overlay {
+        padding: 2.5rem 2rem 2rem;
+    }
+
+    .content-overlay .headline {
+        font-size: var(--text-3xl);
+    }
+
+    .content-overlay .text {
+        font-size: var(--text-base);
+        line-height: 1.6;
+    }
+
+    .tile.gradient:not(.rect) {
+        min-height: 320px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE (768px and below)
+   ============================================ */
+
+@media (max-width: 768px) {
+    .bento-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--grid-gap-mobile);
+        padding: 0;
+    }
+
+    .tile {
+        width: 100%;
+        min-height: unset;
+        margin: 0;
+        border-radius: var(--radius-sm);
+        padding: var(--space-md);
+    }
+
+    .tile.wide,
+    .tile.big,
+    .tile.rect {
+        width: 100%;
+        max-height: unset;
+    }
+
+    .content-overlay {
+        padding: var(--space-md);
+    }
+
+    .full-image img {
+        border-radius: var(--radius-sm);
+    }
+}
+
+/* ============================================
+   RESPONSIVE - SMALL MOBILE (480px and below)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .bento-grid {
+        padding: 0;
+    }
+
+    .tile {
+        padding: var(--space-md);
+    }
+
+    .content-overlay {
+        padding: 1.25rem;
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
+/* ============================================
+   SCROLL MARGIN FOR ANCHOR LINKS
+   ============================================ */
+
+#who-we-are,
+#service-01,
+#movie-grid,
+#lukas-contact,
+#history {
+    scroll-margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+
+    #who-we-are,
+    #service-01,
+    #movie-grid,
+    #lukas-contact,
+    #history {
+        scroll-margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #who-we-are,
+    #service-01,
+    #movie-grid,
+    #lukas-contact,
+    #history {
+        scroll-margin-top: 40px;
+    }
+}

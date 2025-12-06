@@ -1,0 +1,419 @@
+/* Desktop Service Tiles */
+.service-tile {
+    position: relative;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.service-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+}
+
+.service-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.service-tile .expand-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../images/icons/expand.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.service-tile:hover .expand-icon {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Service Tiles */
+.basic-service-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    min-width: 270px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    background-color: #1a1a1a;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.basic-service-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+}
+
+.basic-service-tile .expand-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../images/icons/expand.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.basic-service-tile:hover .expand-icon {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.service-tile:hover::after {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.service-tile:hover img {
+    opacity: 0.8;
+}
+
+.service-tile .service-content {
+    position: absolute; /* Position at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: rgba(215, 125, 50, 0.9);
+    z-index: 10;
+    height: auto;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.service-tile .service-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-tile .service-title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-tile .text {
+    display: none;
+}
+
+/* Modal Styles */
+#service-modal .modal-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+#service-modal .modal-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#service-modal .modal-header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+}
+
+#service-modal .modal-header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 2;
+}
+
+#service-modal .modal-title {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#service-modal .modal-subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Service Tiles */
+.mobile-only-services {
+    display: none;
+}
+
+#basic-services-scroll {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+    padding: 15px 0;
+    margin: 0;
+    user-select: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#basic-services-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.basic-service-tile {
+    position: relative;
+    flex: 0 0 auto;
+    width: 70vw;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.basic-service-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 1;
+}
+
+.basic-service-tile:hover::after {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.basic-service-tile img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+    opacity: 0.7;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.basic-service-tile .service-content-mobile {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(215, 125, 50, 0.9);
+    z-index: 10;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.basic-service-tile .service-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 11;
+    width: 100%;
+}
+
+.basic-service-tile .number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+    line-height: 1;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.basic-service-tile h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.basic-service-tile p {
+    display: none;
+}
+
+/* Desktop & Tablet Media Queries */
+@media (max-width: 1024px) {
+    .service-tile {
+        height: calc(30vw - 60px); /* Adjust for tablet */
+        min-height: 160px;
+    }
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+    .mobile-only-services {
+        display: block;
+        width: 100%;
+        margin: 1rem 0 2rem;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .bento-grid .service-tile {
+        display: none;
+    }
+    
+    #basic-services-scroll {
+        padding: 15px 15px;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        padding-right: 45px;
+        scroll-padding: 0 70px 0 15px;
+    }
+    
+    .basic-service-tile {
+        width: 70vw; /* Responsive width */
+        max-width: 300px;
+        margin-right: 15px;
+    }
+    
+    .basic-service-tile img {
+        height: calc(35vw + 40px); /* Increased from 20vw to 35vw */
+        min-height: 160px; /* Increased from 100px to 160px */
+        max-height: 180px; /* Increased from 135px to 180px */
+    }
+    
+    .expand-icon {
+        width: 36px;
+        height: 36px;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .basic-service-tile {
+        width: 80vw;
+        max-width: 280px;
+    }
+    
+    .basic-service-tile img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    .expand-icon {
+        width: 32px;
+        height: 32px;
+        bottom: 12px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .basic-service-tile {
+        width: 85vw;
+        max-width: 260px;
+    }
+    
+    .basic-service-tile img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    #basic-services-scroll {
+        padding-right: 60px;
+    }
+} 

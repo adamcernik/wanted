@@ -1,0 +1,229 @@
+/* ============================================
+   TIMELINE SECTION STYLES
+   ============================================ */
+
+.timeline-container {
+    width: 100%;
+    margin: 25px 0 40px;
+    grid-column: span 4;
+    position: relative;
+    z-index: 1;
+}
+
+#timeline-basic-scroll {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 15px 20px 25px 0;
+    margin: 0;
+    /* Enable scrollbar on desktop */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-gold) rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+#timeline-basic-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+#timeline-basic-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+#timeline-basic-scroll::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+}
+
+#timeline-basic-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}
+
+.timeline-tile {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 30px;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+}
+
+.timeline-tile:last-child {
+    margin-right: 0;
+}
+
+.timeline-year {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--light-tile);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 4px 15px;
+    border-radius: 0 12px 0 0;
+    z-index: 2;
+    border: none;
+    min-width: 70px;
+    text-align: center;
+}
+
+.timeline-content {
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 0 1rem 1rem 1rem;
+    padding: 20px;
+    box-shadow: none;
+    min-height: 220px;
+    transition: transform 0.2s ease;
+    border: 0.5px solid rgba(215, 125, 50, 0.5);
+    width: 100%;
+}
+
+.timeline-event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-event-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.timeline-event-list li::before {
+    content: '•';
+    color: var(--accent-gold);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Timeline swipe indicator */
+.timeline-container.loaded .timeline-tile:first-child::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 8px;
+    height: 30px;
+    background: rgba(215, 125, 50, 0.4);
+    border-radius: 5px 0 0 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    animation: swipeHint 2s ease-in-out infinite;
+}
+
+@keyframes swipeHint {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Timeline error message */
+.timeline-error {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+/* ============================================
+   RESPONSIVE TIMELINE STYLES
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .timeline-container {
+        grid-column: 1 / -1;
+        margin: 20px 0 30px;
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #timeline-basic-scroll {
+        padding: 15px 15px 15px 15px;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        padding-right: 45px;
+        scroll-padding: 0 70px 0 15px;
+        /* Hide scrollbar on mobile for cleaner look */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    #timeline-basic-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .timeline-tile {
+        width: 280px;
+        margin-right: 20px;
+    }
+
+    .timeline-year {
+        font-size: 1rem;
+        padding: 6px 12px;
+        min-width: 60px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+        min-height: 180px;
+    }
+
+    .timeline-event-list li {
+        font-size: 0.9rem;
+    }
+
+    .timeline-container {
+        margin: 15px 0 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-container {
+        padding: 20px;
+        margin: 15px 0 20px;
+        overflow: hidden;
+    }
+
+    .timeline-tile {
+        width: 260px;
+        margin-right: 15px;
+    }
+
+    .timeline-year {
+        min-width: 50px;
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+
+    .timeline-content {
+        min-height: 160px;
+    }
+
+    .timeline-tile:last-child {
+        margin-right: 0;
+    }
+}

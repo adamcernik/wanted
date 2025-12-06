@@ -1,0 +1,211 @@
+:root {
+    /* ============================================
+       COLOR SYSTEM
+       ============================================ */
+
+    /* Primary Colors */
+    --color-primary: #0F1521;
+    /* Dark Midnight */
+    --color-secondary: #7D0F1E;
+    /* Deep Crimson */
+    --color-accent-gold: #B8860B;
+    /* Dark Gold */
+    --color-accent-gold-light: #e5c14c;
+    /* Light Gold */
+    --color-accent-slate: #455A64;
+    /* Deep Slate */
+    --color-accent-orange: #d77d32;
+    /* Orange for service overlays */
+
+    /* Background Colors */
+    --color-bg-dark: #1E1E1E;
+    /* Dark Grey */
+    --color-bg-tile: #262626;
+    /* Tile Background */
+    --color-bg-tile-light: #2c4054;
+    /* Light Tile */
+
+    /* Border & Divider Colors */
+    --color-border: #333333;
+    /* Dividers & subtle elements */
+    --color-border-accent: rgba(215, 125, 50, 0.7);
+    /* Accent borders */
+
+    /* Text Colors */
+    --color-text: #E0E0E0;
+    /* Light grey for body text */
+    --color-text-heading: #FFFFFF;
+    /* White for headings */
+    --color-text-muted: rgba(255, 255, 255, 0.7);
+
+    /* ============================================
+       GRADIENTS
+       ============================================ */
+    --gradient-dark: linear-gradient(to bottom, #111922 0%, #1a2735 100%);
+    --gradient-tile: linear-gradient(135deg, var(--color-primary) 0%, #233446 100%);
+    --gradient-gold: linear-gradient(90deg, var(--color-accent-gold), var(--color-accent-gold-light));
+    --gradient-heading: linear-gradient(90deg, var(--color-text-heading), #B8B8B8);
+
+    /* Service Overlay Gradients */
+    --gradient-service: linear-gradient(to top,
+            rgba(215, 125, 50, 0.95) 0%,
+            rgba(215, 125, 50, 0.85) 50%,
+            rgba(215, 125, 50, 0.7) 100%);
+    --gradient-service-hover: linear-gradient(to top,
+            rgba(215, 125, 50, 0.98) 0%,
+            rgba(215, 125, 50, 0.88) 50%,
+            rgba(215, 125, 50, 0.78) 100%);
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+
+    /* Font Families */
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Font Sizes - Desktop */
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 1.875rem;
+    /* 30px */
+    --text-4xl: 2.25rem;
+    /* 36px */
+    --text-5xl: 3rem;
+    /* 48px */
+
+    /* Font Weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Line Heights */
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 1.7;
+
+    /* Letter Spacing */
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.015em;
+    --tracking-wider: 0.05em;
+
+    /* ============================================
+       SPACING SYSTEM
+       ============================================ */
+    --space-xs: 0.25rem;
+    /* 4px */
+    --space-sm: 0.5rem;
+    /* 8px */
+    --space-md: 1rem;
+    /* 16px */
+    --space-lg: 1.5rem;
+    /* 24px */
+    --space-xl: 2rem;
+    /* 32px */
+    --space-2xl: 3rem;
+    /* 48px */
+    --space-3xl: 4rem;
+    /* 64px */
+
+    /* ============================================
+       LAYOUT
+       ============================================ */
+    --container-max-width: 1400px;
+    --grid-gap: 1.5rem;
+    --grid-gap-mobile: 1rem;
+
+    /* ============================================
+       BORDERS & RADIUS
+       ============================================ */
+    --radius-sm: 0.5rem;
+    /* 8px */
+    --radius-md: 0.75rem;
+    /* 12px */
+    --radius-lg: 1rem;
+    /* 16px */
+    --radius-xl: 1.25rem;
+    /* 20px */
+    --radius-full: 9999px;
+
+    --border-width: 1px;
+    --border-width-thick: 2px;
+
+    /* ============================================
+       SHADOWS
+       ============================================ */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+    --shadow-tile: 0 4px 30px rgba(0, 0, 0, 0.2);
+    --shadow-tile-hover: 0 8px 32px rgba(0, 0, 0, 0.3), 0 16px 48px rgba(0, 0, 0, 0.2);
+
+    /* ============================================
+       Z-INDEX SYSTEM
+       ============================================ */
+    --z-base: 0;
+    --z-dropdown: 10;
+    --z-sticky: 20;
+    --z-header: 100;
+    --z-overlay: 900;
+    --z-modal: 1000;
+    --z-tooltip: 1100;
+
+    /* ============================================
+       TRANSITIONS & ANIMATIONS
+       ============================================ */
+    --transition-fast: 150ms;
+    --transition-base: 200ms;
+    --transition-slow: 300ms;
+    --transition-slower: 500ms;
+
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ============================================
+       BREAKPOINTS (for reference in JS)
+       ============================================ */
+    --breakpoint-mobile: 640px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-laptop: 1024px;
+    --breakpoint-desktop: 1440px;
+}
+
+/* ============================================
+   LEGACY VARIABLE ALIASES (for backward compatibility)
+   ============================================ */
+:root {
+    --primary: var(--color-primary);
+    --secondary: var(--color-secondary);
+    --accent-gold: var(--color-accent-gold);
+    --accent-slate: var(--color-accent-slate);
+    --dark-bg: var(--color-bg-dark);
+    --dark-tile: var(--color-bg-tile);
+    --light-tile: var(--color-bg-tile-light);
+    --border-color: var(--color-border);
+    --text-color: var(--color-text);
+    --heading-color: var(--color-text-heading);
+    --heading-font: var(--font-heading);
+    --body-font: var(--font-body);
+    --background: #F5F5F7;
+    --gradient-dark: var(--gradient-dark);
+    --gradient-tile: var(--gradient-tile);
+    --gradient-gold: var(--gradient-gold);
+}

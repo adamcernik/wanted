@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "services": "Služby",
+    "production": "Produkce",
+    "references": "Reference",
+    "contact": "Kontakt",
+    "language": "Jazyk"
+  },
+  "header": {
+    "skipToContent": "Přejít k obsahu"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Kdo jsme",
+      "text": "Díky kvalitě a rozsahu nabízených služeb je WANTED s.f.o. dobře etablován ve filmovém průmyslu, v oblasti vybavovacích projektů, výroby designového nábytku, komplexních interiérových realizací a produktů na podporu prodeje."
+    },
+    "whatWeDo": {
+      "title": "Co děláme",
+      "services": [
+        "Film",
+        "Dekorace",
+        "Rekvizity",
+        "Eventy",
+        "Interiéry",
+        "Nábytek"
+      ]
+    },
+    "resources": {
+      "title": "Naše zdroje",
+      "items": [
+        "Vlastní vozový park",
+        "Skladovací a výrobní prostory",
+        "Rozsáhlá síť ověřených dodavatelů",
+        "Praktické zkušenosti z filmových setů",
+        "Kvalifikovaný a oddaný personál"
+      ]
+    },
+    "projects": {
+      "inProgress": "Probíhající",
+      "daciaNvi": "Projekt Dacia NVI",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "Připravujeme"
+    },
+    "filmProduction": {
+      "title": "Podpora filmové a TV produkce",
+      "text": "WANTED s.f.o. se podílel na tvorbě mnoha oceňovaných filmů a televizních seriálů. Naše odborné znalosti v oblasti rekvizit, dekorací a scénografického designu pomáhají oživit příběhy napříč různými žánry a produkcemi."
+    },
+    "notableFilms": {
+      "title": "Významné filmové projekty",
+      "projects": [
+        "The Wheel of Time (2020-2023)",
+        "Jojo Rabbit (2018)",
+        "The Painted Bird (2018)",
+        "The Zookeeper's Wife (2017)",
+        "Snowpiercer (2013)",
+        "Mission: Impossible - Ghost Protocol (2011)"
+      ]
+    },
+    "commercialProjects": {
+      "title": "Komerční projekty",
+      "projects": [
+        "Renault Group (Homologovaný dodavatel)",
+        "Dacia New Visual Identity",
+        "Renault Store rebranding",
+        "Renault Alpine Store",
+        "Renault Care Service",
+        "Různé komerční kampaně a propagační akce"
+      ]
+    },
+    "quote": {
+      "text": "Potěšení z práce přináší dokonalost do díla",
+      "author": "— Aristotelés"
+    },
+    "renault": {
+      "text": "schválený dodavatel"
+    }
+  },
+  "services": {
+    "heading": "Naše služby",
+    "service01": {
+      "title": "Tisk & Design",
+      "number": "01",
+      "description": "Profesionální tiskové a designové služby pro různá média",
+      "capabilities": [
+        "Velkoformátový tisk",
+        "Digitální a ofsetový tisk",
+        "Grafické designové služby",
+        "Výroba brandových materiálů",
+        "Zakázkové značení a displeje",
+        "Výstavní tisky a materiály"
+      ]
+    },
+    "service02": {
+      "title": "Korporátní identity",
+      "number": "02",
+      "description": "Komplexní vývoj a implementace firemní identity",
+      "capabilities": [
+        "Vývoj brandové strategie",
+        "Systémy vizuální identity",
+        "Tvorba brand manuálů",
+        "Design firemních materiálů",
+        "Prostorový branding",
+        "Design brandovaných prostor"
+      ]
+    },
+    "service03": {
+      "title": "Nábytek",
+      "number": "03",
+      "description": "Zakázkový design a výroba nábytku",
+      "capabilities": [
+        "Zakázkový design nábytku",
+        "Vývoj prototypů",
+        "Zakázková výroba nábytku",
+        "Komerční nábytkové řešení",
+        "Výstavní a prezentační nábytek",
+        "Nábytek pro filmové scény"
+      ]
+    },
+    "service04": {
+      "title": "Produkce",
+      "number": "04",
+      "description": "Komplexní produkční služby a projektový management",
+      "capabilities": [
+        "Podpora filmové a TV produkce",
+        "Produkce eventů",
+        "Produkce výstav",
+        "Stavba kulis",
+        "Komerční produkce",
+        "Produkce maloobchodních prostředí"
+      ]
+    },
+    "service05": {
+      "title": "Řemesla",
+      "number": "05",
+      "description": "Specializované řemeslné práce včetně sklářských prací a zakázkových řešení",
+      "capabilities": [
+        "Zakázkové skleněné instalace",
+        "Umělecké zpracování kovů",
+        "Precizní truhlářské práce",
+        "Speciální malířské úpravy",
+        "Sochařské prvky",
+        "Výroba zakázkových rekvizit"
+      ]
+    },
+    "service06": {
+      "title": "Filmové rekvizity & Dekorace",
+      "number": "06",
+      "description": "Zakázkové rekvizity a dekorace pro film a televizi",
+      "capabilities": [
+        "Výroba zakázkových rekvizit",
+        "Dekorace scén",
+        "Historicky přesné rekonstrukce",
+        "Speciální rekvizity a efekty",
+        "Aranžování scén",
+        "Podpora produkčního designu"
+      ]
+    },
+    "service07": {
+      "title": "Logistika",
+      "number": "07",
+      "description": "Komplexní logistické a transportní služby",
+      "capabilities": [
+        "Transportní služby",
+        "Správa skladů",
+        "Kontrola inventáře",
+        "Expedice a příjem",
+        "Instalační logistika",
+        "Logistická podpora na place"
+      ]
+    },
+    "service08": {
+      "title": "Dokumentace",
+      "number": "08",
+      "description": "Profesionální dokumentační a projektové dokumentační služby",
+      "capabilities": [
+        "Technická dokumentace",
+        "Projektová fotografie",
+        "Video dokumentace",
+        "Procesní dokumentace",
+        "Dokumentace skutečného provedení",
+        "Správa archivů"
+      ]
+    }
+  },
+  "contact": {
+    "formTitle": "Kontaktujte nás",
+    "name": "Vaše jméno",
+    "email": "Váš e-mail",
+    "subject": "Předmět",
+    "message": "Vaše zpráva",
+    "sendMessage": "Odeslat zprávu",
+    "sending": "Odesílání...",
+    "sent": "Zpráva odeslána!",
+    "failed": "Odeslání selhalo",
+    "disclaimer": "Odesláním tohoto formuláře souhlasíte se zpracováním vašich osobních údajů v souladu s GDPR.",
+    "emailContact": "info@wanted-sfo.cz",
+    "people": {
+      "lukas": {
+        "name": "Lukas Katakalidis",
+        "phone": "+420 606 042 031",
+        "email": "lukas@wanted-sfo.cz",
+        "ico": "71382186",
+        "dic": "CZ8211270144"
+      },
+      "pepi": {
+        "name": "Pepi Borik",
+        "phone": "+420 602 335 335",
+        "email": "pepi@wanted-sfo.cz",
+        "ico": "74241486",
+        "dic": "CZ7907132475"
+      }
+    },
+    "company": {
+      "name": "WANTED s.f.o.",
+      "address": [
+        "Zásadská 569/3",
+        "190 00 Praha 9"
+      ]
+    },
+    "warehouse": {
+      "title": "Kancelář / Sklad",
+      "address": [
+        "Stoliňská 4",
+        "190 00 Praha 9"
+      ]
+    },
+    "labels": {
+      "ico": "IČO:",
+      "dic": "DIČ:",
+      "headquarters": "Sídlo:"
+    },
+    "sponsorship": {
+      "title": "Sponzoring"
+    }
+  },
+  "modal": {
+    "closeButton": "Zavřít"
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Podpora a služby filmové produkce",
+    "title": "WANTED - Podpora filmové produkce"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "services": "Szolgáltatások",
+    "production": "Gyártás",
+    "references": "Referenciák",
+    "contact": "Kapcsolat",
+    "language": "Nyelv"
+  },
+  "header": {
+    "skipToContent": "Ugrás a tartalomhoz"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Kik vagyunk",
+      "text": "A kínált szolgáltatások minőségének és választékának köszönhetően a WANTED s.f.o. jól megalapozott a filmiparban, a berendezési projektek területén, a dizájnbútorok gyártásában, a komplex belsőépítészeti megvalósításokban és az értékesítést támogató termékek területén."
+    },
+    "whatWeDo": {
+      "title": "Mivel foglalkozunk",
+      "services": [
+        "Film",
+        "Dekorációk",
+        "Kellékek",
+        "Rendezvények",
+        "Belsőépítészet",
+        "Bútorok"
+      ]
+    },
+    "resources": {
+      "title": "Erőforrásaink",
+      "items": [
+        "Saját járműflotta",
+        "Raktár- és gyártólétesítmények",
+        "Kiterjedt hálózat ellenőrzött beszállítókkal",
+        "Gyakorlati forgatási tapasztalat",
+        "Képzett és elkötelezett személyzet"
+      ]
+    },
+    "projects": {
+      "inProgress": "Folyamatban",
+      "daciaNvi": "Dacia NVI Projekt",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "Hamarosan"
+    },
+    "filmProduction": {
+      "title": "Film és TV gyártási támogatás",
+      "text": "A WANTED s.f.o. számos elismert film és televíziós sorozat létrehozásához járult hozzá. A kellékek, dekorációk és díszlettervezés területén szerzett szakértelmünk segített életre kelteni történeteket különböző műfajokban és produkciókban."
+    },
+    "notableFilms": {
+      "title": "Kiemelkedő filmprojektek",
+      "projects": [
+        "The Wheel of Time (2020-2023)",
+        "Jojo Rabbit (2018)",
+        "The Painted Bird (2018)",
+        "The Zookeeper's Wife (2017)",
+        "Snowpiercer (2013)",
+        "Mission: Impossible - Ghost Protocol (2011)"
+      ]
+    },
+    "commercialProjects": {
+      "title": "Kereskedelmi projektek",
+      "projects": [
+        "Renault Csoport (Jóváhagyott beszállító)",
+        "Dacia új vizuális arculat",
+        "Renault Store arculatváltás",
+        "Renault Alpine Store",
+        "Renault Care Service",
+        "Különböző kereskedelmi kampányok és promóciós események"
+      ]
+    },
+    "quote": {
+      "text": "A munkában lelt öröm tökéletességet hoz a műbe",
+      "author": "— Arisztotelész"
+    },
+    "renault": {
+      "text": "jóváhagyott beszállító"
+    }
+  },
+  "services": {
+    "heading": "Szolgáltatásaink",
+    "service01": {
+      "title": "Nyomtatás és dizájn",
+      "number": "01",
+      "description": "Professzionális nyomtatási és tervezési szolgáltatások különböző médiumokhoz",
+      "capabilities": [
+        "Nagyformátumú nyomtatás",
+        "Digitális és ofszet nyomtatás",
+        "Grafikai tervezési szolgáltatások",
+        "Márkaanyagok gyártása",
+        "Egyedi feliratok és kijelzők",
+        "Kiállítási nyomatok és anyagok"
+      ]
+    },
+    "service02": {
+      "title": "Vállalati arculat",
+      "number": "02",
+      "description": "Átfogó márkaidentitás-fejlesztés és -megvalósítás",
+      "capabilities": [
+        "Márkastratégia fejlesztése",
+        "Vizuális arculati rendszerek",
+        "Márkaútmutatók létrehozása",
+        "Vállalati kellékek tervezése",
+        "Környezeti márkázás",
+        "Márkázott terek tervezése"
+      ]
+    },
+    "service03": {
+      "title": "Bútorok",
+      "number": "03",
+      "description": "Egyedi bútortervezési és gyártási megoldások",
+      "capabilities": [
+        "Egyedi bútortervezés",
+        "Prototípus-fejlesztés",
+        "Egyedi bútorok gyártása",
+        "Kereskedelmi bútor megoldások",
+        "Kiállítási és display bútorok",
+        "Díszletbútorok"
+      ]
+    },
+    "service04": {
+      "title": "Gyártás",
+      "number": "04",
+      "description": "Teljes körű gyártási szolgáltatások és projektmenedzsment",
+      "capabilities": [
+        "Film és TV gyártási támogatás",
+        "Rendezvényszervezés",
+        "Kiállítás-kivitelezés",
+        "Díszletépítés",
+        "Kereskedelmi gyártás",
+        "Kiskereskedelmi környezetek létrehozása"
+      ]
+    },
+    "service05": {
+      "title": "Kézművesség",
+      "number": "05",
+      "description": "Specializált kézművesség, beleértve az üvegmunkákat és egyedi megoldásokat",
+      "capabilities": [
+        "Egyedi üveginstallációk",
+        "Művészi fémmunka",
+        "Minőségi famunka",
+        "Speciális festési felületek",
+        "Szobrászati elemek",
+        "Egyedi kellékek készítése"
+      ]
+    },
+    "service06": {
+      "title": "Filmkellékek és dekoráció",
+      "number": "06",
+      "description": "Egyedi kellékek és díszletek film és televízió számára",
+      "capabilities": [
+        "Egyedi kellékek készítése",
+        "Díszletdekoráció",
+        "Korhű reprodukciók",
+        "Speciális kellékek és effektek",
+        "Díszletberendezési szolgáltatások",
+        "Produkciós design támogatás"
+      ]
+    },
+    "service07": {
+      "title": "Logisztika",
+      "number": "07",
+      "description": "Átfogó logisztikai és szállítási szolgáltatások",
+      "capabilities": [
+        "Szállítási szolgáltatások",
+        "Raktárkezelés",
+        "Készletnyilvántartás",
+        "Szállítás és átvétel",
+        "Telepítési logisztika",
+        "Forgatási logisztikai támogatás"
+      ]
+    },
+    "service08": {
+      "title": "Dokumentáció",
+      "number": "08",
+      "description": "Professzionális dokumentációs és projektdokumentációs szolgáltatások",
+      "capabilities": [
+        "Műszaki dokumentáció",
+        "Projektfotózás",
+        "Videós dokumentáció",
+        "Folyamatdokumentáció",
+        "Megvalósulási dokumentáció",
+        "Archívumkezelés"
+      ]
+    }
+  },
+  "contact": {
+    "formTitle": "Kapcsolat",
+    "name": "Az Ön neve",
+    "email": "Az Ön e-mail címe",
+    "subject": "Tárgy",
+    "message": "Az Ön üzenete",
+    "sendMessage": "Üzenet küldése",
+    "sending": "Küldés...",
+    "sent": "Üzenet elküldve!",
+    "failed": "Küldés sikertelen",
+    "disclaimer": "Az űrlap beküldésével Ön hozzájárul személyes adatainak a GDPR-nak megfelelő feldolgozásához.",
+    "address": "Cím",
+    "emailUs": "E-mail küldése",
+    "followUs": "Kövessen minket",
+    "emailContact": "info@wanted-sfo.cz",
+    "people": {
+      "lukas": {
+        "name": "Lukas Katakalidis",
+        "phone": "+420 606 042 031",
+        "email": "lukas@wanted-sfo.cz",
+        "ico": "71382186",
+        "dic": "CZ8211270144"
+      },
+      "pepi": {
+        "name": "Pepi Borik",
+        "phone": "+420 602 335 335",
+        "email": "pepi@wanted-sfo.cz",
+        "ico": "74241486",
+        "dic": "CZ7907132475"
+      }
+    },
+    "company": {
+      "name": "WANTED s.f.o.",
+      "address": [
+        "Zásadská 569/3",
+        "190 00 Praha 9"
+      ]
+    },
+    "warehouse": {
+      "title": "Iroda / Raktár",
+      "address": [
+        "Stoliňská 4",
+        "190 00 Praha 9"
+      ]
+    },
+    "labels": {
+      "ico": "IČO:",
+      "dic": "DIČ:",
+      "headquarters": "Székhely:"
+    },
+    "sponsorship": {
+      "title": "Szponzorálás"
+    }
+  },
+  "modal": {
+    "closeButton": "Ablak bezárása"
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Filmgyártási támogatás és szolgáltatások",
+    "title": "WANTED - Filmgyártási támogatás"
+  }
+}

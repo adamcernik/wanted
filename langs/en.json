@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "services": "Services",
+    "production": "Production",
+    "references": "References",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "header": {
+    "skipToContent": "Skip to content"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Who We Are",
+      "text": "Thanks to the quality and range of services offered, WANTED s.f.o. is well established in the film industry, in the field of fit-out projects, production of design furniture, complex interior realizations and sales support products."
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "services": [
+        "Film",
+        "Decorations",
+        "Props",
+        "Events",
+        "Interiors",
+        "Furniture"
+      ]
+    },
+    "resources": {
+      "title": "Our Resources",
+      "items": [
+        "Own transportation fleet",
+        "Storage and production facilities",
+        "Extensive network of verified suppliers",
+        "Hands-on film set experience",
+        "Qualified and dedicated personnel"
+      ]
+    },
+    "projects": {
+      "inProgress": "In progress",
+      "daciaNvi": "Dacia NVI Project",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "Coming Soon"
+    },
+    "filmProduction": {
+      "title": "Film & TV Production Support",
+      "text": "WANTED s.f.o. has contributed to the creation of numerous acclaimed films and television series. Our expertise in props, decorations, and set design has helped bring stories to life across various genres and productions."
+    },
+    "notableFilms": {
+      "title": "Notable Film Projects",
+      "projects": [
+        "The Wheel of Time (2020-2023)",
+        "Jojo Rabbit (2018)",
+        "The Painted Bird (2018)",
+        "The Zookeeper's Wife (2017)",
+        "Snowpiercer (2013)",
+        "Mission: Impossible - Ghost Protocol (2011)"
+      ]
+    },
+    "commercialProjects": {
+      "title": "Commercial Projects",
+      "projects": [
+        "Renault Group (Homologated supplier)",
+        "Dacia New Visual Identity",
+        "Renault Store rebranding",
+        "Renault Alpine Store",
+        "Renault Care Service",
+        "Various commercial campaigns and promotional events"
+      ]
+    },
+    "quote": {
+      "text": "Pleasure in the job puts perfection in the work",
+      "author": "— Aristotle"
+    },
+    "renault": {
+      "text": "approved supplier"
+    }
+  },
+  "services": {
+    "heading": "Our Services",
+    "service01": {
+      "title": "Print & Design",
+      "number": "01",
+      "description": "Professional printing and design services for various media",
+      "capabilities": [
+        "Large format printing",
+        "Digital and offset printing",
+        "Graphic design services",
+        "Brand materials production",
+        "Custom signage and displays",
+        "Exhibition prints and materials"
+      ]
+    },
+    "service02": {
+      "title": "Corporate Identities",
+      "number": "02",
+      "description": "Comprehensive brand identity development and implementation",
+      "capabilities": [
+        "Brand strategy development",
+        "Visual identity systems",
+        "Brand guidelines creation",
+        "Corporate collateral design",
+        "Environmental branding",
+        "Branded space design"
+      ]
+    },
+    "service03": {
+      "title": "Furniture",
+      "number": "03",
+      "description": "Custom furniture design and manufacturing solutions",
+      "capabilities": [
+        "Custom furniture design",
+        "Prototype development",
+        "Bespoke furniture production",
+        "Commercial furniture solutions",
+        "Exhibition and display furniture",
+        "Set design furniture"
+      ]
+    },
+    "service04": {
+      "title": "Production",
+      "number": "04",
+      "description": "Full-scale production services and project management",
+      "capabilities": [
+        "Film and TV production support",
+        "Event production",
+        "Exhibition production",
+        "Set construction",
+        "Commercial production",
+        "Retail environment production"
+      ]
+    },
+    "service05": {
+      "title": "Crafts",
+      "number": "05",
+      "description": "Specialized craftsmanship including glass work and custom solutions",
+      "capabilities": [
+        "Custom glass installations",
+        "Artistic metalwork",
+        "Fine woodworking",
+        "Specialty paint finishes",
+        "Sculptural elements",
+        "Custom prop creation"
+      ]
+    },
+    "service06": {
+      "title": "Film Props & Deco",
+      "number": "06",
+      "description": "Custom props and set decorations for film and television",
+      "capabilities": [
+        "Custom prop creation",
+        "Set decoration",
+        "Period-accurate recreations",
+        "Specialty props and effects",
+        "Set dressing services",
+        "Production design support"
+      ]
+    },
+    "service07": {
+      "title": "Logistics",
+      "number": "07",
+      "description": "Comprehensive logistics and transportation services",
+      "capabilities": [
+        "Transportation services",
+        "Warehouse management",
+        "Inventory control",
+        "Shipping and receiving",
+        "Installation logistics",
+        "On-set logistics support"
+      ]
+    },
+    "service08": {
+      "title": "Documentation",
+      "number": "08",
+      "description": "Professional documentation and project documentation services",
+      "capabilities": [
+        "Technical documentation",
+        "Project photography",
+        "Video documentation",
+        "Process documentation",
+        "As-built documentation",
+        "Archive management"
+      ]
+    }
+  },
+  "contact": {
+    "formTitle": "Contact Us",
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message sent!",
+    "failed": "Sending failed",
+    "disclaimer": "By submitting this form, you agree to the processing of your personal data in accordance with GDPR.",
+    "address": "Address",
+    "emailUs": "Email Us",
+    "followUs": "Follow Us",
+    "emailContact": "info@wanted-sfo.cz",
+    "people": {
+      "lukas": {
+        "name": "Lukas Katakalidis",
+        "phone": "+420 606 042 031",
+        "email": "lukas@wanted-sfo.cz",
+        "ico": "71382186",
+        "dic": "CZ8211270144"
+      },
+      "pepi": {
+        "name": "Pepi Borik",
+        "phone": "+420 602 335 335",
+        "email": "pepi@wanted-sfo.cz",
+        "ico": "74241486",
+        "dic": "CZ7907132475"
+      }
+    },
+    "company": {
+      "name": "WANTED s.f.o.",
+      "address": [
+        "Zásadská 569/3",
+        "190 00 Praha 9"
+      ]
+    },
+    "warehouse": {
+      "title": "Office / Warehouse",
+      "address": [
+        "Stoliňská 4",
+        "190 00 Praha 9"
+      ]
+    },
+    "labels": {
+      "ico": "IČO:",
+      "dic": "DIČ:",
+      "headquarters": "Headquarters:"
+    },
+    "sponsorship": {
+      "title": "Sponsorship"
+    }
+  },
+  "modal": {
+    "closeButton": "Close modal"
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Film Production Support and Services",
+    "title": "WANTED - Film Production Support"
+  }
+}

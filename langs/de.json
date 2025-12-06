@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "services": "Dienstleistungen",
+    "production": "Produktion",
+    "references": "Referenzen",
+    "contact": "Kontakt",
+    "language": "Sprache"
+  },
+  "header": {
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Wer wir sind",
+      "text": "Dank der Qualität und der Bandbreite der angebotenen Dienstleistungen ist WANTED s.f.o. in der Filmindustrie, im Bereich der Ausstattungsprojekte, der Produktion von Designmöbeln, komplexen Innenraumgestaltungen und Verkaufsförderungsprodukten gut etabliert."
+    },
+    "whatWeDo": {
+      "title": "Was wir tun",
+      "services": [
+        "Film",
+        "Dekorationen",
+        "Requisiten",
+        "Veranstaltungen",
+        "Inneneinrichtungen",
+        "Möbel"
+      ]
+    },
+    "resources": {
+      "title": "Unsere Ressourcen",
+      "items": [
+        "Eigene Transportflotte",
+        "Lager- und Produktionsanlagen",
+        "Umfangreiches Netzwerk verifizierter Lieferanten",
+        "Praktische Erfahrung am Filmset",
+        "Qualifiziertes und engagiertes Personal"
+      ]
+    },
+    "projects": {
+      "inProgress": "In Bearbeitung",
+      "daciaNvi": "Dacia NVI Projekt",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "Demnächst"
+    },
+    "filmProduction": {
+      "title": "Film- & TV-Produktionsunterstützung",
+      "text": "WANTED s.f.o. hat zur Entstehung zahlreicher anerkannter Filme und Fernsehserien beigetragen. Unsere Expertise in den Bereichen Requisiten, Dekorationen und Setdesign hat dazu beigetragen, Geschichten in verschiedenen Genres und Produktionen zum Leben zu erwecken."
+    },
+    "notableFilms": {
+      "title": "Bemerkenswerte Filmprojekte",
+      "projects": [
+        "The Wheel of Time (2020-2023)",
+        "Jojo Rabbit (2018)",
+        "The Painted Bird (2018)",
+        "The Zookeeper's Wife (2017)",
+        "Snowpiercer (2013)",
+        "Mission: Impossible - Ghost Protocol (2011)"
+      ]
+    },
+    "commercialProjects": {
+      "title": "Kommerzielle Projekte",
+      "projects": [
+        "Renault Group (Zugelassener Lieferant)",
+        "Dacia Neue Visuelle Identität",
+        "Renault Store Neugestaltung",
+        "Renault Alpine Store",
+        "Renault Care Service",
+        "Verschiedene Werbekampagnen und Promotionsveranstaltungen"
+      ]
+    },
+    "quote": {
+      "text": "Freude an der Arbeit führt zur Perfektion im Werk",
+      "author": "— Aristoteles"
+    },
+    "renault": {
+      "text": "zugelassener Lieferant"
+    }
+  },
+  "services": {
+    "heading": "Unsere Dienstleistungen",
+    "service01": {
+      "title": "Druck & Design",
+      "number": "01",
+      "description": "Professionelle Druck- und Designdienstleistungen für verschiedene Medien",
+      "capabilities": [
+        "Großformatdruck",
+        "Digital- und Offsetdruck",
+        "Grafikdesign-Dienstleistungen",
+        "Produktion von Markenmaterialien",
+        "Maßgeschneiderte Beschilderung und Displays",
+        "Ausstellungsdrucke und -materialien"
+      ]
+    },
+    "service02": {
+      "title": "Corporate Identity",
+      "number": "02",
+      "description": "Umfassende Markenidentitätsentwicklung und -implementierung",
+      "capabilities": [
+        "Entwicklung von Markenstrategien",
+        "Visuelle Identitätssysteme",
+        "Erstellung von Markenrichtlinien",
+        "Design von Unternehmensdrucksachen",
+        "Umgebungsbranding",
+        "Design von Markenräumen"
+      ]
+    },
+    "service03": {
+      "title": "Möbel",
+      "number": "03",
+      "description": "Maßgeschneiderte Möbeldesign- und Fertigungslösungen",
+      "capabilities": [
+        "Maßgeschneidertes Möbeldesign",
+        "Prototypenentwicklung",
+        "Maßgefertigte Möbelproduktion",
+        "Kommerzielle Möbellösungen",
+        "Ausstellungs- und Displaymöbel",
+        "Möbel für Filmsets"
+      ]
+    },
+    "service04": {
+      "title": "Produktion",
+      "number": "04",
+      "description": "Umfassende Produktionsdienstleistungen und Projektmanagement",
+      "capabilities": [
+        "Unterstützung bei Film- und TV-Produktionen",
+        "Eventproduktion",
+        "Ausstellungsproduktion",
+        "Kulissenbau",
+        "Kommerzielle Produktion",
+        "Produktion von Einzelhandelsumgebungen"
+      ]
+    },
+    "service05": {
+      "title": "Handwerk",
+      "number": "05",
+      "description": "Spezialisiertes Handwerk einschließlich Glasarbeiten und maßgeschneiderten Lösungen",
+      "capabilities": [
+        "Maßgefertigte Glasinstallationen",
+        "Künstlerische Metallarbeiten",
+        "Feine Holzarbeiten",
+        "Spezielle Lackierungen",
+        "Skulpturale Elemente",
+        "Erstellung maßgeschneiderter Requisiten"
+      ]
+    },
+    "service06": {
+      "title": "Filmrequisiten & Deko",
+      "number": "06",
+      "description": "Maßgeschneiderte Requisiten und Setdekorationen für Film und Fernsehen",
+      "capabilities": [
+        "Erstellung maßgeschneiderter Requisiten",
+        "Setdekoration",
+        "Epochengetreue Rekonstruktionen",
+        "Spezialrequisiten und -effekte",
+        "Einrichtungsdienstleistungen für Sets",
+        "Unterstützung beim Produktionsdesign"
+      ]
+    },
+    "service07": {
+      "title": "Logistik",
+      "number": "07",
+      "description": "Umfassende Logistik- und Transportdienstleistungen",
+      "capabilities": [
+        "Transportdienstleistungen",
+        "Lagerverwaltung",
+        "Bestandskontrolle",
+        "Versand und Empfang",
+        "Installationslogistik",
+        "Logistische Unterstützung am Set"
+      ]
+    },
+    "service08": {
+      "title": "Dokumentation",
+      "number": "08",
+      "description": "Professionelle Dokumentations- und Projektdokumentationsdienstleistungen",
+      "capabilities": [
+        "Technische Dokumentation",
+        "Projektfotografie",
+        "Videodokumentation",
+        "Prozessdokumentation",
+        "As-Built-Dokumentation",
+        "Archivverwaltung"
+      ]
+    }
+  },
+  "contact": {
+    "formTitle": "Kontaktieren Sie uns",
+    "name": "Ihr Name",
+    "email": "Ihre E-Mail",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "sendMessage": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "sent": "Nachricht gesendet!",
+    "failed": "Senden fehlgeschlagen",
+    "disclaimer": "Durch das Absenden dieses Formulars stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten gemäß DSGVO zu.",
+    "address": "Adresse",
+    "emailUs": "E-Mail an uns",
+    "followUs": "Folgen Sie uns",
+    "emailContact": "info@wanted-sfo.cz",
+    "people": {
+      "lukas": {
+        "name": "Lukas Katakalidis",
+        "phone": "+420 606 042 031",
+        "email": "lukas@wanted-sfo.cz",
+        "ico": "71382186",
+        "dic": "CZ8211270144"
+      },
+      "pepi": {
+        "name": "Pepi Borik",
+        "phone": "+420 602 335 335",
+        "email": "pepi@wanted-sfo.cz",
+        "ico": "74241486",
+        "dic": "CZ7907132475"
+      }
+    },
+    "company": {
+      "name": "WANTED s.f.o.",
+      "address": [
+        "Zásadská 569/3",
+        "190 00 Praha 9"
+      ]
+    },
+    "warehouse": {
+      "title": "Büro / Lager",
+      "address": [
+        "Stoliňská 4",
+        "190 00 Praha 9"
+      ]
+    },
+    "labels": {
+      "ico": "IČO:",
+      "dic": "DIČ:",
+      "headquarters": "Sitz:"
+    },
+    "sponsorship": {
+      "title": "Sponsoring"
+    }
+  },
+  "modal": {
+    "closeButton": "Modal schließen"
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Filmproduktionsunterstützung und Dienstleistungen",
+    "title": "WANTED - Filmproduktionsunterstützung"
+  }
+}

@@ -1,0 +1,147 @@
+/* Partners section styling */
+.partners-section {
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    height: auto;
+}
+
+.partners-wrapper {
+    background-color: transparent !important;
+    padding: 0 !important;
+    overflow: hidden;
+    box-shadow: none !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.partners-container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Grid layout for partners logos */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px; /* Increased spacing between logos */
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Remove side margins */
+    width: 100%; /* Ensure full width */
+    padding: 10px 0; /* Add vertical padding */
+}
+
+.partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    /* Lighter background for better contrast */
+    background-color: rgba(26, 42, 58, 0.15); /* Reduced opacity */
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.partner-item:hover {
+    background-color: rgba(26, 42, 58, 0.25); /* Lighter hover state */
+}
+
+.partner-logo {
+    max-width: 100%;
+    max-height: 40px; /* Smaller logos */
+    object-fit: contain;
+    /* Make all logos white */
+    filter: brightness(0) invert(1);
+    opacity: 0.4; /* Reduced opacity to make logos lighter */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    opacity: 0.8; /* Slightly lower than full opacity even on hover */
+    transform: scale(1.1);
+}
+
+/* Special case for logos that might need different treatment */
+.partner-logo.dark-logo {
+    filter: brightness(0) invert(1); /* Ensure consistent white color */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    /* 2 rows on tablet */
+    .partners-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px 30px; /* vertical horizontal - Increased vertical gap between rows */
+        margin: 0; /* Remove side margins */
+        padding: 15px 0; /* Add more vertical padding */
+    }
+    
+    .partner-logo {
+        max-height: 35px; /* Smaller logos on tablet */
+    }
+    
+    /* Fix partners wrapper positioning */
+    .partners-wrapper {
+        width: 100%;
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    /* Specifically ensure 2-row display on smaller tablets */
+    .partners-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 40px 25px; /* vertical horizontal - Even more vertical spacing */
+        margin: 0; /* Remove side margins */
+    }
+    
+    .partners-container {
+        padding: 15px 0; /* More vertical padding */
+    }
+    
+    .partner-logo {
+        max-height: 30px; /* Even smaller on smaller tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-container {
+        padding: 10px 0;
+    }
+    
+    /* 3 rows on smaller tablets */
+    .partners-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px 22px; /* vertical horizontal - More vertical spacing */
+        margin: 0; /* Remove side margins */
+    }
+    
+    .partner-logo {
+        max-height: 25px; /* Smaller on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-container {
+        padding: 10px 0;
+    }
+    
+    /* 4 rows on mobile */
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 20px; /* vertical horizontal - More vertical spacing for small mobile */
+        margin: 0; /* Remove side margins */
+    }
+    
+    .partner-logo {
+        max-height: 20px; /* Much smaller on small mobile */
+    }
+} 

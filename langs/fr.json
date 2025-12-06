@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "services": "Services",
+    "production": "Production",
+    "references": "Références",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "header": {
+    "skipToContent": "Passer au contenu"
+  },
+  "home": {
+    "whoWeAre": {
+      "title": "Qui sommes-nous",
+      "text": "Grâce à la qualité et à la gamme des services proposés, WANTED s.f.o. est bien établie dans l'industrie cinématographique, dans le domaine des projets d'aménagement, de la production de mobilier design, des réalisations d'intérieurs complexes et des produits d'aide à la vente."
+    },
+    "whatWeDo": {
+      "title": "Ce que nous faisons",
+      "services": [
+        "Cinéma",
+        "Décorations",
+        "Accessoires",
+        "Événements",
+        "Intérieurs",
+        "Meubles"
+      ]
+    },
+    "resources": {
+      "title": "Nos ressources",
+      "items": [
+        "Flotte de transport propre",
+        "Installations de stockage et de production",
+        "Réseau étendu de fournisseurs vérifiés",
+        "Expérience pratique sur les plateaux de tournage",
+        "Personnel qualifié et dévoué"
+      ]
+    },
+    "projects": {
+      "inProgress": "En cours",
+      "daciaNvi": "Projet Dacia NVI",
+      "renaultStore": "Renault Store New'R",
+      "comingSoon": "Prochainement"
+    },
+    "filmProduction": {
+      "title": "Support à la production cinématographique et télévisuelle",
+      "text": "WANTED s.f.o. a contribué à la création de nombreux films et séries télévisées acclamés. Notre expertise en matière d'accessoires, de décorations et de conception de décors a aidé à donner vie à des histoires à travers divers genres et productions."
+    },
+    "notableFilms": {
+      "title": "Projets cinématographiques notables",
+      "projects": [
+        "The Wheel of Time (2020-2023)",
+        "Jojo Rabbit (2018)",
+        "The Painted Bird (2018)",
+        "The Zookeeper's Wife (2017)",
+        "Snowpiercer (2013)",
+        "Mission : Impossible - Ghost Protocol (2011)"
+      ]
+    },
+    "commercialProjects": {
+      "title": "Projets commerciaux",
+      "projects": [
+        "Groupe Renault (Fournisseur homologué)",
+        "Nouvelle identité visuelle Dacia",
+        "Refonte du Renault Store",
+        "Renault Alpine Store",
+        "Renault Care Service",
+        "Diverses campagnes commerciales et événements promotionnels"
+      ]
+    },
+    "quote": {
+      "text": "Le plaisir dans le travail met la perfection dans l'œuvre",
+      "author": "— Aristote"
+    },
+    "renault": {
+      "text": "fournisseur agréé"
+    }
+  },
+  "services": {
+    "heading": "Nos Services",
+    "service01": {
+      "title": "Impression & Design",
+      "number": "01",
+      "description": "Services professionnels d'impression et de design pour divers médias",
+      "capabilities": [
+        "Impression grand format",
+        "Impression numérique et offset",
+        "Services de conception graphique",
+        "Production de matériels de marque",
+        "Signalétique et affichages personnalisés",
+        "Impressions et matériels d'exposition"
+      ]
+    },
+    "service02": {
+      "title": "Identités d'entreprise",
+      "number": "02",
+      "description": "Développement et mise en œuvre complète d'identité de marque",
+      "capabilities": [
+        "Développement de stratégie de marque",
+        "Systèmes d'identité visuelle",
+        "Création de directives de marque",
+        "Conception de supports d'entreprise",
+        "Marquage environnemental",
+        "Conception d'espaces de marque"
+      ]
+    },
+    "service03": {
+      "title": "Mobilier",
+      "number": "03",
+      "description": "Solutions personnalisées de conception et de fabrication de mobilier",
+      "capabilities": [
+        "Conception de mobilier sur mesure",
+        "Développement de prototypes",
+        "Production de mobilier sur mesure",
+        "Solutions de mobilier commercial",
+        "Mobilier d'exposition et de présentation",
+        "Mobilier pour décors de cinéma"
+      ]
+    },
+    "service04": {
+      "title": "Production",
+      "number": "04",
+      "description": "Services de production à grande échelle et gestion de projet",
+      "capabilities": [
+        "Soutien à la production cinématographique et télévisuelle",
+        "Production d'événements",
+        "Production d'expositions",
+        "Construction de décors",
+        "Production commerciale",
+        "Production d'environnements commerciaux"
+      ]
+    },
+    "service05": {
+      "title": "Artisanat",
+      "number": "05",
+      "description": "Artisanat spécialisé incluant travail du verre et solutions personnalisées",
+      "capabilities": [
+        "Installations en verre sur mesure",
+        "Travail artistique du métal",
+        "Travail du bois fin",
+        "Finitions de peinture spéciales",
+        "Éléments sculpturaux",
+        "Création d'accessoires personnalisés"
+      ]
+    },
+    "service06": {
+      "title": "Accessoires & Déco de film",
+      "number": "06",
+      "description": "Accessoires personnalisés et décorations de plateau pour le cinéma et la télévision",
+      "capabilities": [
+        "Création d'accessoires personnalisés",
+        "Décoration de plateau",
+        "Reconstitutions fidèles à l'époque",
+        "Accessoires et effets spéciaux",
+        "Services de décoration de plateau",
+        "Soutien à la conception de production"
+      ]
+    },
+    "service07": {
+      "title": "Logistique",
+      "number": "07",
+      "description": "Services complets de logistique et de transport",
+      "capabilities": [
+        "Services de transport",
+        "Gestion d'entrepôt",
+        "Contrôle d'inventaire",
+        "Expédition et réception",
+        "Logistique d'installation",
+        "Soutien logistique sur plateau"
+      ]
+    },
+    "service08": {
+      "title": "Documentation",
+      "number": "08",
+      "description": "Services professionnels de documentation et de documentation de projet",
+      "capabilities": [
+        "Documentation technique",
+        "Photographie de projet",
+        "Documentation vidéo",
+        "Documentation de processus",
+        "Documentation telle que construite",
+        "Gestion d'archives"
+      ]
+    }
+  },
+  "contact": {
+    "formTitle": "Contactez-nous",
+    "name": "Votre nom",
+    "email": "Votre e-mail",
+    "subject": "Sujet",
+    "message": "Votre message",
+    "sendMessage": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "sent": "Message envoyé !",
+    "failed": "Échec de l'envoi",
+    "disclaimer": "En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles conformément au RGPD.",
+    "address": "Adresse",
+    "emailUs": "Envoyez-nous un e-mail",
+    "followUs": "Suivez-nous",
+    "emailContact": "info@wanted-sfo.cz",
+    "people": {
+      "lukas": {
+        "name": "Lukas Katakalidis",
+        "phone": "+420 606 042 031",
+        "email": "lukas@wanted-sfo.cz",
+        "ico": "71382186",
+        "dic": "CZ8211270144"
+      },
+      "pepi": {
+        "name": "Pepi Borik",
+        "phone": "+420 602 335 335",
+        "email": "pepi@wanted-sfo.cz",
+        "ico": "74241486",
+        "dic": "CZ7907132475"
+      }
+    },
+    "company": {
+      "name": "WANTED s.f.o.",
+      "address": [
+        "Zásadská 569/3",
+        "190 00 Praha 9"
+      ]
+    },
+    "warehouse": {
+      "title": "Bureau / Entrepôt",
+      "address": [
+        "Stoliňská 4",
+        "190 00 Praha 9"
+      ]
+    },
+    "labels": {
+      "ico": "IČO:",
+      "dic": "DIČ:",
+      "headquarters": "Siège:"
+    },
+    "sponsorship": {
+      "title": "Parrainage"
+    }
+  },
+  "modal": {
+    "closeButton": "Fermer la modal"
+  },
+  "meta": {
+    "description": "WANTED s.f.o. - Support et services de production cinématographique",
+    "title": "WANTED - Support à la production cinématographique"
+  }
+}
