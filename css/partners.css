@@ -1,7 +1,8 @@
 /* Partners section styling */
 .partners-section {
     width: 100%;
-    padding: 15px 0;
+    padding: 8px 0;
+    /* Reduced from 15px */
     overflow: hidden;
     position: relative;
     background: transparent;
@@ -24,19 +25,24 @@
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
+    /* Reduced from 10px */
 }
 
 /* Grid layout for partners logos */
 .partners-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 25px; /* Increased spacing between logos */
+    gap: 25px;
+    /* Increased spacing between logos */
     align-items: center;
     justify-content: center;
-    margin: 0; /* Remove side margins */
-    width: 100%; /* Ensure full width */
-    padding: 10px 0; /* Add vertical padding */
+    margin: 0;
+    /* Remove side margins */
+    width: 100%;
+    /* Ensure full width */
+    padding: 5px 0;
+    /* Reduced from 10px */
 }
 
 .partner-item {
@@ -45,49 +51,60 @@
     align-items: center;
     padding: 4px;
     /* Lighter background for better contrast */
-    background-color: rgba(26, 42, 58, 0.15); /* Reduced opacity */
+    background-color: rgba(26, 42, 58, 0.15);
+    /* Reduced opacity */
     border-radius: 6px;
     transition: background-color 0.3s ease;
 }
 
 .partner-item:hover {
-    background-color: rgba(26, 42, 58, 0.25); /* Lighter hover state */
+    background-color: rgba(26, 42, 58, 0.25);
+    /* Lighter hover state */
 }
 
 .partner-logo {
     max-width: 100%;
-    max-height: 40px; /* Smaller logos */
+    max-height: 40px;
+    /* Smaller logos */
     object-fit: contain;
     /* Make all logos white */
     filter: brightness(0) invert(1);
-    opacity: 0.4; /* Reduced opacity to make logos lighter */
+    opacity: 0.4;
+    /* Reduced opacity to make logos lighter */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .partner-logo:hover {
-    opacity: 0.8; /* Slightly lower than full opacity even on hover */
+    opacity: 0.8;
+    /* Slightly lower than full opacity even on hover */
     transform: scale(1.1);
 }
 
 /* Special case for logos that might need different treatment */
 .partner-logo.dark-logo {
-    filter: brightness(0) invert(1); /* Ensure consistent white color */
+    filter: brightness(0) invert(1);
+    /* Ensure consistent white color */
 }
 
 /* Media Queries */
 @media (max-width: 1024px) {
+
     /* 2 rows on tablet */
     .partners-grid {
         grid-template-columns: repeat(6, 1fr);
-        gap: 30px 30px; /* vertical horizontal - Increased vertical gap between rows */
-        margin: 0; /* Remove side margins */
-        padding: 15px 0; /* Add more vertical padding */
+        gap: 30px 30px;
+        /* vertical horizontal - Increased vertical gap between rows */
+        margin: 0;
+        /* Remove side margins */
+        padding: 15px 0;
+        /* Add more vertical padding */
     }
-    
+
     .partner-logo {
-        max-height: 35px; /* Smaller logos on tablet */
+        max-height: 35px;
+        /* Smaller logos on tablet */
     }
-    
+
     /* Fix partners wrapper positioning */
     .partners-wrapper {
         width: 100%;
@@ -96,19 +113,24 @@
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
+
     /* Specifically ensure 2-row display on smaller tablets */
     .partners-grid {
         grid-template-columns: repeat(6, 1fr);
-        gap: 40px 25px; /* vertical horizontal - Even more vertical spacing */
-        margin: 0; /* Remove side margins */
+        gap: 40px 25px;
+        /* vertical horizontal - Even more vertical spacing */
+        margin: 0;
+        /* Remove side margins */
     }
-    
+
     .partners-container {
-        padding: 15px 0; /* More vertical padding */
+        padding: 15px 0;
+        /* More vertical padding */
     }
-    
+
     .partner-logo {
-        max-height: 30px; /* Even smaller on smaller tablets */
+        max-height: 30px;
+        /* Even smaller on smaller tablets */
     }
 }
 
@@ -116,16 +138,19 @@
     .partners-container {
         padding: 10px 0;
     }
-    
+
     /* 3 rows on smaller tablets */
     .partners-grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 35px 22px; /* vertical horizontal - More vertical spacing */
-        margin: 0; /* Remove side margins */
+        gap: 35px 22px;
+        /* vertical horizontal - More vertical spacing */
+        margin: 0;
+        /* Remove side margins */
     }
-    
+
     .partner-logo {
-        max-height: 25px; /* Smaller on mobile */
+        max-height: 25px;
+        /* Smaller on mobile */
     }
 }
 
@@ -133,15 +158,18 @@
     .partners-container {
         padding: 10px 0;
     }
-    
+
     /* 4 rows on mobile */
     .partners-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px 20px; /* vertical horizontal - More vertical spacing for small mobile */
-        margin: 0; /* Remove side margins */
+        gap: 30px 20px;
+        /* vertical horizontal - More vertical spacing for small mobile */
+        margin: 0;
+        /* Remove side margins */
     }
-    
+
     .partner-logo {
-        max-height: 20px; /* Much smaller on small mobile */
+        max-height: 20px;
+        /* Much smaller on small mobile */
     }
-} 
+}

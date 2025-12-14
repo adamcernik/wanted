@@ -228,10 +228,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Sídlo:"
-    },
-    "sponsorship": {
-      "title": "Sponzoring"
     }
+  },
+  "sponsorship": {
+    "title": "Sponzoring",
+    "subtitle": "",
+    "content": "Obsah dodá doktor Kalbis"
   },
   "modal": {
     "closeButton": "Zavřít"

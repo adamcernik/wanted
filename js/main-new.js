@@ -249,15 +249,60 @@ function initModals() {
 
     // Function to open modal
     function openModal(modalId) {
-        const data = modalData[modalId];
-        if (!data) return;
+        // Check if it's the sponsorship modal (different structure)
+        if (modalId === 'sponsorship') {
+            const data = modalData[modalId];
+            if (!data) return;
+            modalImage.src = data.image;
+            modalImage.alt = data.title;
+            modalTitle.textContent = data.title;
+            modalSubtitle.textContent = data.subtitle;
+            modalBody.innerHTML = data.content;
+        } else {
+            // Get current language from i18n
+            const currentLang = window.i18n?.getCurrentLanguage() || 'cs';
+            const langTranslations = window.translations?.[currentLang];
 
-        // Populate modal content
-        modalImage.src = data.image;
-        modalImage.alt = data.title;
-        modalTitle.textContent = data.title;
-        modalSubtitle.textContent = data.subtitle;
-        modalBody.innerHTML = data.content;
+            if (!langTranslations?.services) {
+                console.warn(`Services translations not found for ${currentLang}`);
+                // Fallback to hardcoded data
+                const data = modalData[modalId];
+                if (!data) return;
+                modalImage.src = data.image;
+                modalImage.alt = data.title;
+                modalTitle.textContent = data.title;
+                modalSubtitle.textContent = data.subtitle;
+                modalBody.innerHTML = data.content;
+                return;
+            }
+
+            // Load service content from translations
+            const serviceNumber = modalId.split('-')[1]; // service-01 -> 01
+            const serviceKey = `service${serviceNumber}`; // service01
+            const serviceData = langTranslations.services[serviceKey];
+
+            if (!serviceData) {
+                console.warn(`Service data not found for ${serviceKey}`);
+                return;
+            }
+
+            // Populate modal content from translations
+            modalImage.src = `images/services/${serviceNumber}.jpg`;
+            modalImage.alt = serviceData.title;
+            modalTitle.textContent = serviceData.title;
+            modalSubtitle.textContent = serviceData.description;
+
+            // Build capabilities list from translations
+            const capabilities = serviceData.capabilities || [];
+            const listHTML = `
+                <div class="modal-section">
+                    <ul class="modal-list two-columns">
+                        ${capabilities.map(cap => `<li>${cap}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            modalBody.innerHTML = listHTML;
+        }
 
         // Show modal
         modalOverlay.classList.add('active');
