@@ -231,10 +231,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Székhely:"
-    },
-    "sponsorship": {
-      "title": "Szponzorálás"
     }
+  },
+  "sponsorship": {
+    "title": "Szponzorálás",
+    "subtitle": "",
+    "content": "A Wanted cég büszkén támogatja a Kadaň hokicsapatot. Hiszünk egy olyan csapatban, amely minden nap jobbá akar válni — és pontosan ez a mi munkához való hozzáállásunk is. Örülünk, hogy egy olyan csapat mögött állhatunk, amely küzd, fejlődik és tolja tovább a határokat. Sok sikert és kitartást kívánunk a srácoknak a következő mérkőzésekhez."
   },
   "modal": {
     "closeButton": "Ablak bezárása"

@@ -231,10 +231,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Siedziba:"
-    },
-    "sponsorship": {
-      "title": "Sponsoring"
     }
+  },
+  "sponsorship": {
+    "title": "Sponsoring",
+    "subtitle": "",
+    "content": "Firma Wanted z dumą wspiera drużynę hokejową Kadaně. Wierzymy w zespół, który ma ochotę poprawiać się każdego dnia — i właśnie takie jest nasze podejście do pracy. Cieszymy się, że możemy wspierać drużynę, która walczy, rośnie i przesuwa granice dalej. Życzymy chłopakom wielu sukcesów i wytrwałości w nadchodzących meczach."
   },
   "modal": {
     "closeButton": "Zamknij okno"

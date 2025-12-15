@@ -231,10 +231,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Headquarters:"
-    },
-    "sponsorship": {
-      "title": "Sponsorship"
     }
+  },
+  "sponsorship": {
+    "title": "Sponsorship",
+    "subtitle": "",
+    "content": "Wanted company proudly supports the Kadaň hockey team. We believe in a team that has the desire to improve every day — and that is exactly our approach to work. We are glad to stand behind a team that fights, grows and pushes the boundaries further. We wish the guys much success and perseverance in future matches."
   },
   "modal": {
     "closeButton": "Close modal"

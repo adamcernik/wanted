@@ -1399,10 +1399,20 @@
     max-height: 500px;
 }
 
+.map-tile {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
 .map-tile iframe {
     border: none;
     width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    display: block;
+    /* Removes possible inline gap */
 }
 
 @media (max-width: 1024px) {
@@ -1435,6 +1445,10 @@
     .form-disclaimer {
         margin-top: 1rem;
         line-height: 1.4;
+    }
+
+    .map-tile {
+        min-height: 400px;
     }
 }
 
@@ -1579,4 +1593,109 @@
     .project-slide {
         box-sizing: border-box !important;
     }
+}
+
+/* Sponsorship Tile */
+.sponsorship-tile {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+    min-height: 300px;
+    display: block;
+}
+
+.sponsorship-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.sponsorship-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sponsorship-tile:hover .sponsorship-background img {
+    transform: scale(1.05);
+}
+
+.sponsorship-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(15, 25, 35, 0.8) 0%,
+            rgba(15, 25, 35, 0.4) 40%,
+            rgba(15, 25, 35, 0.1) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sponsorship-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.sponsorship-content .headline {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF;
+    background: none;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+#who-we-are img {
+    object-fit: contain !important;
+    object-position: top !important;
+    background-color: #1a1a1a;
+    /* Dark background to match theme */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .sponsorship-tile {
+        min-height: 200px;
+        border-radius: 8px;
+    }
+
+    .sponsorship-content {
+        padding: 1.5rem;
+    }
+}
+
+.sponsorship-tile .expand-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../images/icons/expand.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+}
+
+.sponsorship-tile:hover .expand-icon {
+    background-color: rgba(0, 0, 0, 0.7);
 }

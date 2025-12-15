@@ -231,10 +231,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Siège:"
-    },
-    "sponsorship": {
-      "title": "Parrainage"
     }
+  },
+  "sponsorship": {
+    "title": "Parrainage",
+    "subtitle": "",
+    "content": "La société Wanted soutient fièrement l'équipe de hockey de Kadaň. Nous croyons en une équipe qui a le désir de s'améliorer chaque jour — et c'est exactement notre approche du travail. Nous sommes heureux de soutenir une équipe qui se bat, grandit et repousse les limites. Nous souhaitons aux gars beaucoup de succès et de persévérance dans les matchs à venir."
   },
   "modal": {
     "closeButton": "Fermer la modal"

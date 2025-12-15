@@ -231,10 +231,12 @@
       "ico": "IČO:",
       "dic": "DIČ:",
       "headquarters": "Sitz:"
-    },
-    "sponsorship": {
-      "title": "Sponsoring"
     }
+  },
+  "sponsorship": {
+    "title": "Sponsoring",
+    "subtitle": "",
+    "content": "Die Firma Wanted unterstützt stolz das Eishockeyteam von Kadaň. Wir glauben an ein Team, das sich jeden Tag verbessern will — und genau das ist auch unser Arbeitsansatz. Wir freuen uns, hinter einer Mannschaft zu stehen, die kämpft, wächst und Grenzen verschiebt. Wir wünschen den Jungs viel Erfolg und Ausdauer für die kommenden Spiele."
   },
   "modal": {
     "closeButton": "Modal schließen"

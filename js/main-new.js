@@ -249,16 +249,94 @@ function initModals() {
 
     // Function to open modal
     function openModal(modalId) {
+        // First, ensure modal header has the correct default structure
+        const modalHeader = document.querySelector('.modal-header');
+
         // Check if it's the sponsorship modal (different structure)
         if (modalId === 'sponsorship') {
-            const data = modalData[modalId];
-            if (!data) return;
-            modalImage.src = data.image;
-            modalImage.alt = data.title;
-            modalTitle.textContent = data.title;
-            modalSubtitle.textContent = data.subtitle;
-            modalBody.innerHTML = data.content;
+            // Get current language from i18n
+            const currentLang = window.i18n?.getCurrentLanguage() || 'cs';
+            const langTranslations = window.translations?.[currentLang];
+
+            if (langTranslations?.sponsorship) {
+                console.log('SPONSORSHIP MODAL LOADING - v2025-12-14-11:21'); // Cache buster
+                const sponsorshipData = langTranslations.sponsorship;
+
+                // Define sponsoring images (10 images for 5x2 grid)
+                const sponsoringImages = [
+                    'images/sponzoring/sponzoring01.jpeg',
+                    'images/sponzoring/sponzoring02.jpeg',
+                    'images/sponzoring/sponzoring03.jpeg',
+                    'images/sponzoring/sponzoring04.jpeg',
+                    'images/sponzoring/sponzoring05.jpeg',
+                    'images/sponzoring/sponzoring06.jpeg',
+                    'images/sponzoring/sponzoring11.jpeg',
+                    'images/sponzoring/sponzoring12.jpeg',
+                    'images/sponzoring/sponzoring09.jpeg',
+                    'images/sponzoring/sponzoring10.jpeg'
+                ];
+
+                // Create image collage HTML for header
+                const imageCollageHTML = sponsoringImages.map((img, index) => {
+                    return `<div class="collage-item" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                        <img src="${img}" alt="Sponsoring ${index + 1}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>`;
+                }).join('');
+
+                // Replace the modal header with the collage version
+                if (modalHeader) {
+                    modalHeader.innerHTML = `
+                        <div class="sponsorship-header-collage" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(2, 1fr); gap: 4px; overflow: hidden; z-index: 1;">
+                            ${imageCollageHTML}
+                        </div>
+                        <div class="modal-header-content" style="z-index: 2;">
+                            <h2 class="modal-title">${sponsorshipData.title}</h2>
+                            <p class="modal-subtitle">${sponsorshipData.subtitle || ''}</p>
+                        </div>
+                    `;
+                }
+
+                // Display text content in body
+                const contentHTML = `
+                    <div class="modal-section">
+                        <p style="text-align: center; font-size: 1.2rem; line-height: 1.8;">
+                            ${sponsorshipData.content || ''}
+                        </p>
+                    </div>
+                `;
+                modalBody.innerHTML = contentHTML;
+            } else {
+                // Fallback to hardcoded data
+                const data = modalData[modalId];
+                if (!data) return;
+                if (modalHeader) {
+                    modalHeader.innerHTML = `
+                        <img src="${data.image}" alt="${data.title}" id="modal-image">
+                        <div class="modal-header-content">
+                            <h2 class="modal-title">${data.title}</h2>
+                            <p class="modal-subtitle">${data.subtitle}</p>
+                        </div>
+                    `;
+                }
+                modalBody.innerHTML = data.content;
+            }
         } else {
+            // SERVICE MODALS - Restore default header structure
+            if (modalHeader) {
+                modalHeader.innerHTML = `
+                    <img src="" alt="" id="modal-image">
+                    <div class="modal-header-content">
+                        <h2 class="modal-title" id="modal-title"></h2>
+                        <div class="modal-subtitle" id="modal-subtitle"></div>
+                    </div>
+                `;
+            }
+
+            // Re-get references after restoring HTML
+            const restoredModalImage = document.getElementById('modal-image');
+            const restoredModalTitle = document.getElementById('modal-title');
+            const restoredModalSubtitle = document.getElementById('modal-subtitle');
+
             // Get current language from i18n
             const currentLang = window.i18n?.getCurrentLanguage() || 'cs';
             const langTranslations = window.translations?.[currentLang];
@@ -268,10 +346,10 @@ function initModals() {
                 // Fallback to hardcoded data
                 const data = modalData[modalId];
                 if (!data) return;
-                modalImage.src = data.image;
-                modalImage.alt = data.title;
-                modalTitle.textContent = data.title;
-                modalSubtitle.textContent = data.subtitle;
+                restoredModalImage.src = data.image;
+                restoredModalImage.alt = data.title;
+                restoredModalTitle.textContent = data.title;
+                restoredModalSubtitle.textContent = data.subtitle;
                 modalBody.innerHTML = data.content;
                 return;
             }
@@ -287,10 +365,10 @@ function initModals() {
             }
 
             // Populate modal content from translations
-            modalImage.src = `images/services/${serviceNumber}.jpg`;
-            modalImage.alt = serviceData.title;
-            modalTitle.textContent = serviceData.title;
-            modalSubtitle.textContent = serviceData.description;
+            restoredModalImage.src = `images/services/${serviceNumber}.jpg`;
+            restoredModalImage.alt = serviceData.title;
+            restoredModalTitle.textContent = serviceData.title;
+            restoredModalSubtitle.textContent = serviceData.description;
 
             // Build capabilities list from translations
             const capabilities = serviceData.capabilities || [];
