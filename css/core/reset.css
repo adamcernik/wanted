@@ -68,7 +68,6 @@ a:not([class]) {
 
 /* Remove animations for people who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {

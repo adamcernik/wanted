@@ -1,21 +1,21 @@
 :root {
     /* Dark Color Scheme */
-    --primary: #0F1521; /* Dark Midnight */
-    --secondary: #7D0F1E; /* Deep Crimson */
-    --accent-gold: #B8860B; /* Dark Gold */
-    --accent-slate: #455A64; /* Deep Slate */
-    --dark-bg: #1E1E1E; /* Dark Grey */
+    --primary: #0f1521; /* Dark Midnight */
+    --secondary: #7d0f1e; /* Deep Crimson */
+    --accent-gold: #b8860b; /* Dark Gold */
+    --accent-slate: #455a64; /* Deep Slate */
+    --dark-bg: #1e1e1e; /* Dark Grey */
     --dark-tile: #262626; /* Slightly lighter than background */
     --border-color: #333333; /* Dividers & subtle elements */
-    --text-color: #E0E0E0; /* Light grey for body text */
-    --heading-color: #FFFFFF; /* White for headings */
-    
+    --text-color: #e0e0e0; /* Light grey for body text */
+    --heading-color: #ffffff; /* White for headings */
+
     /* Font variables */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Raleway', sans-serif;
-    
+
     /* Keep other values unchanged */
-    --background: #F5F5F7;
+    --background: #f5f5f7;
     --light-tile: #2c4054;
     --gradient-dark: linear-gradient(to bottom, #111922 0%, #1a2735 100%);
     --gradient-tile: linear-gradient(135deg, var(--primary) 0%, #233446 100%);
@@ -34,7 +34,7 @@ body {
     color: var(--text-color);
     min-height: 100vh;
     padding: 2rem;
-    background-image: 
+    background-image:
         radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05), transparent 70%),
         radial-gradient(circle at 0% 50%, rgba(26, 42, 58, 0.1), transparent 50%),
         var(--gradient-dark);
@@ -50,7 +50,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.01em;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, var(--heading-color), #B8B8B8);
+    background: linear-gradient(90deg, var(--heading-color), #b8b8b8);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,7 +71,10 @@ body {
 }
 
 /* Add scroll margin to target elements */
-#who-we-are, #service-01, #movie-grid, #lukas-contact {
+#who-we-are,
+#service-01,
+#movie-grid,
+#lukas-contact {
     scroll-margin-top: 20px;
 }
 
@@ -88,19 +91,25 @@ html.mobile-menu-open body {
 
 @media (max-width: 1024px) {
     /* Adjust scroll margin for medium screens */
-    #who-we-are, #service-01, #movie-grid, #lukas-contact {
+    #who-we-are,
+    #service-01,
+    #movie-grid,
+    #lukas-contact {
         scroll-margin-top: 30px;
     }
 }
 
 @media (max-width: 768px) {
     /* Adjust scroll margin for small screens */
-    #who-we-are, #service-01, #movie-grid, #lukas-contact {
+    #who-we-are,
+    #service-01,
+    #movie-grid,
+    #lukas-contact {
         scroll-margin-top: 40px;
     }
-    
+
     body {
         padding: 1rem;
         padding-top: 120px;
     }
-} 
+}

@@ -16,7 +16,7 @@
 }
 
 /* Add spacing between multiple bento-grid sections */
-.bento-grid+.bento-grid {
+.bento-grid + .bento-grid {
     margin-top: var(--grid-gap);
 }
 
@@ -65,7 +65,7 @@
    ============================================ */
 
 .tile.gradient {
-    background: linear-gradient(135deg, #0F1521 0%, #233446 100%);
+    background: linear-gradient(135deg, #0f1521 0%, #233446 100%);
 }
 
 .tile.light {
@@ -144,14 +144,16 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 1.5rem;
-    background: linear-gradient(to top,
-            rgba(26, 42, 58, 1) 0%,
-            rgba(26, 42, 58, 0.95) 15%,
-            rgba(26, 42, 58, 0.85) 30%,
-            rgba(26, 42, 58, 0.7) 50%,
-            rgba(26, 42, 58, 0.4) 70%,
-            rgba(26, 42, 58, 0.2) 85%,
-            rgba(26, 42, 58, 0) 100%);
+    background: linear-gradient(
+        to top,
+        rgba(26, 42, 58, 1) 0%,
+        rgba(26, 42, 58, 0.95) 15%,
+        rgba(26, 42, 58, 0.85) 30%,
+        rgba(26, 42, 58, 0.7) 50%,
+        rgba(26, 42, 58, 0.4) 70%,
+        rgba(26, 42, 58, 0.2) 85%,
+        rgba(26, 42, 58, 0) 100%
+    );
 }
 
 .content-overlay::before {
@@ -161,9 +163,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg,
-            rgba(212, 175, 55, 0.08) 0%,
-            rgba(26, 42, 58, 0.08) 100%);
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.08) 0%, rgba(26, 42, 58, 0.08) 100%);
     pointer-events: none;
 }
 
@@ -302,7 +302,6 @@
 }
 
 @media (max-width: 1024px) {
-
     #who-we-are,
     #service-01,
     #movie-grid,
@@ -313,7 +312,6 @@
 }
 
 @media (max-width: 768px) {
-
     #who-we-are,
     #service-01,
     #movie-grid,

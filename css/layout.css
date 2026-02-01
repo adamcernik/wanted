@@ -34,8 +34,9 @@
 /* Apply hover effects only to tiles that trigger modals */
 .tile.service-tile:hover,
 .tile[data-modal]:hover {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-               0 16px 48px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 16px 48px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
     cursor: pointer;
 }
@@ -117,7 +118,8 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 24px;
-    background: linear-gradient(to top, 
+    background: linear-gradient(
+        to top,
         rgba(26, 42, 58, 1) 0%,
         rgba(26, 42, 58, 0.95) 15%,
         rgba(26, 42, 58, 0.85) 30%,
@@ -139,7 +141,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: linear-gradient(to top, 
+    background: linear-gradient(
+        to top,
         rgba(26, 42, 58, 1) 0%,
         rgba(26, 42, 58, 0.95) 15%,
         rgba(26, 42, 58, 0.85) 30%,
@@ -158,14 +161,14 @@
         min-height: 100%;
         justify-content: flex-end;
     }
-    
+
     /* Show services scroll container on mobile */
     .services-scroll-container {
         display: none !important;
         width: 100%;
         margin: 0 0 1.5rem 0;
     }
-    
+
     /* Hide desktop service tiles on mobile */
     .bento-grid .service-tile:not(.mobile-service) {
         display: none;
@@ -183,10 +186,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, 
-        rgba(212, 175, 55, 0.08) 0%,
-        rgba(26, 42, 58, 0.08) 100%
-    );
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.08) 0%, rgba(26, 42, 58, 0.08) 100%);
     pointer-events: none;
 }
 
@@ -223,7 +223,7 @@
     }
 
     /* Adjust contact tiles to fit properly in tablet view */
-    .contact-person-tile, 
+    .contact-person-tile,
     .company-contact-tile,
     .warehouse-contact-tile {
         min-height: 180px;
@@ -257,7 +257,7 @@
     .content-overlay {
         padding: 2.5rem 2rem 2rem;
     }
-    
+
     .content-overlay .headline {
         font-size: 1.75rem;
     }
@@ -293,31 +293,31 @@
         padding: 0;
         margin: 0 auto;
     }
-    
+
     /* Adjust tile sizes for tablet */
     .big {
         grid-column: span 2;
         grid-row: span 1;
         min-height: 300px;
     }
-    
+
     /* Special handling for movie grid on tablet */
     #movie-grid.tile.big {
         min-height: 400px;
     }
-    
+
     .rect {
         grid-column: span 2;
     }
-    
+
     .wide {
         grid-column: span 2;
     }
-    
+
     .wide-full {
         grid-column: span 2;
     }
-    
+
     /* Make sure the partners grid works in tablet view */
     .partners-grid {
         grid-template-columns: repeat(6, 1fr);
@@ -336,24 +336,24 @@
         padding: 0;
         margin: 0 auto;
     }
-    
+
     /* Fix for any specific problematic tiles */
     .tile.quote-tile,
     .tile.service-tile {
         min-height: 200px;
         grid-column: span 1;
     }
-    
+
     /* Ensure proper layout for the resource tile */
     .resources-tile {
         grid-column: span 2;
     }
-    
+
     /* Fix for any overflowing content */
     .tile {
         overflow: hidden;
     }
-    
+
     /* Fix partners tile in tablet view */
     #partners.tile.wide-full {
         border-radius: 0 !important;
@@ -375,17 +375,19 @@
         gap: 1rem;
         padding: 0 10px;
     }
-    
-    .big, .rect, .wide {
+
+    .big,
+    .rect,
+    .wide {
         grid-column: 1;
     }
-    
+
     /* Make movie grid higher on single column */
     #movie-grid.tile.big {
         min-height: 650px;
         max-height: none;
     }
-    
+
     .movie-grid {
         min-height: 500px;
     }
@@ -428,7 +430,7 @@
         padding: 0;
         margin: 0 auto;
     }
-    
+
     /* Standard tile padding */
     .tile {
         width: 100%;
@@ -437,16 +439,16 @@
         border-radius: 8px;
         padding: 16px;
     }
-    
+
     .tile.wide {
         width: 100%;
     }
-    
+
     .tile.big {
         width: 100%;
         max-height: unset;
     }
-    
+
     /* Modify Who We Are tile for mobile */
     #who-we-are {
         min-height: 500px;
@@ -455,17 +457,17 @@
         padding: 0;
         border-radius: 8px;
     }
-    
+
     /* What We Do tile - exact padding from image */
     .what-we-do-tile {
         padding: 16px;
     }
-    
+
     /* Fix for Content Overlays */
     .content-overlay {
         padding: 16px;
     }
-    
+
     /* Who We Are overlay padding */
     #who-we-are .content-overlay {
         position: absolute;
@@ -473,14 +475,15 @@
         left: 0;
         right: 0;
         padding: 20px;
-        background: linear-gradient(to top,
+        background: linear-gradient(
+            to top,
             rgba(26, 42, 58, 1) 0%,
             rgba(26, 42, 58, 0.9) 60%,
             rgba(26, 42, 58, 0.6) 80%,
             rgba(26, 42, 58, 0) 100%
         );
     }
-    
+
     #who-we-are img {
         width: 100%;
         height: auto;
@@ -489,15 +492,15 @@
         border-radius: 8px 8px 0 0;
         margin-bottom: 16px;
     }
-    
+
     #who-we-are.tile.big.full-image {
         border-radius: 8px;
     }
-    
+
     .map-tile {
         height: 300px;
     }
-    
+
     /* Make sure full images have rounded corners on mobile */
     .full-image img {
         border-radius: 8px;
@@ -508,7 +511,7 @@
         margin: 0 0 0.5rem 0;
         padding: 0;
     }
-    
+
     #who-we-are .content-overlay .text {
         font-size: 1rem;
         line-height: 1.5;
@@ -522,34 +525,34 @@
         padding: 0;
         margin: 0 auto;
     }
-    
+
     /* Standard tile padding */
     .tile {
         padding: 16px;
     }
-    
+
     /* Content overlay padding */
     .content-overlay {
         padding: 20px;
         height: 100%;
         min-height: 100%;
     }
-    
+
     /* Further adjust Who We Are tile for smaller screens */
     #who-we-are {
         min-height: 500px;
         max-height: 500px;
     }
-    
+
     #who-we-are img {
         margin-bottom: 16px;
     }
-    
+
     /* What We Do tile */
     .what-we-do-tile {
         padding: 20px;
     }
-    
+
     /* Who We Are overlay */
     #who-we-are .content-overlay {
         position: absolute;
@@ -558,13 +561,13 @@
         right: 0;
         padding: 20px;
     }
-    
+
     #who-we-are .content-overlay .headline {
         font-size: 1.5rem;
         margin: 0 0 0.3rem 0;
         padding: 0;
     }
-    
+
     #who-we-are .content-overlay .text {
         font-size: 0.9rem;
         line-height: 1.4;
@@ -591,7 +594,7 @@
         font-size: 2rem;
         margin-bottom: 0.6rem;
     }
-    
+
     #who-we-are .content-overlay .text {
         font-size: 1rem;
         line-height: 1.5;
@@ -702,4 +705,4 @@
     max-height: none !important;
     overflow: visible !important;
     width: 100% !important;
-} 
+}

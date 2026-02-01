@@ -22,7 +22,7 @@ export class NaturalScroll {
             overscrollResistance: 0.3,
             overscrollReturnDelay: 500,
             customSnapBehavior: null,
-            ...options
+            ...options,
         };
 
         this.state = {
@@ -39,7 +39,7 @@ export class NaturalScroll {
             scrollDistanceTraveled: 0,
             isOverscrolling: false,
             overscrollAmount: 0,
-            overscrollReturnTimeoutId: null
+            overscrollReturnTimeoutId: null,
         };
 
         this.init();
@@ -47,8 +47,12 @@ export class NaturalScroll {
 
     init() {
         // Touch events
-        this.container.addEventListener('touchstart', this.onTouchStart.bind(this), { passive: true });
-        this.container.addEventListener('touchmove', this.onTouchMove.bind(this), { passive: false });
+        this.container.addEventListener('touchstart', this.onTouchStart.bind(this), {
+            passive: true,
+        });
+        this.container.addEventListener('touchmove', this.onTouchMove.bind(this), {
+            passive: false,
+        });
         this.container.addEventListener('touchend', this.onTouchEnd.bind(this), { passive: true });
 
         // Mouse events (for desktop)
@@ -116,9 +120,14 @@ export class NaturalScroll {
             e.preventDefault();
 
             const isAtLeftEdge = this.container.scrollLeft <= 0;
-            const isAtRightEdge = this.container.scrollLeft + this.container.offsetWidth >= this.container.scrollWidth;
+            const isAtRightEdge =
+                this.container.scrollLeft + this.container.offsetWidth >=
+                this.container.scrollWidth;
 
-            if (this.config.overscrollEnabled && ((isAtLeftEdge && deltaX < 0) || (isAtRightEdge && deltaX > 0))) {
+            if (
+                this.config.overscrollEnabled &&
+                ((isAtLeftEdge && deltaX < 0) || (isAtRightEdge && deltaX > 0))
+            ) {
                 this.handleOverscroll(deltaX);
             } else {
                 this.handleNormalScroll(deltaX, elapsed);
@@ -196,9 +205,13 @@ export class NaturalScroll {
         }
 
         const isAtLeftEdge = this.container.scrollLeft <= 0;
-        const isAtRightEdge = this.container.scrollLeft + this.container.offsetWidth >= this.container.scrollWidth;
+        const isAtRightEdge =
+            this.container.scrollLeft + this.container.offsetWidth >= this.container.scrollWidth;
 
-        if (this.config.overscrollEnabled && ((isAtLeftEdge && deltaX < 0) || (isAtRightEdge && deltaX > 0))) {
+        if (
+            this.config.overscrollEnabled &&
+            ((isAtLeftEdge && deltaX < 0) || (isAtRightEdge && deltaX > 0))
+        ) {
             this.handleOverscroll(deltaX);
         } else {
             this.handleNormalScroll(deltaX, elapsed);
@@ -234,9 +247,14 @@ export class NaturalScroll {
             this.clearOverscrollReturn();
 
             const isAtLeftEdge = this.container.scrollLeft <= 0;
-            const isAtRightEdge = this.container.scrollLeft + this.container.offsetWidth >= this.container.scrollWidth;
+            const isAtRightEdge =
+                this.container.scrollLeft + this.container.offsetWidth >=
+                this.container.scrollWidth;
 
-            if (this.config.overscrollEnabled && ((isAtLeftEdge && e.deltaX < 0) || (isAtRightEdge && e.deltaX > 0))) {
+            if (
+                this.config.overscrollEnabled &&
+                ((isAtLeftEdge && e.deltaX < 0) || (isAtRightEdge && e.deltaX > 0))
+            ) {
                 this.handleOverscrollWheel(e.deltaX);
             } else {
                 const wheelDelta = e.deltaX || e.deltaY;
@@ -255,14 +273,16 @@ export class NaturalScroll {
     // Scroll handling
     handleNormalScroll(deltaX, elapsed) {
         this.state.isOverscrolling = false;
-        
+
         const isTimeline = this.container.classList.contains('timeline-scroll-container');
-        const resistedDeltaX = deltaX * (isTimeline ? this.config.resistance * 1.8 : this.config.resistance);
+        const resistedDeltaX =
+            deltaX * (isTimeline ? this.config.resistance * 1.8 : this.config.resistance);
         this.container.scrollLeft += resistedDeltaX;
 
         if (elapsed > 0) {
             const velocityWeight = isTimeline ? 0.4 : 0.2;
-            this.state.velocityX = (1 - velocityWeight) * this.state.velocityX + velocityWeight * (deltaX / elapsed);
+            this.state.velocityX =
+                (1 - velocityWeight) * this.state.velocityX + velocityWeight * (deltaX / elapsed);
         }
     }
 
@@ -285,7 +305,7 @@ export class NaturalScroll {
 
     handleOverscrollWheel(deltaX) {
         this.state.overscrollAmount += deltaX * -0.1;
-        
+
         const maxOverscroll = this.container.offsetWidth * 0.1;
         this.state.overscrollAmount = Math.max(
             Math.min(this.state.overscrollAmount, maxOverscroll),
@@ -295,7 +315,7 @@ export class NaturalScroll {
         const track = this.getTrack();
         if (track) {
             track.style.transform = `translateX(${this.state.overscrollAmount}px)`;
-            
+
             clearTimeout(this.state.overscrollReturnTimeoutId);
             this.state.overscrollReturnTimeoutId = setTimeout(() => {
                 this.returnFromOverscroll();
@@ -355,8 +375,8 @@ export class NaturalScroll {
 
         items.forEach(item => {
             const itemLeft = item.offsetLeft;
-            const itemCenter = itemLeft + (item.offsetWidth / 2);
-            const distanceToCenter = Math.abs(scrollPosition + (containerWidth / 2) - itemCenter);
+            const itemCenter = itemLeft + item.offsetWidth / 2;
+            const distanceToCenter = Math.abs(scrollPosition + containerWidth / 2 - itemCenter);
 
             if (distanceToCenter < closestDistance) {
                 closestDistance = distanceToCenter;
@@ -365,10 +385,11 @@ export class NaturalScroll {
         });
 
         if (closestItem) {
-            const targetPosition = closestItem.offsetLeft - (containerWidth - closestItem.offsetWidth) / 2;
+            const targetPosition =
+                closestItem.offsetLeft - (containerWidth - closestItem.offsetWidth) / 2;
             this.container.scrollTo({
                 left: targetPosition,
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         }
     }
@@ -382,7 +403,7 @@ export class NaturalScroll {
         if (immediate) {
             track.style.transition = 'none';
             track.style.transform = 'translateX(0)';
-            this.state.overscrollAmount =0;
+            this.state.overscrollAmount = 0;
             return;
         }
 
@@ -398,8 +419,10 @@ export class NaturalScroll {
     scheduleOverscrollReturn() {
         const isMobile = 'ontouchstart' in window;
         const maxDelay = isMobile ? 250 : 150;
-        const delay = Math.abs(this.state.overscrollAmount) > this.container.offsetWidth * 0.1 ?
-                      Math.min(Math.abs(this.state.overscrollAmount), maxDelay) : 0;
+        const delay =
+            Math.abs(this.state.overscrollAmount) > this.container.offsetWidth * 0.1
+                ? Math.min(Math.abs(this.state.overscrollAmount), maxDelay)
+                : 0;
 
         this.state.overscrollReturnTimeoutId = setTimeout(() => {
             this.returnFromOverscroll();

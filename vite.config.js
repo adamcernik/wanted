@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     server: {
         port: 8000,
-        open: true
+        open: true,
     },
     build: {
         outDir: 'dist',
@@ -12,26 +12,26 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 manualChunks: {
-                    'i18n': ['./js/i18n.js'],
-                    'scroll': ['./js/modules/scroll.js']
-                }
-            }
-        }
+                    i18n: ['./js/i18n.js'],
+                    scroll: ['./js/modules/scroll.js'],
+                },
+            },
+        },
     },
     css: {
         devSourcemap: true,
         preprocessorOptions: {
             css: {
-                charset: false
-            }
-        }
+                charset: false,
+            },
+        },
     },
     resolve: {
         alias: {
-            '@css': '/css'
-        }
+            '@css': '/css',
+        },
     },
     optimizeDeps: {
-        include: []
-    }
+        include: [],
+    },
 });

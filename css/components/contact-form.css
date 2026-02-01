@@ -19,7 +19,9 @@
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: 1rem;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -49,7 +51,9 @@
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     margin-top: 0.5rem;
     align-self: flex-start;
 }
@@ -63,20 +67,20 @@
     .contact-form {
         gap: 1rem;
     }
-    
+
     .contact-form input,
     .contact-form textarea {
         padding: 0.875rem;
         font-size: 0.95rem;
     }
-    
+
     .contact-form textarea {
         min-height: 120px;
     }
-    
+
     .submit-btn {
         padding: 0.875rem 1.75rem;
         font-size: 0.95rem;
         width: 100%;
     }
-} 
+}

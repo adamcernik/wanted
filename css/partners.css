@@ -32,7 +32,7 @@
 /* Grid layout for partners logos */
 .partners-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     gap: 25px;
     /* Increased spacing between logos */
     align-items: center;
@@ -71,7 +71,9 @@
     filter: brightness(0) invert(1);
     opacity: 0.4;
     /* Reduced opacity to make logos lighter */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
 .partner-logo:hover {
@@ -88,10 +90,9 @@
 
 /* Media Queries */
 @media (max-width: 1024px) {
-
     /* 2 rows on tablet */
     .partners-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         gap: 30px 30px;
         /* vertical horizontal - Increased vertical gap between rows */
         margin: 0;
@@ -113,10 +114,9 @@
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
-
     /* Specifically ensure 2-row display on smaller tablets */
     .partners-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         gap: 40px 25px;
         /* vertical horizontal - Even more vertical spacing */
         margin: 0;
@@ -141,7 +141,7 @@
 
     /* 3 rows on smaller tablets */
     .partners-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 35px 22px;
         /* vertical horizontal - More vertical spacing */
         margin: 0;
@@ -161,7 +161,7 @@
 
     /* 4 rows on mobile */
     .partners-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 30px 20px;
         /* vertical horizontal - More vertical spacing for small mobile */
         margin: 0;

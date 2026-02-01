@@ -8,19 +8,20 @@ I've completely refactored your WANTED film production website with a focus on *
 
 ## 📊 Results At A Glance
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| **main.js** | 1,741 lines | ~250 lines | **85% smaller** |
-| **CSS Organization** | 3 huge files | 15+ focused modules | **Much cleaner** |
-| **Breakpoints** | 7 inconsistent | 4 standardized | **Simplified** |
-| **Build Process** | None | Vite + ESLint + Prettier | **Professional** |
-| **Maintainability** | Difficult | Easy | **Game changer** |
+| Metric               | Before         | After                    | Improvement      |
+| -------------------- | -------------- | ------------------------ | ---------------- |
+| **main.js**          | 1,741 lines    | ~250 lines               | **85% smaller**  |
+| **CSS Organization** | 3 huge files   | 15+ focused modules      | **Much cleaner** |
+| **Breakpoints**      | 7 inconsistent | 4 standardized           | **Simplified**   |
+| **Build Process**    | None           | Vite + ESLint + Prettier | **Professional** |
+| **Maintainability**  | Difficult      | Easy                     | **Game changer** |
 
 ---
 
 ## 🗂 New File Structure
 
 ### **CSS - Before**
+
 ```
 css/
 ├── main.css (1072 lines!) ← Everything mixed together
@@ -30,6 +31,7 @@ css/
 ```
 
 ### **CSS - After** ✨
+
 ```
 css/
 ├── core/              # Foundation (NEW!)
@@ -44,11 +46,12 @@ css/
 ```
 
 ### **JavaScript - Before**
+
 ```
 js/
 ├── main.js (1741 lines!) ← Everything in one file
 │   - Project slider
-│   - Contact form  
+│   - Contact form
 │   - Timeline
 │   - Scrolling (600+ lines!)
 │   - Navigation
@@ -58,6 +61,7 @@ js/
 ```
 
 ### **JavaScript - After** ✨
+
 ```
 js/
 ├── core/              # Foundation (NEW!)
@@ -79,38 +83,41 @@ js/
 ### **1. CSS Architecture** 🎨
 
 **Before:**
+
 - Huge monolithic files (1500+ lines)
 - Duplicate media queries everywhere
 - Hard to find styles
 - Conflicting breakpoints
 
 **After:**
+
 - ✅ Modular structure by purpose
 - ✅ Consolidated breakpoints (mobile-first)
 - ✅ Comprehensive CSS variables
 - ✅ Easy to navigate and maintain
 
 **New Design Token System:**
+
 ```css
 /* All organized in css/core/variables.css */
 :root {
     /* Colors */
-    --color-primary: #0F1521;
-    --color-accent-gold: #B8860B;
-    
+    --color-primary: #0f1521;
+    --color-accent-gold: #b8860b;
+
     /* Typography */
     --text-base: 1rem;
     --text-xl: 1.25rem;
     --font-heading: 'Montserrat', sans-serif;
-    
+
     /* Spacing */
     --space-md: 1rem;
     --space-xl: 2rem;
-    
+
     /* Transitions */
     --transition-base: 200ms;
     --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     /* And much more! */
 }
 ```
@@ -118,12 +125,14 @@ js/
 ### **2. JavaScript Modularization** 💻
 
 **Before:**
+
 - One massive file (1741 lines)
 - Everything mixed together
 - Hard to test
 - Difficult to understand
 
 **After:**
+
 ```javascript
 // Clean, modular imports
 import { initProjectSlider } from './modules/slider.js';
@@ -139,6 +148,7 @@ import { NaturalScroll } from './modules/scroll.js';
 ```
 
 **The 600-line Scroll Function:**
+
 ```javascript
 // Before: Buried in main.js
 function setupNaturalScrolling(container, options) {
@@ -154,12 +164,14 @@ scroll.destroy(); // When done
 ### **3. Modern Build Process** ⚙️
 
 **New Tools:**
+
 - ✅ **Vite**: Lightning-fast dev server with hot reload
 - ✅ **ESLint**: Catches errors and enforces standards
 - ✅ **Prettier**: Auto-formats your code
 - ✅ **npm scripts**: Common tasks made easy
 
 **Commands:**
+
 ```bash
 npm install        # Install dependencies
 npm run dev        # Start development server
@@ -171,6 +183,7 @@ npm run format     # Format all files
 ### **4. Comprehensive Documentation** 📚
 
 **Created:**
+
 - ✅ **README.md**: Full project guide
 - ✅ **REFACTORING_SUMMARY.md**: Detailed technical analysis
 - ✅ **THIS_IS_WHAT_I_DID.md**: Quick summary (this file!)
@@ -182,7 +195,9 @@ npm run format     # Format all files
 ## 🚀 How To Use
 
 ### **Option 1: Keep Using The Old Code**
+
 Everything still works as before! Old files are preserved:
+
 - `css/main.css`
 - `js/main.js`
 - All existing functionality
@@ -190,30 +205,34 @@ Everything still works as before! Old files are preserved:
 ### **Option 2: Switch To New Modular Code**
 
 **1. Install dependencies:**
+
 ```bash
 cd /Users/jiriadamcernik/Dev/wanted
 npm install
 ```
 
 **2. Start development server:**
+
 ```bash
 npm run dev
 ```
 
 **3. Update `index.html`:**
+
 ```html
 <!-- Replace old imports -->
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css" />
 <script src="js/main.js"></script>
 
 <!-- With new modular imports -->
-<link rel="stylesheet" href="css/main-new.css">
+<link rel="stylesheet" href="css/main-new.css" />
 <script type="module" src="js/main-new.js"></script>
 ```
 
 **4. Test everything works**
 
 **5. Build for production:**
+
 ```bash
 npm run build
 ```
@@ -223,6 +242,7 @@ npm run build
 ## 📁 Files Created
 
 ### **CSS Files (5 new files)**
+
 - `css/core/reset.css` - Modern CSS reset
 - `css/core/variables.css` - Design tokens
 - `css/core/typography.css` - Typography system
@@ -230,6 +250,7 @@ npm run build
 - `css/main-new.css` - New main stylesheet
 
 ### **JavaScript Files (6 new files)**
+
 - `js/core/config.js` - Configuration
 - `js/core/utils.js` - Utility functions
 - `js/modules/scroll.js` - Scrolling (ES6 class)
@@ -239,6 +260,7 @@ npm run build
 - `js/main-new.js` - Main entry point
 
 ### **Build & Config Files (5 new files)**
+
 - `package.json` - Project config
 - `vite.config.js` - Vite config
 - `.eslintrc.json` - Linting rules
@@ -246,6 +268,7 @@ npm run build
 - `.gitignore` - Git ignore patterns
 
 ### **Documentation (3 new files)**
+
 - `README.md` - Project documentation
 - `REFACTORING_SUMMARY.md` - Technical details
 - `THIS_IS_WHAT_I_DID.md` - This summary!
@@ -255,6 +278,7 @@ npm run build
 ## 💡 What Makes This Better?
 
 ### **For Development**
+
 1. **Find things instantly**: Logical file organization
 2. **Add features easily**: Modular structure
 3. **Fix bugs quickly**: Small, focused files
@@ -262,6 +286,7 @@ npm run build
 5. **Fast feedback**: Vite hot reload
 
 ### **For Maintenance**
+
 1. **Understand code**: Clear separation
 2. **Modify safely**: Isolated modules
 3. **Prevent bugs**: ESLint catches issues
@@ -269,6 +294,7 @@ npm run build
 5. **Document changes**: Clean Git history
 
 ### **For Performance** (Potential)
+
 1. **Code splitting**: Load only what's needed
 2. **Tree shaking**: Remove unused code
 3. **Minification**: Smaller files
@@ -280,6 +306,7 @@ npm run build
 ## 🎯 Design Stays The Same!
 
 **Important**: All the visual design stays exactly the same!
+
 - ✅ Same bento grid layout
 - ✅ Same colors and typography
 - ✅ Same animations
@@ -294,12 +321,14 @@ npm run build
 ### **Adding a New Feature**
 
 **Before:**
+
 1. Open main.js (1741 lines)
 2. Scroll forever to find the right place
 3. Add code, hope it doesn't break anything
 4. Test manually, fingers crossed
 
 **After:**
+
 1. Create new module in `js/modules/`
 2. Write focused, testable code
 3. Import in `main-new.js`
@@ -308,6 +337,7 @@ npm run build
 ### **Fixing a Style Issue**
 
 **Before:**
+
 1. Open components.css (1571 lines)
 2. Use cmd+F to search
 3. Find multiple definitions
@@ -315,6 +345,7 @@ npm run build
 5. Debug media query conflicts
 
 **After:**
+
 1. Know exactly which file to open
 2. Find the component instantly
 3. See all related styles together
@@ -323,11 +354,13 @@ npm run build
 ### **Onboarding a New Developer**
 
 **Before:**
+
 - "Uh, good luck finding your way around..."
 - Takes 4-6 hours to understand structure
 - Lots of trial and error
 
 **After:**
+
 - "Check the README, structure is clear!"
 - Takes 1-2 hours to get oriented
 - Logical organization makes sense
@@ -359,6 +392,7 @@ New Modular Files:
 ## 🤔 Should You Switch?
 
 ### **Reasons TO Switch:**
+
 - ✅ Planning to add more features
 - ✅ Want easier maintenance
 - ✅ Building a team
@@ -366,6 +400,7 @@ New Modular Files:
 - ✅ Need better code quality
 
 ### **Reasons to WAIT:**
+
 - ⏸ Site is 100% working right now
 - ⏸ No plans for changes
 - ⏸ Want to test thoroughly first
@@ -378,6 +413,7 @@ New Modular Files:
 ## 🧪 Testing Checklist
 
 Before switching to production:
+
 - [ ] All pages load correctly
 - [ ] Project slider works
 - [ ] Mobile navigation works
@@ -393,15 +429,18 @@ Before switching to production:
 ## 🛠 Troubleshooting
 
 **"Module not found" errors?**
+
 - Make sure you're using `type="module"` in script tag
 - Check file paths are correct
 - Run `npm install` first
 
 **"Vite command not found"?**
+
 - Run `npm install` in project directory
 - Use `npx vite` if local install doesn't work
 
 **"Site looks broken"?**
+
 - Check browser console for errors
 - Verify CSS imports in main-new.css
 - Make sure all module imports are correct
@@ -411,11 +450,13 @@ Before switching to production:
 ## 📞 Need Help?
 
 Check these files:
+
 1. **README.md** - Full documentation
 2. **REFACTORING_SUMMARY.md** - Technical details
 3. **package.json** - See available commands
 
 Run:
+
 ```bash
 npm run dev    # See errors in terminal
 npm run lint   # Check code quality
@@ -438,12 +479,14 @@ npm run lint   # Check code quality
 ## 🎉 Summary
 
 **What Changed**:
+
 - Code organization (massively improved!)
 - Developer experience (professional!)
 - Maintainability (excellent!)
 - Build tooling (modern!)
 
 **What Stayed The Same**:
+
 - Visual design (identical!)
 - User experience (unchanged!)
 - Functionality (100% working!)

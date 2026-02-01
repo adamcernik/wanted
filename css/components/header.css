@@ -210,8 +210,9 @@
     height: 2px;
     margin: 4px 0;
     background: var(--text-color);
-    transition: transform 0.3s ease,
-               opacity 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
     transform-origin: center;
 }
 
@@ -266,24 +267,24 @@
         padding: 1rem;
         height: 104px;
     }
-    
+
     .header.scrolled {
         padding: 0.75rem 1rem;
         height: 80px;
     }
-    
+
     .logo {
         height: 67.2px; /* 96px * 0.7 = 67.2px (30% smaller) */
     }
-    
+
     .desktop-nav {
         display: none;
     }
-    
+
     .mobile-toggle {
         display: flex;
     }
-    
+
     .mobile-nav.active {
         display: flex;
         max-height: 100vh;
@@ -356,22 +357,22 @@
         border-radius: 0;
         background: none;
     }
-    
+
     .mobile-nav {
         padding: 1rem 1rem 1.5rem;
     }
-    
+
     .mobile-nav-content {
         padding-top: 0;
     }
-    
+
     .mobile-nav .language-select {
         position: relative;
         margin-bottom: 0.5rem;
     }
-    
+
     .mobile-nav .language-current {
         font-size: 0.9rem;
         padding: 0.3rem 0.5rem;
     }
-} 
+}

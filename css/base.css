@@ -29,7 +29,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.01em;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, var(--heading-color), #B8B8B8);
+    background: linear-gradient(90deg, var(--heading-color), #b8b8b8);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,7 +63,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-
     #who-we-are,
     #service-01,
     #movie-grid,
@@ -83,7 +82,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     #who-we-are,
     #service-01,
     #movie-grid,

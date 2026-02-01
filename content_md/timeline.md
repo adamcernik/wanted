@@ -138,20 +138,20 @@ PVA Auto Show Praha - Renault
 The Crow / Yellow Flower
 The Wheel of Time/Season 2
 Circle
-Renault Alpine Store/Interior
-Renault Store Rebranding/Interior
-Renault E-Tech/PVA E-Salon Prague
-Renault&Dacia Flags Rebranding/Exterior
-Dacia New Identity/Pilot Store/Interior
+Renault Alpine Store / Interior
+Renault Store Rebranding / Interior
+Renault E-Tech / PVA E-Salon Prague
+Renault&Dacia Flags / Exterior
+Dacia New Identity / Pilot Store / Interior
 Dacia Evolution Showroom
 
 **2023**
 The Wheel of Time / Season 3 / Czechia / Slovenia
 The Crow / Yellow Flower
 Dacia New Visual Identity / New Project
-Renault Store / Rebranding
-Renault & Dacia Flags Rebranding / Exterior
-Renault Care Service / Rebranding
+Renault Store Rebranding
+Renault & Dacia Flags / Exterior
+Renault Care Service
 MG Since 1924 / New Graphics Expo Frame
 Mitsubishi Motors / Drive Your Ambition / New Graphics Expo Frame
 
@@ -159,19 +159,16 @@ Mitsubishi Motors / Drive Your Ambition / New Graphics Expo Frame
 The Wheel of Time / Season 3 / South Africa
 Dacia New Visual Identity / Czechia / Slovakia / Hungary / Sweden / Denmark / Poland / Estonia / Latvia / Lithuania
 Dacia Duster / Konvence / CZ
-Renault Store / New One / Rebranding
+Renault Store / New One
 Renault Alpine Store
 Renault & Dacia New Graphics / Flags / City Light View / Banners
-Renault Care Service / Rebranding
+Renault Care Service
 
 **2025**
-Kidnapping of President  FIN/CZ/EST/NL
-Gerta Schnirich D/CZ
+Kidnapping of President FIN/CZ/EST/NL
+Gerta Schnirch D/CZ
 FBI International season 4 CZ
-Renault New'R / Rebranding
-Dacia New Visual Identity / Rebranding
+Renault New'R
+Dacia New Visual Identity
 Renault & Dacia / Konvence / Car of the Year 2025
-Age of Innocence
-
-**2026**
 Age of Innocence

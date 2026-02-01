@@ -43,9 +43,15 @@ export class ProjectSlider {
 
         // Touch events for mobile swiping
         if (this.slidesWrapper) {
-            this.slidesWrapper.addEventListener('touchstart', this.handleTouchStart.bind(this), { passive: true });
-            this.slidesWrapper.addEventListener('touchmove', this.handleTouchMove.bind(this), { passive: true });
-            this.slidesWrapper.addEventListener('touchend', this.handleTouchEnd.bind(this), { passive: true });
+            this.slidesWrapper.addEventListener('touchstart', this.handleTouchStart.bind(this), {
+                passive: true,
+            });
+            this.slidesWrapper.addEventListener('touchmove', this.handleTouchMove.bind(this), {
+                passive: true,
+            });
+            this.slidesWrapper.addEventListener('touchend', this.handleTouchEnd.bind(this), {
+                passive: true,
+            });
         }
 
         // Mouse enter/leave to pause/resume autoplay
@@ -126,7 +132,8 @@ export class ProjectSlider {
 
         if (diff > threshold) {
             // Swiped right, go to previous slide
-            const prevIndex = (this.currentIndex - 1 + this.backgrounds.length) % this.backgrounds.length;
+            const prevIndex =
+                (this.currentIndex - 1 + this.backgrounds.length) % this.backgrounds.length;
             this.goToSlide(prevIndex);
             this.resetAutoplay();
         } else if (diff < -threshold) {

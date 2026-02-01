@@ -1,7 +1,7 @@
 /**
  * WANTED s.f.o. - Main Application Entry Point
  * Film Production Support & Services
- * 
+ *
  * This is the new modular version - much cleaner than the original 1741 lines!
  */
 
@@ -119,7 +119,7 @@ function initModals() {
                         <li>Digital design</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-02': {
             title: 'Corporate Identities',
@@ -136,7 +136,7 @@ function initModals() {
                         <li>Visual communication</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-03': {
             title: 'Furniture',
@@ -151,7 +151,7 @@ function initModals() {
                         <li>Interior solutions</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-04': {
             title: 'Production',
@@ -167,7 +167,7 @@ function initModals() {
                         <li>Resource coordination</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-05': {
             title: 'Crafts',
@@ -182,7 +182,7 @@ function initModals() {
                         <li>Unique custom pieces</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-06': {
             title: 'Film Props & Decorations',
@@ -199,7 +199,7 @@ function initModals() {
                         <li>Custom craftsmanship</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-07': {
             title: 'Logistics',
@@ -215,7 +215,7 @@ function initModals() {
                         <li>Delivery coordination</li>
                     </ul>
                 </div>
-            `
+            `,
         },
         'service-08': {
             title: 'Documentation',
@@ -231,9 +231,9 @@ function initModals() {
                         <li>Compliance documentation</li>
                     </ul>
                 </div>
-            `
+            `,
         },
-        'sponsorship': {
+        sponsorship: {
             title: 'Sponzoring',
             subtitle: '',
             image: '',
@@ -243,8 +243,8 @@ function initModals() {
                         Obsah dodá doktor Kalbis
                     </p>
                 </div>
-            `
-        }
+            `,
+        },
     };
 
     // Function to open modal
@@ -273,15 +273,17 @@ function initModals() {
                     'images/sponzoring/sponzoring11.jpeg',
                     'images/sponzoring/sponzoring12.jpeg',
                     'images/sponzoring/sponzoring09.jpeg',
-                    'images/sponzoring/sponzoring10.jpeg'
+                    'images/sponzoring/sponzoring10.jpeg',
                 ];
 
                 // Create image collage HTML for header
-                const imageCollageHTML = sponsoringImages.map((img, index) => {
-                    return `<div class="collage-item" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                const imageCollageHTML = sponsoringImages
+                    .map((img, index) => {
+                        return `<div class="collage-item" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
                         <img src="${img}" alt="Sponsoring ${index + 1}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>`;
-                }).join('');
+                    })
+                    .join('');
 
                 // Replace the modal header with the collage version
                 if (modalHeader) {
@@ -476,7 +478,6 @@ async function initTimeline() {
         setTimeout(() => {
             container.parentElement.classList.add('loaded');
         }, 1000);
-
     } catch (error) {
         console.error('Error initializing timeline:', error);
         container.innerHTML = '<p class="timeline-error">Failed to load timeline content.</p>';
@@ -521,7 +522,9 @@ function parseTimelineMarkdown(markdown) {
  * Render timeline HTML
  */
 function renderTimeline(container, timelineData) {
-    const html = timelineData.map(({ year, events }) => `
+    const html = timelineData
+        .map(
+            ({ year, events }) => `
         <div class="timeline-tile">
             <div class="timeline-year">${year}</div>
             <div class="timeline-content">
@@ -530,7 +533,9 @@ function renderTimeline(container, timelineData) {
                 </ul>
             </div>
         </div>
-    `).join('');
+    `
+        )
+        .join('');
 
     container.innerHTML = html;
 }
@@ -584,28 +589,40 @@ function initServicesScroll() {
     let scrollLeft = 0;
 
     // Basic touch handling
-    basicServicesScroll.addEventListener('touchstart', (e) => {
-        isScrolling = false;
-        startX = e.touches[0].pageX;
-        scrollLeft = basicServicesScroll.scrollLeft;
-    }, { passive: true });
+    basicServicesScroll.addEventListener(
+        'touchstart',
+        e => {
+            isScrolling = false;
+            startX = e.touches[0].pageX;
+            scrollLeft = basicServicesScroll.scrollLeft;
+        },
+        { passive: true }
+    );
 
-    basicServicesScroll.addEventListener('touchmove', (e) => {
-        const x = e.touches[0].pageX;
-        const walk = (x - startX) * 2;
-        if (Math.abs(walk) > 5) {
-            isScrolling = true;
-        }
-    }, { passive: true });
+    basicServicesScroll.addEventListener(
+        'touchmove',
+        e => {
+            const x = e.touches[0].pageX;
+            const walk = (x - startX) * 2;
+            if (Math.abs(walk) > 5) {
+                isScrolling = true;
+            }
+        },
+        { passive: true }
+    );
 
-    basicServicesScroll.addEventListener('touchend', (e) => {
-        if (isScrolling) {
-            // Mark event to prevent click
-            setTimeout(() => {
-                isScrolling = false;
-            }, 100);
-        }
-    }, { passive: true });
+    basicServicesScroll.addEventListener(
+        'touchend',
+        e => {
+            if (isScrolling) {
+                // Mark event to prevent click
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 100);
+            }
+        },
+        { passive: true }
+    );
 
     // Handle clicks on service tiles
     const tiles = basicServicesScroll.querySelectorAll('.basic-service-tile[data-target]');

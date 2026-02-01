@@ -4,21 +4,21 @@
        ============================================ */
 
     /* Primary Colors */
-    --color-primary: #0F1521;
+    --color-primary: #0f1521;
     /* Dark Midnight */
-    --color-secondary: #7D0F1E;
+    --color-secondary: #7d0f1e;
     /* Deep Crimson */
-    --color-accent-gold: #B8860B;
+    --color-accent-gold: #b8860b;
     /* Dark Gold */
     --color-accent-gold-light: #e5c14c;
     /* Light Gold */
-    --color-accent-slate: #455A64;
+    --color-accent-slate: #455a64;
     /* Deep Slate */
     --color-accent-orange: #d77d32;
     /* Orange for service overlays */
 
     /* Background Colors */
-    --color-bg-dark: #1E1E1E;
+    --color-bg-dark: #1e1e1e;
     /* Dark Grey */
     --color-bg-tile: #262626;
     /* Tile Background */
@@ -32,9 +32,9 @@
     /* Accent borders */
 
     /* Text Colors */
-    --color-text: #E0E0E0;
+    --color-text: #e0e0e0;
     /* Light grey for body text */
-    --color-text-heading: #FFFFFF;
+    --color-text-heading: #ffffff;
     /* White for headings */
     --color-text-muted: rgba(255, 255, 255, 0.7);
 
@@ -43,18 +43,26 @@
        ============================================ */
     --gradient-dark: linear-gradient(to bottom, #111922 0%, #1a2735 100%);
     --gradient-tile: linear-gradient(135deg, var(--color-primary) 0%, #233446 100%);
-    --gradient-gold: linear-gradient(90deg, var(--color-accent-gold), var(--color-accent-gold-light));
-    --gradient-heading: linear-gradient(90deg, var(--color-text-heading), #B8B8B8);
+    --gradient-gold: linear-gradient(
+        90deg,
+        var(--color-accent-gold),
+        var(--color-accent-gold-light)
+    );
+    --gradient-heading: linear-gradient(90deg, var(--color-text-heading), #b8b8b8);
 
     /* Service Overlay Gradients */
-    --gradient-service: linear-gradient(to top,
-            rgba(215, 125, 50, 0.95) 0%,
-            rgba(215, 125, 50, 0.85) 50%,
-            rgba(215, 125, 50, 0.7) 100%);
-    --gradient-service-hover: linear-gradient(to top,
-            rgba(215, 125, 50, 0.98) 0%,
-            rgba(215, 125, 50, 0.88) 50%,
-            rgba(215, 125, 50, 0.78) 100%);
+    --gradient-service: linear-gradient(
+        to top,
+        rgba(215, 125, 50, 0.95) 0%,
+        rgba(215, 125, 50, 0.85) 50%,
+        rgba(215, 125, 50, 0.7) 100%
+    );
+    --gradient-service-hover: linear-gradient(
+        to top,
+        rgba(215, 125, 50, 0.98) 0%,
+        rgba(215, 125, 50, 0.88) 50%,
+        rgba(215, 125, 50, 0.78) 100%
+    );
 
     /* ============================================
        TYPOGRAPHY
@@ -204,7 +212,7 @@
     --heading-color: var(--color-text-heading);
     --heading-font: var(--font-heading);
     --body-font: var(--font-body);
-    --background: #F5F5F7;
+    --background: #f5f5f7;
     --gradient-dark: var(--gradient-dark);
     --gradient-tile: var(--gradient-tile);
     --gradient-gold: var(--gradient-gold);

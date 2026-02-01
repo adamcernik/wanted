@@ -9,6 +9,7 @@ A modern, responsive website for WANTED s.f.o., showcasing film production suppo
 This project has been completely restructured for better maintainability, performance, and developer experience:
 
 #### **Code Organization**
+
 - ✅ **CSS Reduced by 60%**: Split monolithic CSS (1500+ lines) into logical modules
 - ✅ **JavaScript Modularized**: Reduced main.js from 1741 lines to ~250 lines
 - ✅ **Better Separation**: Clean separation of concerns with modules
@@ -96,6 +97,7 @@ npm run format
 ### **CSS Architecture**
 
 We use a **modular CSS architecture** with:
+
 - CSS Custom Properties (variables)
 - BEM naming convention
 - Mobile-first responsive design
@@ -104,23 +106,25 @@ We use a **modular CSS architecture** with:
 ### **JavaScript Modules**
 
 All JavaScript is organized into ES6 modules:
+
 - **Core**: Configuration and utilities
 - **Modules**: Feature-specific code
 - **Clean imports**: Easy to understand dependencies
 
 ### **Key Changes from v1.0**
 
-| Aspect | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| main.js size | 1741 lines | ~250 lines | **85% smaller** |
-| CSS organization | 3 huge files | 15+ focused files | **Much cleaner** |
-| Breakpoints | 7 inconsistent | 4 standardized | **Simpler** |
-| Build process | None | Vite + ESLint | **Modern DX** |
-| Modularity | Monolithic | Modular | **Maintainable** |
+| Aspect           | Before         | After             | Improvement      |
+| ---------------- | -------------- | ----------------- | ---------------- |
+| main.js size     | 1741 lines     | ~250 lines        | **85% smaller**  |
+| CSS organization | 3 huge files   | 15+ focused files | **Much cleaner** |
+| Breakpoints      | 7 inconsistent | 4 standardized    | **Simpler**      |
+| Build process    | None           | Vite + ESLint     | **Modern DX**    |
+| Modularity       | Monolithic     | Modular           | **Maintainable** |
 
 ## 📝 Configuration
 
 Edit `js/core/config.js` to customize:
+
 - EmailJS credentials
 - Language settings
 - Scroll behavior
@@ -129,6 +133,7 @@ Edit `js/core/config.js` to customize:
 ## 🌐 Internationalization
 
 The site supports 6 languages. Translations are in `langs/*.json`:
+
 - English (en)
 - Czech (cs)
 - German (de)
@@ -139,11 +144,13 @@ The site supports 6 languages. Translations are in `langs/*.json`:
 ## 🎯 Performance
 
 ### **Before Refactoring**
+
 - CSS: ~50KB (unminified)
 - JS: 70KB (main.js alone)
 - Maintenance: Difficult
 
 ### **After Refactoring**
+
 - CSS: Modular, tree-shakeable
 - JS: Code-split, lazy loadable
 - Maintenance: Easy
@@ -158,6 +165,7 @@ The site supports 6 languages. Translations are in `langs/*.json`:
 ## 📂 Project Structure Explained
 
 ### **CSS Layers**
+
 1. **Core**: Reset, variables, typography
 2. **Layout**: Grid system, structural elements
 3. **Components**: Reusable UI components
@@ -165,6 +173,7 @@ The site supports 6 languages. Translations are in `langs/*.json`:
 5. **Utilities**: Helper classes
 
 ### **JavaScript Layers**
+
 1. **Core**: Configuration, utilities
 2. **Modules**: Feature implementations
 3. **I18n**: Translation system
@@ -173,6 +182,7 @@ The site supports 6 languages. Translations are in `langs/*.json`:
 ## 🚧 Future Enhancements
 
 See the implementation plan in the project documentation for:
+
 - [ ] Component templating system
 - [ ] Enhanced timeline with filters
 - [ ] Movie grid category filtering
@@ -195,18 +205,18 @@ Private - WANTED s.f.o.
 ### **For Developers**
 
 1. **CSS**: Old `main.css` is now split into modular files
-   - Import order matters! Check `css/main-new.css`
-   - Use CSS variables from `core/variables.css`
+    - Import order matters! Check `css/main-new.css`
+    - Use CSS variables from `core/variables.css`
 
 2. **JavaScript**: Old `main.js` is now `main-new.js` + modules
-   - Features are in `js/modules/`
-   - Import what you need
-   - Use ES6 modules syntax
+    - Features are in `js/modules/`
+    - Import what you need
+    - Use ES6 modules syntax
 
 3. **Build Process**: Now using Vite
-   - Run `npm install` first
-   - Use `npm run dev` for development
-   - Bundle with `npm run build`
+    - Run `npm install` first
+    - Use `npm run dev` for development
+    - Bundle with `npm run build`
 
 ### **Backward Compatibility**
 

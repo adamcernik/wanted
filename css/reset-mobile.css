@@ -44,7 +44,7 @@
         /* Enable panning in x direction */
         touch-action: pan-x !important;
     }
-    
+
     /* Simplify service tiles for better performance */
     .mobile-service {
         /* Prevent selection while scrolling */
@@ -61,7 +61,7 @@
         animation: none !important;
         transform: none !important;
     }
-    
+
     /* Remove any potential pointer events issues */
     .services-track {
         pointer-events: auto !important;

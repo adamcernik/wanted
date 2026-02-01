@@ -13,7 +13,9 @@
     padding: 2rem;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
     backdrop-filter: blur(5px);
 }
 
@@ -35,7 +37,8 @@
     overflow: hidden;
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+    transition:
+        transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
         opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -51,7 +54,7 @@
 }
 
 /* Only apply to direct img children, not those in sponsorship collage */
-.modal-header>img {
+.modal-header > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -63,10 +66,12 @@
     left: 0;
     right: 0;
     padding: 2rem;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.9) 0%,
-            rgba(0, 0, 0, 0.7) 50%,
-            rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
 
 .modal-title {
@@ -207,7 +212,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
 }
 
 .sponsorship-header-collage img:hover {

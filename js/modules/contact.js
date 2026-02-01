@@ -58,7 +58,6 @@ export class ContactForm {
                 this.submitBtn.textContent = originalBtnText;
                 this.submitBtn.disabled = false;
             }, 3000);
-
         } catch (error) {
             // Error handling
             console.error('EmailJS error:', error);

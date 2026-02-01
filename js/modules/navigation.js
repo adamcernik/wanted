@@ -84,7 +84,7 @@ export class Navigation {
         e.preventDefault();
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
         this.closeMobileMenu();
     }

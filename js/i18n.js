@@ -190,7 +190,11 @@ function translatePage() {
     });
 
     // Dispatch event for other components
-    document.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: currentLanguage, data: langData } }));
+    document.dispatchEvent(
+        new CustomEvent('languageChanged', {
+            detail: { language: currentLanguage, data: langData },
+        })
+    );
 }
 
 /**
@@ -231,7 +235,9 @@ function translatePlaceholder(element) {
     if (value !== undefined) {
         element.placeholder = value;
     } else {
-        console.warn(`Translation for placeholder key "${key}" not found in language "${currentLanguage}"`);
+        console.warn(
+            `Translation for placeholder key "${key}" not found in language "${currentLanguage}"`
+        );
     }
 }
 
@@ -526,5 +532,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.i18n = {
     switchLanguage,
     translatePage,
-    getCurrentLanguage: () => currentLanguage
-}; 
+    getCurrentLanguage: () => currentLanguage,
+};
