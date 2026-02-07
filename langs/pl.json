@@ -244,5 +244,8 @@
   "meta": {
     "description": "WANTED s.f.o. - Wsparcie i usługi produkcji filmowej",
     "title": "WANTED - Wsparcie produkcji filmowej"
+  },
+  "timeline": {
+    "older": "i starsze"
   }
 }

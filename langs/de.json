@@ -244,5 +244,8 @@
   "meta": {
     "description": "WANTED s.f.o. - Filmproduktionsunterstützung und Dienstleistungen",
     "title": "WANTED - Filmproduktionsunterstützung"
+  },
+  "timeline": {
+    "older": "und älter"
   }
 }

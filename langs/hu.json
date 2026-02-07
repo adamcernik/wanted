@@ -244,5 +244,8 @@
   "meta": {
     "description": "WANTED s.f.o. - Filmgyártási támogatás és szolgáltatások",
     "title": "WANTED - Filmgyártási támogatás"
+  },
+  "timeline": {
+    "older": "és régebbi"
   }
 }

@@ -241,5 +241,8 @@
   "meta": {
     "description": "WANTED s.f.o. - Podpora a služby filmové produkce",
     "title": "WANTED - Podpora filmové produkce"
+  },
+  "timeline": {
+    "older": "a starší"
   }
 }

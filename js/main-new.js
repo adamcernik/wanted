@@ -259,20 +259,20 @@ function initModals() {
             const langTranslations = window.translations?.[currentLang];
 
             if (langTranslations?.sponsorship) {
-                console.log('SPONSORSHIP MODAL LOADING - v2025-12-14-11:21'); // Cache buster
+                console.log('SPONSORSHIP MODAL LOADING - v2026-02-07-22:30'); // Cache buster
                 const sponsorshipData = langTranslations.sponsorship;
 
                 // Define sponsoring images (10 images for 5x2 grid)
                 const sponsoringImages = [
                     'images/sponzoring/sponzoring01.jpeg',
-                    'images/sponzoring/sponzoring02.jpeg',
+                    'images/sponzoring/sponzoring02.jpg',
                     'images/sponzoring/sponzoring03.jpeg',
                     'images/sponzoring/sponzoring04.jpeg',
                     'images/sponzoring/sponzoring05.jpeg',
                     'images/sponzoring/sponzoring06.jpeg',
-                    'images/sponzoring/sponzoring11.jpeg',
-                    'images/sponzoring/sponzoring12.jpeg',
-                    'images/sponzoring/sponzoring09.jpeg',
+                    'images/sponzoring/sponzoring07.jpeg',
+                    'images/sponzoring/sponzoring08.jpg',
+                    'images/sponzoring/sponzoring09.jpg',
                     'images/sponzoring/sponzoring10.jpeg',
                 ];
 
@@ -474,10 +474,8 @@ async function initTimeline() {
         // Render timeline
         renderTimeline(container, timelineData);
 
-        // Add loaded class for swipe hint animation (after a delay)
-        setTimeout(() => {
-            container.parentElement.classList.add('loaded');
-        }, 1000);
+        // Expose for i18n
+        window.refreshTimeline = initTimeline;
     } catch (error) {
         console.error('Error initializing timeline:', error);
         container.innerHTML = '<p class="timeline-error">Failed to load timeline content.</p>';
@@ -494,7 +492,7 @@ function parseTimelineMarkdown(markdown) {
     let currentEvents = [];
 
     lines.forEach(line => {
-        const yearMatch = line.match(/^\*\*(\d{4})\*\*$/);
+        const yearMatch = line.match(/^\*\*(.*?)\*\*$/);
 
         if (yearMatch) {
             // Save previous year if exists
@@ -522,19 +520,29 @@ function parseTimelineMarkdown(markdown) {
  * Render timeline HTML
  */
 function renderTimeline(container, timelineData) {
+    // Get current language and translations
+    const currentLang = window.i18n?.getCurrentLanguage() || 'cs';
+    const olderLabel = window.translations?.[currentLang]?.timeline?.older || 'a starší';
+
     const html = timelineData
-        .map(
-            ({ year, events }) => `
+        .map(({ year, events }) => {
+            // Translate year header if it contains "2008" and "starší" or "older"
+            let displayYear = year;
+            if (year.includes('2008')) {
+                displayYear = `2008 ${olderLabel}`;
+            }
+
+            return `
         <div class="timeline-tile">
-            <div class="timeline-year">${year}</div>
+            <div class="timeline-year">${displayYear}</div>
             <div class="timeline-content">
                 <ul class="timeline-event-list">
                     ${events.map(event => `<li>${event}</li>`).join('')}
                 </ul>
             </div>
         </div>
-    `
-        )
+    `;
+        })
         .join('');
 
     container.innerHTML = html;

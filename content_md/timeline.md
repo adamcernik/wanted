@@ -1,6 +1,4 @@
-**Timeline Content**
-
-**2008**
+**2008 a starší**
 Expozitura - Nova
 The Chronicles of Narnia: Prince Caspian
 Děti noci
@@ -169,6 +167,6 @@ Kidnapping of President FIN/CZ/EST/NL
 Gerta Schnirch D/CZ
 FBI International season 4 CZ
 Renault New'R
-Dacia New Visual Identity
+Dacia New Visual Identity / Czechia / Slovakia / Hungary / Sweden / Denmark / Poland / Estonia / Latvia / Lithuania
 Renault & Dacia / Konvence / Car of the Year 2025
 Age of Innocence

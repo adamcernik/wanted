@@ -180,6 +180,7 @@ function translatePage() {
     translateProjectsSection(langData);
     translateContactForm(langData);
     translateServices(langData);
+    translateTimeline(langData);
 
     // Update HTML lang attribute
     document.documentElement.lang = currentLanguage;
@@ -429,6 +430,20 @@ function translateContactForm(langData) {
         if (submitBtn.hasAttribute('data-failed')) {
             submitBtn.setAttribute('data-failed', langData.contact.failed || 'Sending failed');
         }
+    }
+}
+
+/**
+ * Translate timeline section
+ * @param {Object} langData - Translation data for current language
+ */
+function translateTimeline(langData) {
+    if (!langData.timeline) return;
+
+    // Trigger timeline re-render if it exists
+    const container = document.getElementById('timeline-basic-scroll');
+    if (container && window.refreshTimeline) {
+        window.refreshTimeline();
     }
 }
 
